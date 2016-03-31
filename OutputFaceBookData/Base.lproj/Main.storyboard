@@ -19,7 +19,7 @@
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
-                        <segue destination="lGA-mN-Hqd" kind="modal" id="ckZ-Qg-mpC"/>
+                        <segue destination="lGA-mN-Hqd" kind="modal" identifier="SomeIdent" id="ckZ-Qg-mpC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

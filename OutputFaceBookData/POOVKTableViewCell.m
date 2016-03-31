@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *name;
 @property (strong, nonatomic) IBOutlet UILabel *fullnameOrStatus;
+@property (strong, nonatomic) IBOutlet UIImageView *userImage;
 
 @end
 
@@ -109,7 +110,7 @@
     NSString *key = [URL MD5Hash];
     UIImage *image = [POOCache objectForKey:key];
     if (image) {
-        self.imageView.image = image;
+        self.userImage.image = image;
     } else {
         dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0);
         
@@ -119,7 +120,7 @@
             [POOCache setObject:data forKey:key];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.imageView.image = image;
+                self.userImage.image = image;
                 [self layoutSubviews];
             });
         });
