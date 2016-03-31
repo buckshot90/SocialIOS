@@ -20,6 +20,7 @@ static NSString *MessagesIdent = @"MessagesIdent";
 
 @property (strong, nonatomic) NSMutableArray *dialogs;
 @property (strong, nonatomic) NSMutableArray *friends;
+@property (assign, nonatomic) NSInteger index;
 
 @end
 
@@ -34,6 +35,7 @@ static NSString *MessagesIdent = @"MessagesIdent";
         
         self.dialogs = [NSMutableArray array];
         self.friends = [NSMutableArray array];
+        self.index = 50;
         
         return self;
     }
@@ -47,7 +49,8 @@ static NSString *MessagesIdent = @"MessagesIdent";
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [self getDialogs:50 offset:0];
+    [self.dialogs removeAllObjects];
+    [self getDialogs:self.index offset:0];
 }
 
 - (void)getDialogs:(NSInteger)count offset:(NSInteger)offset {
@@ -91,13 +94,18 @@ static NSString *MessagesIdent = @"MessagesIdent";
     }
     
     POOUserDialog *userDialog = self.dialogs[indexPath.row];
-    POOVKUserModel *user = self.friends[indexPath.row];
+    POOVKUserModel *user;
+    if (indexPath.row < self.friends.count) {
+        user = self.friends[indexPath.row];
+    }
     
     [cell initWithInterlocutorImage:user.image interlocutorNameAndSecondname:[NSString stringWithFormat:@"%@ %@",user.name, user.lastName] message:userDialog.body online:user.online outbox:userDialog.outbox readFlag:userDialog.readFlag];
     
     if (indexPath.row == self.dialogs.count - 1) {
         [self getDialogs:20 offset:self.dialogs.count];
     }
+    
+    self.index = [[tableView indexPathsForVisibleRows] lastObject].row + 1;
     
     return cell;
 }

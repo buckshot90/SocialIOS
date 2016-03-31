@@ -193,10 +193,11 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
 #pragma mark - Table
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
     if (self.segmentController.selectedSegmentIndex == 1) {
-        return [_sectionSource subarrayWithRange:NSMakeRange(1, self.sectionSource.count - 1)];
-    } else {
-        return _sectionSource;
+        if (self.sectionSource.count != 0) {
+            return [_sectionSource subarrayWithRange:NSMakeRange(1, self.sectionSource.count - 1)];
+        }
     }
+    return _sectionSource;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -284,7 +285,7 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
             [self addContactsToArray:filtreadArray bySearchString:searchString];
         } if (_segmentController.selectedSegmentIndex == 1) {
             [self addFriendsToArray:filtreadArray bySearchString:searchString];
-        } else {
+        } if (_segmentController.selectedSegmentIndex == 2) {
             [self addInvitesToArray:filtreadArray bySearchString:searchString];
         }
         _sectionSource = [self getSortedArrayBySection:filtreadArray];
@@ -293,7 +294,7 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
             _sectionSource = [self getSortedArrayBySection:_phoneContact];
         } if (_segmentController.selectedSegmentIndex == 1) {
             _sectionSource = [self getSortedArrayBySection:_friends];
-        } else {
+        } if (_segmentController.selectedSegmentIndex == 2) {
             _sectionSource = [self getSortedArrayBySection:_invates];
         }
     }
