@@ -54,6 +54,13 @@
 		D2FE07CB1BD4E6B7004E0C95 /* POOCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE07C91BD4E6B7004E0C95 /* POOCollectionViewCell.m */; };
 		D2FE07CC1BD4E6B7004E0C95 /* POOCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FE07CA1BD4E6B7004E0C95 /* POOCollectionViewCell.xib */; };
 		D2FE07D51BD52BA2004E0C95 /* POOFriendPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE07D41BD52BA2004E0C95 /* POOFriendPhotoViewController.m */; };
+		DF2F60BF1CB0FB05006352D9 /* SOLAudioService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60B31CB0FB05006352D9 /* SOLAudioService.m */; };
+		DF2F60C01CB0FB05006352D9 /* SOLAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60B61CB0FB05006352D9 /* SOLAuthService.m */; };
+		DF2F60C11CB0FB05006352D9 /* SOLFriendService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60B91CB0FB05006352D9 /* SOLFriendService.m */; };
+		DF2F60C31CB0FB05006352D9 /* SOLUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60BE1CB0FB05006352D9 /* SOLUserService.m */; };
+		DF2F60C61CB0FB98006352D9 /* SOLUserPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60C51CB0FB98006352D9 /* SOLUserPlainObject.m */; };
+		DF2F60C91CB0FBB5006352D9 /* SOLFriendPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60C81CB0FBB5006352D9 /* SOLFriendPlainObject.m */; };
+		DF2F60CC1CB0FBDA006352D9 /* SOLAudioPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60CB1CB0FBDA006352D9 /* SOLAudioPlainObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +156,20 @@
 		D2FE07CA1BD4E6B7004E0C95 /* POOCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POOCollectionViewCell.xib; sourceTree = "<group>"; };
 		D2FE07D31BD52BA2004E0C95 /* POOFriendPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOFriendPhotoViewController.h; sourceTree = "<group>"; };
 		D2FE07D41BD52BA2004E0C95 /* POOFriendPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOFriendPhotoViewController.m; sourceTree = "<group>"; };
+		DF2F60B21CB0FB05006352D9 /* SOLAudioService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAudioService.h; sourceTree = "<group>"; };
+		DF2F60B31CB0FB05006352D9 /* SOLAudioService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAudioService.m; sourceTree = "<group>"; };
+		DF2F60B51CB0FB05006352D9 /* SOLAuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAuthService.h; sourceTree = "<group>"; };
+		DF2F60B61CB0FB05006352D9 /* SOLAuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAuthService.m; sourceTree = "<group>"; };
+		DF2F60B81CB0FB05006352D9 /* SOLFriendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendService.h; sourceTree = "<group>"; };
+		DF2F60B91CB0FB05006352D9 /* SOLFriendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendService.m; sourceTree = "<group>"; };
+		DF2F60BD1CB0FB05006352D9 /* SOLUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserService.h; sourceTree = "<group>"; };
+		DF2F60BE1CB0FB05006352D9 /* SOLUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserService.m; sourceTree = "<group>"; };
+		DF2F60C41CB0FB98006352D9 /* SOLUserPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserPlainObject.h; sourceTree = "<group>"; };
+		DF2F60C51CB0FB98006352D9 /* SOLUserPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserPlainObject.m; sourceTree = "<group>"; };
+		DF2F60C71CB0FBB5006352D9 /* SOLFriendPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendPlainObject.h; sourceTree = "<group>"; };
+		DF2F60C81CB0FBB5006352D9 /* SOLFriendPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendPlainObject.m; sourceTree = "<group>"; };
+		DF2F60CA1CB0FBDA006352D9 /* SOLAudioPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAudioPlainObject.h; sourceTree = "<group>"; };
+		DF2F60CB1CB0FBDA006352D9 /* SOLAudioPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAudioPlainObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +330,7 @@
 		D2A8CB971BC7A62C006BF1F6 = {
 			isa = PBXGroup;
 			children = (
+				DF362D091CB0EFC000F388B8 /* Source */,
 				D26F11231C9F15DA004DE72C /* POORequstManager.h */,
 				D26F11241C9F15DA004DE72C /* POORequstManager.m */,
 				D26918FA1C9854D300FD90C6 /* OutputFaceBookData.xcdatamodeld */,
@@ -383,6 +405,85 @@
 				43E040808CE55AAAB5B51A2F /* Pods_OutputFaceBookData.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF2F60AE1CB0FB05006352D9 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60AF1CB0FB05006352D9 /* Services */,
+			);
+			name = BusinessLogicLayer;
+			path = Source/BusinessLogicLayer;
+			sourceTree = SOURCE_ROOT;
+		};
+		DF2F60AF1CB0FB05006352D9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60B01CB0FB05006352D9 /* ConcreteServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DF2F60B01CB0FB05006352D9 /* ConcreteServices */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60B41CB0FB05006352D9 /* AuthService */,
+				DF2F60B11CB0FB05006352D9 /* AudioService */,
+				DF2F60B71CB0FB05006352D9 /* FriendService */,
+				DF2F60BA1CB0FB05006352D9 /* UserService */,
+			);
+			path = ConcreteServices;
+			sourceTree = "<group>";
+		};
+		DF2F60B11CB0FB05006352D9 /* AudioService */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60CA1CB0FBDA006352D9 /* SOLAudioPlainObject.h */,
+				DF2F60CB1CB0FBDA006352D9 /* SOLAudioPlainObject.m */,
+				DF2F60B21CB0FB05006352D9 /* SOLAudioService.h */,
+				DF2F60B31CB0FB05006352D9 /* SOLAudioService.m */,
+			);
+			path = AudioService;
+			sourceTree = "<group>";
+		};
+		DF2F60B41CB0FB05006352D9 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60B51CB0FB05006352D9 /* SOLAuthService.h */,
+				DF2F60B61CB0FB05006352D9 /* SOLAuthService.m */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		DF2F60B71CB0FB05006352D9 /* FriendService */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60C71CB0FBB5006352D9 /* SOLFriendPlainObject.h */,
+				DF2F60C81CB0FBB5006352D9 /* SOLFriendPlainObject.m */,
+				DF2F60B81CB0FB05006352D9 /* SOLFriendService.h */,
+				DF2F60B91CB0FB05006352D9 /* SOLFriendService.m */,
+			);
+			path = FriendService;
+			sourceTree = "<group>";
+		};
+		DF2F60BA1CB0FB05006352D9 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60C41CB0FB98006352D9 /* SOLUserPlainObject.h */,
+				DF2F60C51CB0FB98006352D9 /* SOLUserPlainObject.m */,
+				DF2F60BD1CB0FB05006352D9 /* SOLUserService.h */,
+				DF2F60BE1CB0FB05006352D9 /* SOLUserService.m */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
+		DF362D091CB0EFC000F388B8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60AE1CB0FB05006352D9 /* BusinessLogicLayer */,
+			);
+			name = Source;
+			path = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -516,7 +617,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D292873B1BCBFCDE0089E3BE /* POOTableViewCell.m in Sources */,
+				DF2F60CC1CB0FBDA006352D9 /* SOLAudioPlainObject.m in Sources */,
 				D2A8CBD51BC7B874006BF1F6 /* POOTESTFriend.m in Sources */,
+				DF2F60C01CB0FB05006352D9 /* SOLAuthService.m in Sources */,
 				D20749521C206AEC00A6EB2A /* POORegistrationViewController.m in Sources */,
 				D24BAD301BE7B7E0003C96A9 /* POOFeedTableViewCell.m in Sources */,
 				D293A21A1C47D23C00EDDF59 /* POOVKUserModel.m in Sources */,
@@ -527,8 +630,11 @@
 				D2A8CBDF1BC7CD9A006BF1F6 /* POFriendsListViewController.m in Sources */,
 				D21623B11C737281000306EC /* POOVKTableViewCell.m in Sources */,
 				D2A8CBA81BC7A62C006BF1F6 /* AppDelegate.m in Sources */,
+				DF2F60C11CB0FB05006352D9 /* SOLFriendService.m in Sources */,
 				D293A2131C47D0A300EDDF59 /* POOLogInVKViewController.m in Sources */,
 				D225FB851BDA398900711C53 /* POOCache.m in Sources */,
+				DF2F60C31CB0FB05006352D9 /* SOLUserService.m in Sources */,
+				DF2F60C61CB0FB98006352D9 /* SOLUserPlainObject.m in Sources */,
 				D26F11251C9F15DA004DE72C /* POORequstManager.m in Sources */,
 				D26918FC1C9854D300FD90C6 /* OutputFaceBookData.xcdatamodeld in Sources */,
 				D25412DA1BF20CC7000BD9D3 /* POOCollectionViewLayout.m in Sources */,
@@ -537,9 +643,11 @@
 				D2A8CBA51BC7A62C006BF1F6 /* main.m in Sources */,
 				D2A8CBBC1BC7A684006BF1F6 /* POOFacebookData.m in Sources */,
 				D26918FF1C997C5800FD90C6 /* POOUserDialog.m in Sources */,
+				DF2F60BF1CB0FB05006352D9 /* SOLAudioService.m in Sources */,
 				D2F8AC381C4E6A3A00FB1DB0 /* POOPhoneBookContact.m in Sources */,
 				D2C43ABD1BE3AE7000E0C170 /* POOWebController.m in Sources */,
 				D24BAD341BE7C0E4003C96A9 /* POOFeedViewController.m in Sources */,
+				DF2F60C91CB0FBB5006352D9 /* SOLFriendPlainObject.m in Sources */,
 				D2FE07CB1BD4E6B7004E0C95 /* POOCollectionViewCell.m in Sources */,
 				D225FB8A1BDA6CE100711C53 /* String+Md5.m in Sources */,
 				D24BAD2C1BE7B1BF003C96A9 /* POOFacebookFeed.m in Sources */,
