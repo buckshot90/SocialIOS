@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5633E3341CB2876E0025D290 /* SOLAudioService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3221CB2876E0025D290 /* SOLAudioService.m */; };
+		5633E3351CB2876E0025D290 /* SOLAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3251CB2876E0025D290 /* SOLAuthService.m */; };
+		5633E3361CB2876E0025D290 /* SOLFriendService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3281CB2876E0025D290 /* SOLFriendService.m */; };
+		5633E3371CB2876E0025D290 /* SOLUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E32B1CB2876E0025D290 /* SOLUserService.m */; };
+		5633E3381CB2876E0025D290 /* SOLAudioPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E32F1CB2876E0025D290 /* SOLAudioPlainObject.m */; };
+		5633E3391CB2876E0025D290 /* SOLFriendPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3311CB2876E0025D290 /* SOLFriendPlainObject.m */; };
+		5633E33A1CB2876E0025D290 /* SOLUserPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3331CB2876E0025D290 /* SOLUserPlainObject.m */; };
+		5633E3601CB294DF0025D290 /* Dialogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5633E35F1CB294DF0025D290 /* Dialogs.storyboard */; };
+		5633E3631CB297520025D290 /* SOLDialogListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3621CB297520025D290 /* SOLDialogListTableViewController.m */; };
+		5633E3681CB2C4FF0025D290 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3671CB2C4FF0025D290 /* AppDelegate.m */; };
+		5633E36B1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E36A1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m */; };
+		5633E36E1CB2CFEB0025D290 /* SOLDialogListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E36D1CB2CFEB0025D290 /* SOLDialogListInteractor.m */; };
+		5633E3741CB2D0FD0025D290 /* SOLDialogListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3731CB2D0FD0025D290 /* SOLDialogListPresenter.m */; };
+		5633E3771CB2D15E0025D290 /* SOLDialogListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3761CB2D15E0025D290 /* SOLDialogListRouter.m */; };
+		5633E37E1CB2D9D20025D290 /* SOLDialogService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E37D1CB2D9D20025D290 /* SOLDialogService.m */; };
+		5633E3811CB2D9EF0025D290 /* SOLDialogPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3801CB2D9EF0025D290 /* SOLDialogPlainObject.m */; };
 		5791B2D5C26160ED45146CA2 /* Pods_OutputFaceBookData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43E040808CE55AAAB5B51A2F /* Pods_OutputFaceBookData.framework */; };
 		D20749521C206AEC00A6EB2A /* POORegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20749511C206AEC00A6EB2A /* POORegistrationViewController.m */; };
 		D21623B11C737281000306EC /* POOVKTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D21623AF1C737281000306EC /* POOVKTableViewCell.m */; };
@@ -36,7 +52,6 @@
 		D293A2131C47D0A300EDDF59 /* POOLogInVKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D293A2121C47D0A300EDDF59 /* POOLogInVKViewController.m */; };
 		D293A21A1C47D23C00EDDF59 /* POOVKUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D293A2191C47D23C00EDDF59 /* POOVKUserModel.m */; };
 		D2A8CBA51BC7A62C006BF1F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CBA41BC7A62C006BF1F6 /* main.m */; };
-		D2A8CBA81BC7A62C006BF1F6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CBA71BC7A62C006BF1F6 /* AppDelegate.m */; };
 		D2A8CBAE1BC7A62C006BF1F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A8CBAC1BC7A62C006BF1F6 /* Main.storyboard */; };
 		D2A8CBB31BC7A62C006BF1F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2A8CBB11BC7A62C006BF1F6 /* LaunchScreen.storyboard */; };
 		D2A8CBBC1BC7A684006BF1F6 /* POOFacebookData.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CBBB1BC7A684006BF1F6 /* POOFacebookData.m */; };
@@ -54,19 +69,48 @@
 		D2FE07CB1BD4E6B7004E0C95 /* POOCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE07C91BD4E6B7004E0C95 /* POOCollectionViewCell.m */; };
 		D2FE07CC1BD4E6B7004E0C95 /* POOCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2FE07CA1BD4E6B7004E0C95 /* POOCollectionViewCell.xib */; };
 		D2FE07D51BD52BA2004E0C95 /* POOFriendPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE07D41BD52BA2004E0C95 /* POOFriendPhotoViewController.m */; };
-		DF2F60BF1CB0FB05006352D9 /* SOLAudioService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60B31CB0FB05006352D9 /* SOLAudioService.m */; };
-		DF2F60C01CB0FB05006352D9 /* SOLAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60B61CB0FB05006352D9 /* SOLAuthService.m */; };
-		DF2F60C11CB0FB05006352D9 /* SOLFriendService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60B91CB0FB05006352D9 /* SOLFriendService.m */; };
-		DF2F60C31CB0FB05006352D9 /* SOLUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60BE1CB0FB05006352D9 /* SOLUserService.m */; };
-		DF2F60C61CB0FB98006352D9 /* SOLUserPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60C51CB0FB98006352D9 /* SOLUserPlainObject.m */; };
-		DF2F60C91CB0FBB5006352D9 /* SOLFriendPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60C81CB0FBB5006352D9 /* SOLFriendPlainObject.m */; };
-		DF2F60CC1CB0FBDA006352D9 /* SOLAudioPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60CB1CB0FBDA006352D9 /* SOLAudioPlainObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00DD6C2D9FF0CDE3ACDEE050 /* Pods-OutputFaceBookData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutputFaceBookData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OutputFaceBookData/Pods-OutputFaceBookData.debug.xcconfig"; sourceTree = "<group>"; };
 		0954B568C54480590B5A8386 /* Pods-OutputFaceBookData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OutputFaceBookData.release.xcconfig"; path = "Pods/Target Support Files/Pods-OutputFaceBookData/Pods-OutputFaceBookData.release.xcconfig"; sourceTree = "<group>"; };
 		43E040808CE55AAAB5B51A2F /* Pods_OutputFaceBookData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OutputFaceBookData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5633E3211CB2876E0025D290 /* SOLAudioService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAudioService.h; sourceTree = "<group>"; };
+		5633E3221CB2876E0025D290 /* SOLAudioService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAudioService.m; sourceTree = "<group>"; };
+		5633E3241CB2876E0025D290 /* SOLAuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAuthService.h; sourceTree = "<group>"; };
+		5633E3251CB2876E0025D290 /* SOLAuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAuthService.m; sourceTree = "<group>"; };
+		5633E3271CB2876E0025D290 /* SOLFriendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendService.h; sourceTree = "<group>"; };
+		5633E3281CB2876E0025D290 /* SOLFriendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendService.m; sourceTree = "<group>"; };
+		5633E32A1CB2876E0025D290 /* SOLUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserService.h; sourceTree = "<group>"; };
+		5633E32B1CB2876E0025D290 /* SOLUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserService.m; sourceTree = "<group>"; };
+		5633E32E1CB2876E0025D290 /* SOLAudioPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAudioPlainObject.h; sourceTree = "<group>"; };
+		5633E32F1CB2876E0025D290 /* SOLAudioPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAudioPlainObject.m; sourceTree = "<group>"; };
+		5633E3301CB2876E0025D290 /* SOLFriendPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendPlainObject.h; sourceTree = "<group>"; };
+		5633E3311CB2876E0025D290 /* SOLFriendPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendPlainObject.m; sourceTree = "<group>"; };
+		5633E3321CB2876E0025D290 /* SOLUserPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserPlainObject.h; sourceTree = "<group>"; };
+		5633E3331CB2876E0025D290 /* SOLUserPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserPlainObject.m; sourceTree = "<group>"; };
+		5633E35F1CB294DF0025D290 /* Dialogs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dialogs.storyboard; sourceTree = "<group>"; };
+		5633E3611CB297520025D290 /* SOLDialogListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListTableViewController.h; sourceTree = "<group>"; };
+		5633E3621CB297520025D290 /* SOLDialogListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListTableViewController.m; sourceTree = "<group>"; };
+		5633E3661CB2C4FF0025D290 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ApplicationLayer/AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
+		5633E3671CB2C4FF0025D290 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ApplicationLayer/AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
+		5633E3691CB2CC3E0025D290 /* SOLDialogListModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListModuleAssembly.h; sourceTree = "<group>"; };
+		5633E36A1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListModuleAssembly.m; sourceTree = "<group>"; };
+		5633E36C1CB2CFEB0025D290 /* SOLDialogListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListInteractor.h; sourceTree = "<group>"; };
+		5633E36D1CB2CFEB0025D290 /* SOLDialogListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListInteractor.m; sourceTree = "<group>"; };
+		5633E36F1CB2D03A0025D290 /* SOLDialogListInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListInteractorInput.h; sourceTree = "<group>"; };
+		5633E3701CB2D0620025D290 /* SOLDialogListInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListInteractorOutput.h; sourceTree = "<group>"; };
+		5633E3721CB2D0FD0025D290 /* SOLDialogListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListPresenter.h; sourceTree = "<group>"; };
+		5633E3731CB2D0FD0025D290 /* SOLDialogListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListPresenter.m; sourceTree = "<group>"; };
+		5633E3751CB2D15E0025D290 /* SOLDialogListRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListRouter.h; sourceTree = "<group>"; };
+		5633E3761CB2D15E0025D290 /* SOLDialogListRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListRouter.m; sourceTree = "<group>"; };
+		5633E3781CB2D1860025D290 /* SOLDialogListRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListRouterInput.h; sourceTree = "<group>"; };
+		5633E3791CB2D3070025D290 /* SOLDialogListViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListViewInput.h; sourceTree = "<group>"; };
+		5633E37A1CB2D31E0025D290 /* SOLDialogListViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListViewOutput.h; sourceTree = "<group>"; };
+		5633E37C1CB2D9D20025D290 /* SOLDialogService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogService.h; path = DialogService/SOLDialogService.h; sourceTree = "<group>"; };
+		5633E37D1CB2D9D20025D290 /* SOLDialogService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogService.m; path = DialogService/SOLDialogService.m; sourceTree = "<group>"; };
+		5633E37F1CB2D9EF0025D290 /* SOLDialogPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogPlainObject.h; sourceTree = "<group>"; };
+		5633E3801CB2D9EF0025D290 /* SOLDialogPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogPlainObject.m; sourceTree = "<group>"; };
 		D20749471C20365E00A6EB2A /* VK_ios_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VK_ios_sdk.framework; path = "Pods/../build/Debug-iphoneos/VK_ios_sdk.framework"; sourceTree = "<group>"; };
 		D20749501C206AEC00A6EB2A /* POORegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POORegistrationViewController.h; sourceTree = "<group>"; };
 		D20749511C206AEC00A6EB2A /* POORegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POORegistrationViewController.m; sourceTree = "<group>"; };
@@ -123,8 +167,6 @@
 		D293A2191C47D23C00EDDF59 /* POOVKUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOVKUserModel.m; sourceTree = "<group>"; };
 		D2A8CBA01BC7A62C006BF1F6 /* OutputFaceBookData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutputFaceBookData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8CBA41BC7A62C006BF1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D2A8CBA61BC7A62C006BF1F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D2A8CBA71BC7A62C006BF1F6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D2A8CBAD1BC7A62C006BF1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2A8CBB21BC7A62C006BF1F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2A8CBB41BC7A62C006BF1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -156,20 +198,6 @@
 		D2FE07CA1BD4E6B7004E0C95 /* POOCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POOCollectionViewCell.xib; sourceTree = "<group>"; };
 		D2FE07D31BD52BA2004E0C95 /* POOFriendPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOFriendPhotoViewController.h; sourceTree = "<group>"; };
 		D2FE07D41BD52BA2004E0C95 /* POOFriendPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOFriendPhotoViewController.m; sourceTree = "<group>"; };
-		DF2F60B21CB0FB05006352D9 /* SOLAudioService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAudioService.h; sourceTree = "<group>"; };
-		DF2F60B31CB0FB05006352D9 /* SOLAudioService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAudioService.m; sourceTree = "<group>"; };
-		DF2F60B51CB0FB05006352D9 /* SOLAuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAuthService.h; sourceTree = "<group>"; };
-		DF2F60B61CB0FB05006352D9 /* SOLAuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAuthService.m; sourceTree = "<group>"; };
-		DF2F60B81CB0FB05006352D9 /* SOLFriendService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendService.h; sourceTree = "<group>"; };
-		DF2F60B91CB0FB05006352D9 /* SOLFriendService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendService.m; sourceTree = "<group>"; };
-		DF2F60BD1CB0FB05006352D9 /* SOLUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserService.h; sourceTree = "<group>"; };
-		DF2F60BE1CB0FB05006352D9 /* SOLUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserService.m; sourceTree = "<group>"; };
-		DF2F60C41CB0FB98006352D9 /* SOLUserPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserPlainObject.h; sourceTree = "<group>"; };
-		DF2F60C51CB0FB98006352D9 /* SOLUserPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserPlainObject.m; sourceTree = "<group>"; };
-		DF2F60C71CB0FBB5006352D9 /* SOLFriendPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendPlainObject.h; sourceTree = "<group>"; };
-		DF2F60C81CB0FBB5006352D9 /* SOLFriendPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendPlainObject.m; sourceTree = "<group>"; };
-		DF2F60CA1CB0FBDA006352D9 /* SOLAudioPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAudioPlainObject.h; sourceTree = "<group>"; };
-		DF2F60CB1CB0FBDA006352D9 /* SOLAudioPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAudioPlainObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +220,233 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5633E31C1CB2876E0025D290 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3641CB2C2080025D290 /* ApplicationLayer */,
+				5633E31D1CB2876E0025D290 /* BusinessLogicLayer */,
+				5633E33C1CB288EF0025D290 /* PresentationLayer */,
+				5633E32C1CB2876E0025D290 /* Models */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5633E31D1CB2876E0025D290 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5633E31E1CB2876E0025D290 /* Services */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		5633E31E1CB2876E0025D290 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5633E31F1CB2876E0025D290 /* ConcreteServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5633E31F1CB2876E0025D290 /* ConcreteServices */ = {
+			isa = PBXGroup;
+			children = (
+				5633E37B1CB2D9A50025D290 /* DialogsService */,
+				5633E3201CB2876E0025D290 /* AudioService */,
+				5633E3231CB2876E0025D290 /* AuthService */,
+				5633E3261CB2876E0025D290 /* FriendService */,
+				5633E3291CB2876E0025D290 /* UserService */,
+			);
+			path = ConcreteServices;
+			sourceTree = "<group>";
+		};
+		5633E3201CB2876E0025D290 /* AudioService */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3211CB2876E0025D290 /* SOLAudioService.h */,
+				5633E3221CB2876E0025D290 /* SOLAudioService.m */,
+			);
+			path = AudioService;
+			sourceTree = "<group>";
+		};
+		5633E3231CB2876E0025D290 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3241CB2876E0025D290 /* SOLAuthService.h */,
+				5633E3251CB2876E0025D290 /* SOLAuthService.m */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		5633E3261CB2876E0025D290 /* FriendService */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3271CB2876E0025D290 /* SOLFriendService.h */,
+				5633E3281CB2876E0025D290 /* SOLFriendService.m */,
+			);
+			path = FriendService;
+			sourceTree = "<group>";
+		};
+		5633E3291CB2876E0025D290 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				5633E32A1CB2876E0025D290 /* SOLUserService.h */,
+				5633E32B1CB2876E0025D290 /* SOLUserService.m */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
+		5633E32C1CB2876E0025D290 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5633E32D1CB2876E0025D290 /* PlainObjects */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5633E32D1CB2876E0025D290 /* PlainObjects */ = {
+			isa = PBXGroup;
+			children = (
+				5633E32E1CB2876E0025D290 /* SOLAudioPlainObject.h */,
+				5633E32F1CB2876E0025D290 /* SOLAudioPlainObject.m */,
+				5633E3301CB2876E0025D290 /* SOLFriendPlainObject.h */,
+				5633E3311CB2876E0025D290 /* SOLFriendPlainObject.m */,
+				5633E3321CB2876E0025D290 /* SOLUserPlainObject.h */,
+				5633E3331CB2876E0025D290 /* SOLUserPlainObject.m */,
+				5633E37F1CB2D9EF0025D290 /* SOLDialogPlainObject.h */,
+				5633E3801CB2D9EF0025D290 /* SOLDialogPlainObject.m */,
+			);
+			path = PlainObjects;
+			sourceTree = "<group>";
+		};
+		5633E33C1CB288EF0025D290 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5633E33D1CB288EF0025D290 /* UserStories */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		5633E33D1CB288EF0025D290 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3541CB291F40025D290 /* DialogsUserStory */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		5633E3541CB291F40025D290 /* DialogsUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3551CB291F40025D290 /* Modules */,
+			);
+			path = DialogsUserStory;
+			sourceTree = "<group>";
+		};
+		5633E3551CB291F40025D290 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3561CB291F40025D290 /* DialogListModule */,
+				5633E35C1CB291F40025D290 /* Storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5633E3561CB291F40025D290 /* DialogListModule */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3571CB291F40025D290 /* Assembly */,
+				5633E3581CB291F40025D290 /* Interactor */,
+				5633E3591CB291F40025D290 /* Presenter */,
+				5633E35A1CB291F40025D290 /* Router */,
+				5633E35B1CB291F40025D290 /* View */,
+			);
+			path = DialogListModule;
+			sourceTree = "<group>";
+		};
+		5633E3571CB291F40025D290 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3691CB2CC3E0025D290 /* SOLDialogListModuleAssembly.h */,
+				5633E36A1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		5633E3581CB291F40025D290 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5633E36C1CB2CFEB0025D290 /* SOLDialogListInteractor.h */,
+				5633E36D1CB2CFEB0025D290 /* SOLDialogListInteractor.m */,
+				5633E36F1CB2D03A0025D290 /* SOLDialogListInteractorInput.h */,
+				5633E3701CB2D0620025D290 /* SOLDialogListInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5633E3591CB291F40025D290 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3721CB2D0FD0025D290 /* SOLDialogListPresenter.h */,
+				5633E3731CB2D0FD0025D290 /* SOLDialogListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5633E35A1CB291F40025D290 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3751CB2D15E0025D290 /* SOLDialogListRouter.h */,
+				5633E3761CB2D15E0025D290 /* SOLDialogListRouter.m */,
+				5633E3781CB2D1860025D290 /* SOLDialogListRouterInput.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5633E35B1CB291F40025D290 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3611CB297520025D290 /* SOLDialogListTableViewController.h */,
+				5633E3621CB297520025D290 /* SOLDialogListTableViewController.m */,
+				5633E3791CB2D3070025D290 /* SOLDialogListViewInput.h */,
+				5633E37A1CB2D31E0025D290 /* SOLDialogListViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5633E35C1CB291F40025D290 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5633E35F1CB294DF0025D290 /* Dialogs.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5633E3641CB2C2080025D290 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3651CB2C4370025D290 /* AppDelegate */,
+			);
+			name = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		5633E3651CB2C4370025D290 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3661CB2C4FF0025D290 /* AppDelegate.h */,
+				5633E3671CB2C4FF0025D290 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		5633E37B1CB2D9A50025D290 /* DialogsService */ = {
+			isa = PBXGroup;
+			children = (
+				5633E37C1CB2D9D20025D290 /* SOLDialogService.h */,
+				5633E37D1CB2D9D20025D290 /* SOLDialogService.m */,
+			);
+			name = DialogsService;
+			sourceTree = "<group>";
+		};
 		57AB0CB99FB116F2D773AD4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,7 +585,7 @@
 		D2A8CB971BC7A62C006BF1F6 = {
 			isa = PBXGroup;
 			children = (
-				DF362D091CB0EFC000F388B8 /* Source */,
+				5633E31C1CB2876E0025D290 /* Source */,
 				D26F11231C9F15DA004DE72C /* POORequstManager.h */,
 				D26F11241C9F15DA004DE72C /* POORequstManager.m */,
 				D26918FA1C9854D300FD90C6 /* OutputFaceBookData.xcdatamodeld */,
@@ -358,8 +613,6 @@
 				D225FB871BDA6CB000711C53 /* Utilits */,
 				D2393DCA1BE8ECF70063F0F6 /* Cells */,
 				D225FB821BDA360100711C53 /* Controllers */,
-				D2A8CBA61BC7A62C006BF1F6 /* AppDelegate.h */,
-				D2A8CBA71BC7A62C006BF1F6 /* AppDelegate.m */,
 				D2A8CBAC1BC7A62C006BF1F6 /* Main.storyboard */,
 				D2A8CBB11BC7A62C006BF1F6 /* LaunchScreen.storyboard */,
 				D2A8CBB41BC7A62C006BF1F6 /* Info.plist */,
@@ -407,85 +660,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DF2F60AE1CB0FB05006352D9 /* BusinessLogicLayer */ = {
-			isa = PBXGroup;
-			children = (
-				DF2F60AF1CB0FB05006352D9 /* Services */,
-			);
-			name = BusinessLogicLayer;
-			path = Source/BusinessLogicLayer;
-			sourceTree = SOURCE_ROOT;
-		};
-		DF2F60AF1CB0FB05006352D9 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				DF2F60B01CB0FB05006352D9 /* ConcreteServices */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		DF2F60B01CB0FB05006352D9 /* ConcreteServices */ = {
-			isa = PBXGroup;
-			children = (
-				DF2F60B41CB0FB05006352D9 /* AuthService */,
-				DF2F60B11CB0FB05006352D9 /* AudioService */,
-				DF2F60B71CB0FB05006352D9 /* FriendService */,
-				DF2F60BA1CB0FB05006352D9 /* UserService */,
-			);
-			path = ConcreteServices;
-			sourceTree = "<group>";
-		};
-		DF2F60B11CB0FB05006352D9 /* AudioService */ = {
-			isa = PBXGroup;
-			children = (
-				DF2F60CA1CB0FBDA006352D9 /* SOLAudioPlainObject.h */,
-				DF2F60CB1CB0FBDA006352D9 /* SOLAudioPlainObject.m */,
-				DF2F60B21CB0FB05006352D9 /* SOLAudioService.h */,
-				DF2F60B31CB0FB05006352D9 /* SOLAudioService.m */,
-			);
-			path = AudioService;
-			sourceTree = "<group>";
-		};
-		DF2F60B41CB0FB05006352D9 /* AuthService */ = {
-			isa = PBXGroup;
-			children = (
-				DF2F60B51CB0FB05006352D9 /* SOLAuthService.h */,
-				DF2F60B61CB0FB05006352D9 /* SOLAuthService.m */,
-			);
-			path = AuthService;
-			sourceTree = "<group>";
-		};
-		DF2F60B71CB0FB05006352D9 /* FriendService */ = {
-			isa = PBXGroup;
-			children = (
-				DF2F60C71CB0FBB5006352D9 /* SOLFriendPlainObject.h */,
-				DF2F60C81CB0FBB5006352D9 /* SOLFriendPlainObject.m */,
-				DF2F60B81CB0FB05006352D9 /* SOLFriendService.h */,
-				DF2F60B91CB0FB05006352D9 /* SOLFriendService.m */,
-			);
-			path = FriendService;
-			sourceTree = "<group>";
-		};
-		DF2F60BA1CB0FB05006352D9 /* UserService */ = {
-			isa = PBXGroup;
-			children = (
-				DF2F60C41CB0FB98006352D9 /* SOLUserPlainObject.h */,
-				DF2F60C51CB0FB98006352D9 /* SOLUserPlainObject.m */,
-				DF2F60BD1CB0FB05006352D9 /* SOLUserService.h */,
-				DF2F60BE1CB0FB05006352D9 /* SOLUserService.m */,
-			);
-			path = UserService;
-			sourceTree = "<group>";
-		};
-		DF362D091CB0EFC000F388B8 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				DF2F60AE1CB0FB05006352D9 /* BusinessLogicLayer */,
-			);
-			name = Source;
-			path = source;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -520,7 +694,6 @@
 				TargetAttributes = {
 					D2A8CB9F1BC7A62C006BF1F6 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = NM6WB58BPU;
 					};
 				};
 			};
@@ -550,6 +723,7 @@
 			files = (
 				D2A8CBB31BC7A62C006BF1F6 /* LaunchScreen.storyboard in Resources */,
 				D21623B21C737281000306EC /* POOVKTableViewCell.xib in Resources */,
+				5633E3601CB294DF0025D290 /* Dialogs.storyboard in Resources */,
 				D26918F41C98280200FD90C6 /* POOMessagesViewController.storyboard in Resources */,
 				D2FE07CC1BD4E6B7004E0C95 /* POOCollectionViewCell.xib in Resources */,
 				D2587DBE1C6A22AD006FAB08 /* Assets.xcassets in Resources */,
@@ -616,38 +790,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5633E37E1CB2D9D20025D290 /* SOLDialogService.m in Sources */,
+				5633E36E1CB2CFEB0025D290 /* SOLDialogListInteractor.m in Sources */,
+				5633E3741CB2D0FD0025D290 /* SOLDialogListPresenter.m in Sources */,
 				D292873B1BCBFCDE0089E3BE /* POOTableViewCell.m in Sources */,
-				DF2F60CC1CB0FBDA006352D9 /* SOLAudioPlainObject.m in Sources */,
 				D2A8CBD51BC7B874006BF1F6 /* POOTESTFriend.m in Sources */,
-				DF2F60C01CB0FB05006352D9 /* SOLAuthService.m in Sources */,
+				5633E3351CB2876E0025D290 /* SOLAuthService.m in Sources */,
 				D20749521C206AEC00A6EB2A /* POORegistrationViewController.m in Sources */,
 				D24BAD301BE7B7E0003C96A9 /* POOFeedTableViewCell.m in Sources */,
+				5633E3631CB297520025D290 /* SOLDialogListTableViewController.m in Sources */,
 				D293A21A1C47D23C00EDDF59 /* POOVKUserModel.m in Sources */,
 				D26919031C9AA21700FD90C6 /* POOVkMessageTableViewCell.m in Sources */,
+				5633E33A1CB2876E0025D290 /* SOLUserPlainObject.m in Sources */,
 				D23896651CA04E4800D06C8A /* POOChat.m in Sources */,
 				D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */,
+				5633E3371CB2876E0025D290 /* SOLUserService.m in Sources */,
 				D26918F21C98244000FD90C6 /* POOMessagesViewController.m in Sources */,
 				D2A8CBDF1BC7CD9A006BF1F6 /* POFriendsListViewController.m in Sources */,
 				D21623B11C737281000306EC /* POOVKTableViewCell.m in Sources */,
-				D2A8CBA81BC7A62C006BF1F6 /* AppDelegate.m in Sources */,
-				DF2F60C11CB0FB05006352D9 /* SOLFriendService.m in Sources */,
+				5633E3361CB2876E0025D290 /* SOLFriendService.m in Sources */,
 				D293A2131C47D0A300EDDF59 /* POOLogInVKViewController.m in Sources */,
 				D225FB851BDA398900711C53 /* POOCache.m in Sources */,
-				DF2F60C31CB0FB05006352D9 /* SOLUserService.m in Sources */,
-				DF2F60C61CB0FB98006352D9 /* SOLUserPlainObject.m in Sources */,
 				D26F11251C9F15DA004DE72C /* POORequstManager.m in Sources */,
+				5633E3811CB2D9EF0025D290 /* SOLDialogPlainObject.m in Sources */,
 				D26918FC1C9854D300FD90C6 /* OutputFaceBookData.xcdatamodeld in Sources */,
 				D25412DA1BF20CC7000BD9D3 /* POOCollectionViewLayout.m in Sources */,
 				D25E6AF31C5631E00091D256 /* POOContactInfoViewController.m in Sources */,
 				D2FE07D51BD52BA2004E0C95 /* POOFriendPhotoViewController.m in Sources */,
 				D2A8CBA51BC7A62C006BF1F6 /* main.m in Sources */,
+				5633E36B1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m in Sources */,
+				5633E3681CB2C4FF0025D290 /* AppDelegate.m in Sources */,
 				D2A8CBBC1BC7A684006BF1F6 /* POOFacebookData.m in Sources */,
 				D26918FF1C997C5800FD90C6 /* POOUserDialog.m in Sources */,
-				DF2F60BF1CB0FB05006352D9 /* SOLAudioService.m in Sources */,
+				5633E3341CB2876E0025D290 /* SOLAudioService.m in Sources */,
 				D2F8AC381C4E6A3A00FB1DB0 /* POOPhoneBookContact.m in Sources */,
+				5633E3381CB2876E0025D290 /* SOLAudioPlainObject.m in Sources */,
 				D2C43ABD1BE3AE7000E0C170 /* POOWebController.m in Sources */,
+				5633E3771CB2D15E0025D290 /* SOLDialogListRouter.m in Sources */,
 				D24BAD341BE7C0E4003C96A9 /* POOFeedViewController.m in Sources */,
-				DF2F60C91CB0FBB5006352D9 /* SOLFriendPlainObject.m in Sources */,
+				5633E3391CB2876E0025D290 /* SOLFriendPlainObject.m in Sources */,
 				D2FE07CB1BD4E6B7004E0C95 /* POOCollectionViewCell.m in Sources */,
 				D225FB8A1BDA6CE100711C53 /* String+Md5.m in Sources */,
 				D24BAD2C1BE7B1BF003C96A9 /* POOFacebookFeed.m in Sources */,
@@ -773,6 +954,7 @@
 			baseConfigurationReference = 00DD6C2D9FF0CDE3ACDEE050 /* Pods-OutputFaceBookData.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OutputFaceBookData",
@@ -796,6 +978,7 @@
 			baseConfigurationReference = 0954B568C54480590B5A8386 /* Pods-OutputFaceBookData.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/OutputFaceBookData",

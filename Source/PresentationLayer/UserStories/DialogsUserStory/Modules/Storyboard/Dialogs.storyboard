@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5iF-YA-ate">
+            <objects>
+                <tableViewController id="S0x-wc-Jmq" customClass="SOLDialogListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yZt-lg-Tma">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="c3t-WJ-qIS">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="S0x-wc-Jmq" id="Uuf-wY-Vl8"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="72x-7y-ayf">
+                                <rect key="frame" x="0.0" y="72" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="72x-7y-ayf" id="r9x-4O-9AO">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="S0x-wc-Jmq" id="Ui0-JT-Jij"/>
+                            <outlet property="delegate" destination="S0x-wc-Jmq" id="4bc-82-vte"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="mFI-eJ-R6t" id="v5V-pk-AcP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jO-N2-vkz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Wui-9Z-1z5" customClass="SOLDialogListModuleAssembly">
+                    <connections>
+                        <outlet property="viewController" destination="S0x-wc-Jmq" id="HTe-1E-bYD"/>
+                    </connections>
+                </customObject>
+                <searchDisplayController id="mFI-eJ-R6t">
+                    <connections>
+                        <outlet property="delegate" destination="S0x-wc-Jmq" id="t9b-Bw-oFj"/>
+                        <outlet property="searchBar" destination="c3t-WJ-qIS" id="XRZ-ZY-ovE"/>
+                        <outlet property="searchContentsController" destination="S0x-wc-Jmq" id="xl9-ig-fxO"/>
+                        <outlet property="searchResultsDataSource" destination="S0x-wc-Jmq" id="tWL-0T-suk"/>
+                        <outlet property="searchResultsDelegate" destination="S0x-wc-Jmq" id="SjY-Ls-ggC"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="343" y="598"/>
+        </scene>
+    </scenes>
+</document>
