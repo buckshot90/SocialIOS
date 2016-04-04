@@ -13,6 +13,7 @@
 "phoneNumberText" = "Номер телефона";
 "passwordText" = "Пароль";
 "headerText" = "Добро пожаловать";
+"textMesaage" = "Вы можете использовать учетную запись vk.com";
 
 // POORegistrationViewController
 "navigationController.navigationBar.topItem.titleText" = "Регистрация";
@@ -29,6 +30,7 @@
 "phoneText" = "Номер телефона";
 "passwordText" = "Пароль";
 "registrationButtonText" = "Зарегистрироваться";
+"cancelButtonTitle" = "Отмена";
 
 // POOContactInfoViewController
 "sendMessageText" = "Send Message";

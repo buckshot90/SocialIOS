@@ -41,4 +41,8 @@
     return nil;
 }
 
+- (NSString *) description {
+    return [NSString stringWithFormat:@"Out:%d, ReadState:%d", self.outbox, self.readFlag];
+}
+
 @end

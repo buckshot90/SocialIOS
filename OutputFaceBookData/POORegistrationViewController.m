@@ -8,6 +8,7 @@
 
 #import "POORegistrationViewController.h"
 #import "Consts.h"
+#import <QuartzCore/QuartzCore.h>
 #import "StringLocalizer.h"
 
 typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
@@ -27,13 +28,39 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self buildHeader];
     [self creatSubView];
-    
-    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed: @"Background"]]];
-    [self.navigationController.navigationBar setBackgroundImage:[[UIImage imageNamed:@"Header_black"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
-    self.navigationController.navigationBar.topItem.title = [@"navigationController.navigationBar.topItem.titleText" localized];
-    
 }
+
+- (void)viewWillAppear:(BOOL)animated {
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
+}
+
+- (void)buildHeader {
+    [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed: @"Background"]]];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage imageNamed:@"Header"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.topItem.title = [@"navigationController.navigationBar.topItem.titleText" localized];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    UIImage *headerButtonImg = [UIImage imageNamed:@"TopButton"];
+    
+    UIButton *cancelButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    cancelButton.bounds = CGRectMake( 0, 0, headerButtonImg.size.width, headerButtonImg.size.height );
+    [cancelButton setBackgroundImage:headerButtonImg forState:UIControlStateNormal];
+    [cancelButton setTitle:[@"cancelButtonTitle" localized] forState:UIControlStateNormal];
+    cancelButton.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:14];
+    [cancelButton addTarget:self action:@selector(cancel) forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *customCancelButton = [[UIBarButtonItem alloc] initWithCustomView:cancelButton];
+    self.navigationController.topViewController.navigationItem.rightBarButtonItem = customCancelButton;
+}
+
+- (void)cancel {
+    [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+
 #pragma mark button clicked
 - (void) vkRegistration {
     NSString *checkPhoneRequest = [NSString stringWithFormat: @"https://api.vk.com/method/auth.checkPhone?phone=%@&client_id=%@&client_secret=%@",self.phone.text, kConstsAppId, kConstsSecret];
@@ -178,7 +205,8 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
     [self.lastName setPlaceholder:[@"lastNameText" localized]];
     
     self.phone = [[UITextField alloc] init];
-    [self.phone setBorderStyle:UITextBorderStyleRoundedRect];
+    [self.phone setBorderStyle:UITextBorderStyleNone];
+    [self.phone setBackgroundColor:[UIColor whiteColor]];
     [self.phone setPlaceholder:[@"phoneText" localized]];
     [self.phone setPlaceholder:[@"380995031116" localized]];
     
@@ -213,7 +241,7 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
         self.phone.translatesAutoresizingMaskIntoConstraints = NO;
         self.password.translatesAutoresizingMaskIntoConstraints = NO;
         // textfiled name
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.firstName attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:kConstsIndent]];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.firstName attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:80]];
         
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.firstName attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:kConstsIndent]];
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.firstName attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:kConstsIndent]];
@@ -238,6 +266,10 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:registrationButton attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:kConstsIndent]];
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:registrationButton attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:kConstsIndent]];
     }
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning {

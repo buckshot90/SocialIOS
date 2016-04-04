@@ -22,6 +22,7 @@ static NSArray *SCOPE = nil;
 
 @property (nonatomic, strong) NSArray *friends;
 @property (nonatomic, strong) UITabBarController *tabBarController;
+@property (nonatomic, strong) UINavigationController *navController;
 
 @end
 
@@ -39,7 +40,6 @@ static NSArray *SCOPE = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
     [self creatLoginButtotAndAddToSubView];
     
     //[VKSdk forceLogout];
@@ -131,12 +131,28 @@ static NSArray *SCOPE = nil;
 
 #pragma mark - button creat
 - (void) creatLoginButtotAndAddToSubView {
-    UIButton *facebookLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    facebookLoginButton.backgroundColor = [UIColor darkGrayColor];
-    [facebookLoginButton setTitle: [@"facebookLoginButtonText" localized] forState: UIControlStateNormal];
-    [facebookLoginButton
-     addTarget:self
-     action:@selector(loginButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+//    UIButton *facebookLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+//    facebookLoginButton.backgroundColor = [UIColor darkGrayColor];
+//    [facebookLoginButton setTitle: [@"facebookLoginButtonText" localized] forState: UIControlStateNormal];
+//    [facebookLoginButton
+//     addTarget:self
+//     action:@selector(loginButtonClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"Background"]];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage imageNamed:@"Header_black"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.topItem.title = [@"headerText" localized];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationItem.hidesBackButton = YES;
+    
+    UILabel *messageLable = [[UILabel alloc] init];
+    [messageLable setTextColor:[UIColor grayColor]];
+    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:[@"textMesaage" localized]];
+    NSRange range = [[@"textMesaage" localized]rangeOfString:@"vk.com"];
+    UIFont *fontBold = [UIFont fontWithName:@"Helvetica-Bold" size:16.0f];
+    [attributedString addAttribute:NSForegroundColorAttributeName value:[UIColor grayColor] range:range];
+    [attributedString addAttribute:NSFontAttributeName value:fontBold range:range];
+    messageLable.attributedText = attributedString;
     
     UIButton *vkLoginButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [vkLoginButton setBackgroundImage:[UIImage imageNamed:@"LoginButton"] forState:UIControlStateNormal];
@@ -146,27 +162,22 @@ static NSArray *SCOPE = nil;
     UIButton *vkRegistration = [[UIButton alloc] init];
     [vkRegistration setTitle:[@"vkRegistrationText" localized] forState:UIControlStateNormal];
     [vkRegistration setBackgroundImage:[UIImage imageNamed:@"RegButton"] forState:UIControlStateNormal];
+    [vkRegistration setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [vkRegistration addTarget:self action:@selector(vkRegistration) forControlEvents:UIControlEventTouchDown];
     
-    UIImageView *header = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Header"]];
-    header.contentMode = UIViewContentModeScaleToFill;
-    UILabel *helloLable = [[UILabel alloc] init];
-    helloLable.textColor = [UIColor whiteColor];
-    helloLable.text = [@"headerText" localized];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"Header"] forBarMetrics:UIBarMetricsDefault];
     
-    [self.view addSubview:facebookLoginButton];
+    [self.view addSubview:messageLable];
     [self.view addSubview:vkLoginButton];
     [self.view addSubview:vkRegistration];
-    [self.view addSubview:header];
-    [self.view addSubview:helloLable];
     
-    [self creatConstraints:facebookLoginButton vkButton:vkLoginButton header:header helloLable:helloLable vkRegistration:vkRegistration];
+    [self creatConstraints:messageLable vkButton:vkLoginButton header:nil helloLable:nil vkRegistration:vkRegistration];
 }
 #pragma mark - VK buttons
 - (void) vkRegistration {
     AppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
-    POORegistrationViewController *registrationViewController = [[POORegistrationViewController alloc] init];
-    appDelegate.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:registrationViewController];
+    appDelegate.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:self];
+    [self.navigationController pushViewController:[[POORegistrationViewController alloc] init] animated:YES];
 }
 
 - (void) vkLoginButtonClicked   {
@@ -184,77 +195,95 @@ static NSArray *SCOPE = nil;
 }
 
 #pragma mark - Constraints
-- (void) creatConstraints:(UIButton *)facebookButton vkButton:(UIButton *)vkButton header:(UIImageView *)header helloLable:(UILabel *) lable vkRegistration:(UIButton *)vkRegistration   {
+- (void) creatConstraints:(UILabel *)messageLable vkButton:(UIButton *)vkButton header:(UIImageView *)header helloLable:(UILabel *) lable vkRegistration:(UIButton *)vkRegistration   {
     
     if (self.view.constraints.count == 0) {
         
-        facebookButton.translatesAutoresizingMaskIntoConstraints = NO;
+        messageLable.translatesAutoresizingMaskIntoConstraints = NO;
         vkButton.translatesAutoresizingMaskIntoConstraints = NO;
-        header.translatesAutoresizingMaskIntoConstraints = NO;
-        lable.translatesAutoresizingMaskIntoConstraints = NO;
         vkRegistration.translatesAutoresizingMaskIntoConstraints = NO;
-        //VK Vutton
+        
+        //messageLable
         
         [self.view addConstraint:[NSLayoutConstraint
-                                  constraintWithItem:vkButton
-                                  attribute:NSLayoutAttributeTop
-                                  relatedBy:NSLayoutRelationEqual
-                                  toItem:self.view
-                                  attribute:NSLayoutAttributeTop
-                                  multiplier:1 constant:100]];
-        
-        [self.view addConstraint:[NSLayoutConstraint
-                                  constraintWithItem:vkButton
-                                  attribute:NSLayoutAttributeLeading
-                                  relatedBy:NSLayoutRelationEqual
-                                  toItem:self.view
-                                  attribute:NSLayoutAttributeLeading
-                                  multiplier:1.0f constant:50]];
-        [self.view addConstraint:[NSLayoutConstraint
-                                  constraintWithItem:self.view
-                                  attribute:NSLayoutAttributeTrailing
-                                  relatedBy:NSLayoutRelationEqual
-                                  toItem:vkButton
-                                  attribute:NSLayoutAttributeTrailing
-                                  multiplier:1.0f constant:50]];
-        
-        //Facebook button
-        [self.view addConstraint:[NSLayoutConstraint
-                                  constraintWithItem:facebookButton
+                                  constraintWithItem:messageLable
                                   attribute:NSLayoutAttributeTop
                                   relatedBy:NSLayoutRelationEqual
                                   toItem:vkButton
                                   attribute:NSLayoutAttributeBottom
-                                  multiplier:1.0f constant:5]];
+                                  multiplier:1 constant:20]];
         
         [self.view addConstraint:[NSLayoutConstraint
-                                  constraintWithItem:facebookButton
+                                  constraintWithItem:messageLable
+                                  attribute:NSLayoutAttributeCenterX
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:vkButton
+                                  attribute:NSLayoutAttributeCenterX
+                                  multiplier:1 constant:0]];
+        //VK Button
+        
+        [self.view addConstraint:[NSLayoutConstraint
+                                  constraintWithItem:vkButton
+                                  attribute:NSLayoutAttributeTop
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:self.view
+                                  attribute:NSLayoutAttributeTop
+                                  multiplier:1 constant:80]];
+        
+        [self.view addConstraint:[NSLayoutConstraint
+                                  constraintWithItem:vkButton
+                                  attribute:NSLayoutAttributeHeight
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:nil
+                                  attribute:NSLayoutAttributeNotAnAttribute
+                                  multiplier:1.0
+                                  constant:50]];
+        
+        [self.view addConstraint:[NSLayoutConstraint
+                                  constraintWithItem:vkButton
                                   attribute:NSLayoutAttributeLeading
                                   relatedBy:NSLayoutRelationEqual
                                   toItem:self.view
                                   attribute:NSLayoutAttributeLeading
-                                  multiplier:1.0f constant:50]];
+                                  multiplier:1.0f constant:20]];
         [self.view addConstraint:[NSLayoutConstraint
                                   constraintWithItem:self.view
                                   attribute:NSLayoutAttributeTrailing
                                   relatedBy:NSLayoutRelationEqual
-                                  toItem:facebookButton
+                                  toItem:vkButton
                                   attribute:NSLayoutAttributeTrailing
-                                  multiplier:1.0f constant:50]];
+                                  multiplier:1.0f constant:20]];
         
         //VK registration Button
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:vkRegistration attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:facebookButton attribute:NSLayoutAttributeBottom multiplier:1.0f constant:20]];
+        [self.view addConstraint:[NSLayoutConstraint
+                                  constraintWithItem:self.view
+                                  attribute:NSLayoutAttributeBottom
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:vkRegistration
+                                  attribute:NSLayoutAttributeBottom
+                                  multiplier:1.0f constant:20]];
+        [self.view addConstraint:[NSLayoutConstraint
+                                  constraintWithItem:vkRegistration
+                                  attribute:NSLayoutAttributeTop
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:messageLable
+                                  attribute:NSLayoutAttributeBottom
+                                  multiplier:1.0f constant:20]];
         
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:vkRegistration attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:50]];
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:vkRegistration attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:50]];
-        //header
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:header attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:20]];
-        
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:header attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:0]];
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:header attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:0]];
-         //lable
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:lable attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeCenterX multiplier:1.0f constant:0]];
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:header attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:lable attribute:NSLayoutAttributeCenterY multiplier:1.0f constant:0]];
+        [self.view addConstraint:[NSLayoutConstraint
+                                  constraintWithItem:vkRegistration
+                                  attribute:NSLayoutAttributeLeading
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:self.view
+                                  attribute:NSLayoutAttributeLeading
+                                  multiplier:1.0f constant:20]];
+        [self.view addConstraint:[NSLayoutConstraint
+                                  constraintWithItem:self.view
+                                  attribute:NSLayoutAttributeTrailing
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:vkRegistration
+                                  attribute:NSLayoutAttributeTrailing
+                                  multiplier:1.0f constant:20]];
     }
 }
 
@@ -287,4 +316,10 @@ static NSArray *SCOPE = nil;
 - (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
       NSLog(@"vkSdkNeedCaptchaEnter");
 }
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
+
+
 @end

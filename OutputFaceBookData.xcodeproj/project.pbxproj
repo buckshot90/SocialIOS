@@ -14,12 +14,12 @@
 		D225FB851BDA398900711C53 /* POOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D225FB841BDA398900711C53 /* POOCache.m */; };
 		D225FB8A1BDA6CE100711C53 /* String+Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = D225FB891BDA6CE100711C53 /* String+Md5.m */; };
 		D23896651CA04E4800D06C8A /* POOChat.m in Sources */ = {isa = PBXBuildFile; fileRef = D23896641CA04E4800D06C8A /* POOChat.m */; };
+		D23CE3861CB21B79000D2E4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23CE3851CB21B79000D2E4B /* Assets.xcassets */; };
 		D24BAD2C1BE7B1BF003C96A9 /* POOFacebookFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = D24BAD2B1BE7B1BF003C96A9 /* POOFacebookFeed.m */; };
 		D24BAD301BE7B7E0003C96A9 /* POOFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D24BAD2E1BE7B7E0003C96A9 /* POOFeedTableViewCell.m */; };
 		D24BAD311BE7B7E0003C96A9 /* POOFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D24BAD2F1BE7B7E0003C96A9 /* POOFeedTableViewCell.xib */; };
 		D24BAD341BE7C0E4003C96A9 /* POOFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D24BAD331BE7C0E4003C96A9 /* POOFeedViewController.m */; };
 		D25412DA1BF20CC7000BD9D3 /* POOCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = D25412D91BF20CC7000BD9D3 /* POOCollectionViewLayout.m */; };
-		D2587DBE1C6A22AD006FAB08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2587DBD1C6A22AD006FAB08 /* Assets.xcassets */; };
 		D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2587DC01C6A2434006FAB08 /* StringLocalizer.m */; };
 		D25E6AF31C5631E00091D256 /* POOContactInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D25E6AF21C5631E00091D256 /* POOContactInfoViewController.m */; };
 		D26918F21C98244000FD90C6 /* POOMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D26918F11C98244000FD90C6 /* POOMessagesViewController.m */; };
@@ -72,6 +72,7 @@
 		D225FB891BDA6CE100711C53 /* String+Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "String+Md5.m"; sourceTree = "<group>"; };
 		D23896631CA04E4800D06C8A /* POOChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOChat.h; sourceTree = "<group>"; };
 		D23896641CA04E4800D06C8A /* POOChat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOChat.m; sourceTree = "<group>"; };
+		D23CE3851CB21B79000D2E4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OutputFaceBookData/Assets.xcassets; sourceTree = "<group>"; };
 		D24BAC2E1BE7A5F2003C96A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D24BAC301BE7A641003C96A9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D24BAD2A1BE7B1BF003C96A9 /* POOFacebookFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOFacebookFeed.h; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		D25412D81BF20CC7000BD9D3 /* POOCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOCollectionViewLayout.h; sourceTree = "<group>"; };
 		D25412D91BF20CC7000BD9D3 /* POOCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOCollectionViewLayout.m; sourceTree = "<group>"; };
 		D2587DBC1C6A0C7F006FAB08 /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
-		D2587DBD1C6A22AD006FAB08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OutputFaceBookData/Assets.xcassets; sourceTree = "<group>"; };
 		D2587DBF1C6A2434006FAB08 /* StringLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLocalizer.h; sourceTree = "<group>"; };
 		D2587DC01C6A2434006FAB08 /* StringLocalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringLocalizer.m; sourceTree = "<group>"; };
 		D25E6AF11C5631E00091D256 /* POOContactInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOContactInfoViewController.h; sourceTree = "<group>"; };
@@ -313,7 +313,7 @@
 				D26F11241C9F15DA004DE72C /* POORequstManager.m */,
 				D26918FA1C9854D300FD90C6 /* OutputFaceBookData.xcdatamodeld */,
 				D26C192C1C6A3D39007B3CB4 /* Localizable.strings */,
-				D2587DBD1C6A22AD006FAB08 /* Assets.xcassets */,
+				D23CE3851CB21B79000D2E4B /* Assets.xcassets */,
 				D2A8CBD21BC7AA67006BF1F6 /* Frameworks */,
 				D2A8CBA21BC7A62C006BF1F6 /* OutputFaceBookData */,
 				D2A8CBA11BC7A62C006BF1F6 /* Products */,
@@ -451,7 +451,7 @@
 				D21623B21C737281000306EC /* POOVKTableViewCell.xib in Resources */,
 				D26918F41C98280200FD90C6 /* POOMessagesViewController.storyboard in Resources */,
 				D2FE07CC1BD4E6B7004E0C95 /* POOCollectionViewCell.xib in Resources */,
-				D2587DBE1C6A22AD006FAB08 /* Assets.xcassets in Resources */,
+				D23CE3861CB21B79000D2E4B /* Assets.xcassets in Resources */,
 				D26C192A1C6A3D39007B3CB4 /* Localizable.strings in Resources */,
 				D27085051C5A51B9004B1822 /* POOTableViewCell.xib in Resources */,
 				D2A8CBAE1BC7A62C006BF1F6 /* Main.storyboard in Resources */,

@@ -9,10 +9,11 @@
 // POOFacebookData
 "facebookLoginButtonText" = "Log in with Facebook";
 "vkLoginButtonText" = "Log in with VK";
-"vkRegistrationText" = "Sign in VK";
+"vkRegistrationText" = "Sign in VK.You can follow any responses to exchange messages with your friends free";
 "phoneNumberText" = "Phone Number";
 "passwordText" = "Password";
 "headerText" = "Wellcome";
+"textMesaage" = "You can use vk.com account";
 
 // POORegistrationViewController
 "navigationController.navigationBar.topItem.titleText" = "Registration";
@@ -29,6 +30,7 @@
 "phoneText" = "Phone number";
 "passwordText" = "Password";
 "registrationButtonText" = "Sign up";
+"cancelButtonTitle" = "Cancel";
 
 // POOContactInfoViewController
 "sendMessageText" = "Send Message";

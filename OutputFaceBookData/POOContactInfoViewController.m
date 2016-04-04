@@ -120,8 +120,6 @@
 }
 
 - (void) sendMessage {
-    
-    
     if(![MFMessageComposeViewController canSendText]) {
         
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Error" message:@"device doesn't support SMS!" preferredStyle:UIAlertControllerStyleAlert];
@@ -189,8 +187,6 @@
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:tableView attribute:NSLayoutAttributeTrailing multiplier:1 constant:kConstsIndent]];
     }
 }
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

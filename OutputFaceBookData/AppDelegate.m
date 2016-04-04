@@ -9,14 +9,17 @@
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
 
+static NSArray *SCOPE = nil;
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    SCOPE = @[VK_PER_FRIENDS, VK_PER_WALL, VK_PER_AUDIO, VK_PER_PHOTOS, VK_PER_NOHTTPS, VK_PER_EMAIL, VK_PER_MESSAGES];
     
     self.friendListViewController = [[POFriendsListViewController alloc]init];
     UINavigationController *friendListNavigationConrloller = [[UINavigationController alloc] initWithRootViewController:self.friendListViewController];
@@ -26,10 +29,6 @@
     UINavigationController *friedPhotoNavigationController = [[UINavigationController alloc] initWithRootViewController: self.friendPhotoViewController];
     friedPhotoNavigationController.tabBarItem.title = @"Photo collection tab";
     
-//    self.webViewController = [[POOWebController alloc] init];
-//    UINavigationController *webNavigationController = [[UINavigationController alloc] initWithRootViewController:self.webViewController];
-//    webNavigationController.tabBarItem.title = @"Web Controller";
-    
     self.feedViewController = [[POOFeedViewController alloc] init];
     UINavigationController *feedNavigattionController = [[UINavigationController alloc] initWithRootViewController:self.feedViewController];
     feedNavigattionController.tabBarItem.title = @"Feed";
@@ -38,9 +37,19 @@
     self.tabBarController.viewControllers = @[friendListNavigationConrloller,friedPhotoNavigationController,feedNavigattionController];
     
     POOFacebookData *facebookDateViewController = [[POOFacebookData alloc] init];
+    UINavigationController *navigationFacebookDateViewController = [[UINavigationController alloc] initWithRootViewController:facebookDateViewController];
+    
+//    [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
+//        if (state == VKAuthorizationAuthorized) {
+//            
+//        } else {
+//            
+//            [VKSdk authorize:SCOPE];
+//        }
+//    }];
 
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window setRootViewController:facebookDateViewController];
+    [self.window setRootViewController:navigationFacebookDateViewController];
     [self.window makeKeyAndVisible];
     
     return [[FBSDKApplicationDelegate sharedInstance] application:application
