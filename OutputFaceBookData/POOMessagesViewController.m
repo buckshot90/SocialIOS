@@ -57,11 +57,17 @@ static NSString *MessagesIdent = @"MessagesIdent";
     [POORequstManager getDialogs:count offset:offset block:^(NSArray *response, NSError *error) {
         [self.dialogs addObjectsFromArray:response];
         
+        typeof(self) __weak weakSelf = self;
         [POORequstManager getUserInfoWithIds:[self getUserIds] block:^(NSArray *response, NSError *error) {
-            [self.friends removeAllObjects];
+            typeof(self) __strong strongSelf = weakSelf;
             
-            [self.friends addObjectsFromArray:response];
-            [self.tableView reloadData];
+            if (strongSelf != nil) {
+                
+                [strongSelf.friends removeAllObjects];
+                
+                [strongSelf.friends addObjectsFromArray:response];
+                [strongSelf.tableView reloadData];
+            }
         }];
     }];
 }
