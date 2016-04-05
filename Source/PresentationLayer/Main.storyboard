@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cm5-c1-LOk">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Диалоги-->
+        <scene sceneID="WXB-bn-xHE">
+            <objects>
+                <navigationController id="HTv-dK-hIt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Диалоги" id="AC0-ir-8Vn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ccv-Pi-EA0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iQi-tq-Ulj" kind="relationship" relationship="rootViewController" id="xWX-jE-rhN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cmW-LB-REf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="-403"/>
+        </scene>
+        <!--SOLDialogListTableViewController-->
+        <scene sceneID="mWN-h8-pOb">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SOLDialogListTableViewController" storyboardName="Dialogs" referencedIdentifier="SOLDialogListTableViewController" id="iQi-tq-Ulj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="12N-cV-VzZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ri-en-632" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="786" y="-403"/>
+        </scene>
+        <!--Друзья-->
+        <scene sceneID="h61-9T-HTE">
+            <objects>
+                <navigationController id="nG3-UM-D5D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Друзья" id="8hG-6b-b2D"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Xf-LR-teJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fjg-SA-rpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="331"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="FHj-0i-tPZ">
+            <objects>
+                <tabBarController id="cm5-c1-LOk" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="BId-WA-Gho">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HTv-dK-hIt" kind="relationship" relationship="viewControllers" id="Ohh-N6-7ds"/>
+                        <segue destination="nG3-UM-D5D" kind="relationship" relationship="viewControllers" id="UNr-Y7-fxe"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enm-Qt-utQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707" y="-165"/>
+        </scene>
+    </scenes>
+</document>

@@ -8,7 +8,6 @@
 
 #import "POOFeedTableViewCell.h"
 #import "POOCollectionViewLayout.h"
-#import "POOFeedViewController.h"
 
 @interface POOFeedTableViewCell ()
 {

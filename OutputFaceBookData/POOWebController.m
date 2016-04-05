@@ -7,7 +7,6 @@
 //
 
 #import "POOWebController.h"
-#import "POOFacebookFeed.h"
 
 @interface POOWebController () <UIWebViewDelegate>
 

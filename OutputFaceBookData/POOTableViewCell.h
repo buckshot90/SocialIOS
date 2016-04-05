@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "POOTESTFriend.h"
 
 @interface POOTableViewCell : UITableViewCell
 

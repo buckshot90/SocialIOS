@@ -9,61 +9,36 @@
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
 
-static NSArray *SCOPE = nil;
-
-@interface AppDelegate ()
+@interface AppDelegate () <VKSdkUIDelegate>
 
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    SCOPE = @[VK_PER_FRIENDS, VK_PER_WALL, VK_PER_AUDIO, VK_PER_PHOTOS, VK_PER_NOHTTPS, VK_PER_EMAIL, VK_PER_MESSAGES];
-    
-    self.friendListViewController = [[POFriendsListViewController alloc]init];
-    UINavigationController *friendListNavigationConrloller = [[UINavigationController alloc] initWithRootViewController:self.friendListViewController];
-    friendListNavigationConrloller.tabBarItem.title = @"Friend list Tab";
-    
-    self.friendPhotoViewController = [[POOFriendPhotoViewController alloc] init];
-    UINavigationController *friedPhotoNavigationController = [[UINavigationController alloc] initWithRootViewController: self.friendPhotoViewController];
-    friedPhotoNavigationController.tabBarItem.title = @"Photo collection tab";
-    
-    self.feedViewController = [[POOFeedViewController alloc] init];
-    UINavigationController *feedNavigattionController = [[UINavigationController alloc] initWithRootViewController:self.feedViewController];
-    feedNavigattionController.tabBarItem.title = @"Feed";
-    
-    self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[friendListNavigationConrloller,friedPhotoNavigationController,feedNavigattionController];
-    
-    POOFacebookData *facebookDateViewController = [[POOFacebookData alloc] init];
-    UINavigationController *navigationFacebookDateViewController = [[UINavigationController alloc] initWithRootViewController:facebookDateViewController];
-    
-//    [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
-//        if (state == VKAuthorizationAuthorized) {
-//            
-//        } else {
-//            
-//            [VKSdk authorize:SCOPE];
-//        }
-//    }];
 
     self.window.backgroundColor = [UIColor whiteColor];
-    [self.window setRootViewController:navigationFacebookDateViewController];
     [self.window makeKeyAndVisible];
     
-    return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                      didFinishLaunchingWithOptions:launchOptions];
+    VKSdk *sdkInstance = [VKSdk initializeWithAppId:@"123456"];
+    [sdkInstance setUiDelegate:self];
+    
+    NSArray *SCOPE = @[@"friends", @"email"];
+    [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
+        
+        if (state == VKAuthorizationAuthorized) {
+            // Authorized and ready to go
+        } else if (error) {
+            // Some error happend, but you may try later
+        }
+    }];
+    
+    return YES;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    [VKSdk processOpenURL:url fromApplication:sourceApplication];
-    
-    return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                          openURL:url
-                                                sourceApplication:sourceApplication
-                                                       annotation:annotation
-            ];
+
+    return [VKSdk processOpenURL:url fromApplication:sourceApplication];
 }
 
 
@@ -100,6 +75,34 @@ static NSArray *SCOPE = nil;
             abort();
         }
     }
+}
+
+#pragma mark - VKSdkUIDelegate
+- (void)vkSdkShouldPresentViewController:(UIViewController *)controller {
+    
+}
+
+/**
+ Calls when user must perform captcha-check
+ @param captchaError error returned from API. You can load captcha image from <b>captchaImg</b> property.
+ After user answered current captcha, call answerCaptcha: method with user entered answer.
+ */
+- (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
+    
+}
+
+/**
+ * Called when a controller presented by SDK will be dismissed
+ */
+- (void)vkSdkWillDismissViewController:(UIViewController *)controller {
+    
+}
+
+/**
+ * Called when a controller presented by SDK did dismiss
+ */
+- (void)vkSdkDidDismissViewController:(UIViewController *)controller {
+    
 }
 
 #pragma mark - CoreData
