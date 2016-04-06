@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cm5-c1-LOk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dsR-22-4b9">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Dma-tI-w8l">
+            <objects>
+                <navigationController storyboardIdentifier="InitializeViewController" id="dsR-22-4b9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iYo-Mn-uhW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cm5-c1-LOk" kind="relationship" relationship="rootViewController" id="hzF-5d-TpT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YoN-uF-noW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1477" y="-165"/>
+        </scene>
         <!--Диалоги-->
         <scene sceneID="WXB-bn-xHE">
             <objects>
@@ -45,10 +61,11 @@
             </objects>
             <point key="canvasLocation" x="237" y="331"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Root View Controller-->
         <scene sceneID="FHj-0i-tPZ">
             <objects>
                 <tabBarController id="cm5-c1-LOk" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="htv-2O-Kh9"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="BId-WA-Gho">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -60,6 +77,11 @@
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enm-Qt-utQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="YPt-vw-0Da" customClass="SOLInitializer">
+                    <connections>
+                        <outlet property="rootViewController" destination="cm5-c1-LOk" id="FaW-yl-7bm"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="-707" y="-165"/>
         </scene>

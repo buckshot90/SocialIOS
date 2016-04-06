@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "POOWebController.h"
-#import "POORegistrationViewController.h"
-#import "vkSdk.h"
+
+@protocol SOLThirdPartiesConfigurator;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -18,6 +17,8 @@
 @property (strong, nonatomic) NSManagedObjectModel *managedObjectModel;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@property (strong, nonatomic) id <SOLThirdPartiesConfigurator> thirdpartiesConfigurator;
 
 - (NSString *)applicationDocumentsDirectory;
 - (void)saveContext;

@@ -8,39 +8,24 @@
 
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
+#import "SOLThirdPartiesConfiguratorImplementation.h"
 
-@interface AppDelegate () <VKSdkUIDelegate>
-
+@interface AppDelegate ()
 @end
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    
-    VKSdk *sdkInstance = [VKSdk initializeWithAppId:@"123456"];
-    [sdkInstance setUiDelegate:self];
-    
-    NSArray *SCOPE = @[@"friends", @"email"];
-    [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
-        
-        if (state == VKAuthorizationAuthorized) {
-            // Authorized and ready to go
-        } else if (error) {
-            // Some error happend, but you may try later
-        }
-    }];
+    [self.thirdpartiesConfigurator configure];
     
     return YES;
 }
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-
-    return [VKSdk processOpenURL:url fromApplication:sourceApplication];
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
+    
+    return [self.thirdpartiesConfigurator application:app openURL:url options:options];
 }
-
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -58,6 +43,7 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [self.thirdpartiesConfigurator applicationDidBecomeActive:application];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
@@ -75,34 +61,6 @@
             abort();
         }
     }
-}
-
-#pragma mark - VKSdkUIDelegate
-- (void)vkSdkShouldPresentViewController:(UIViewController *)controller {
-    
-}
-
-/**
- Calls when user must perform captcha-check
- @param captchaError error returned from API. You can load captcha image from <b>captchaImg</b> property.
- After user answered current captcha, call answerCaptcha: method with user entered answer.
- */
-- (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
-    
-}
-
-/**
- * Called when a controller presented by SDK will be dismissed
- */
-- (void)vkSdkWillDismissViewController:(UIViewController *)controller {
-    
-}
-
-/**
- * Called when a controller presented by SDK did dismiss
- */
-- (void)vkSdkDidDismissViewController:(UIViewController *)controller {
-    
 }
 
 #pragma mark - CoreData
