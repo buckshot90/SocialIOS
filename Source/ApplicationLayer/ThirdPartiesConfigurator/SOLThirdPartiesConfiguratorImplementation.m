@@ -60,7 +60,7 @@ static NSString * const kRCFCoreDataStoreName = @"OutputFaceBookData";
         
         if (state == VKAuthorizationAuthorized) {
             // Authorized and ready to go
-            [self.rootController dismissViewControllerAnimated:YES completion:^{}];
+            [self.rootController dismissViewControllerAnimated:NO completion:^{}];
         } else if (error) {
             
 //            [UIAlertController alertControllerWithTitle:nil message:[error description] preferredStyle: UIAlertControllerStyleAlert];

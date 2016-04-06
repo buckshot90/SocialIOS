@@ -17,19 +17,20 @@
     
     typeof(self) __weak weakSelf = self;
     [self.transport getDialogsWithCompletionBlock:^(id data, NSError *error) {
+        typeof(self) __strong strongSelf = weakSelf;
         
-        if (weakSelf && [data isKindOfClass:[NSArray class]]) {
+        if (strongSelf && [data isKindOfClass:[NSArray class]]) {
             
             NSArray *list = (NSArray *)data;
             if (completionBlock) {
               
-                completionBlock([weakSelf.cache cacheExternalRepresentation:list mapper:weakSelf.mapper predicate:predicate], nil);
+                completionBlock([strongSelf.cache cacheExternalRepresentation:list mapper:strongSelf.mapper predicate:predicate], nil);
             }
         } else {
             
             if (completionBlock) {
                 
-                completionBlock([weakSelf.cache cacheWithPredicate:predicate mapper:weakSelf.mapper], error);
+                completionBlock([strongSelf.cache cacheWithPredicate:predicate mapper:strongSelf.mapper], error);
             }
         }
     }];

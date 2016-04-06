@@ -13,6 +13,7 @@
 
 @interface SOLDialogListTableViewController ()
 @property (strong, nonatomic) NSArray<SOLMessagePlainObject *> *dialogList;
+@property (strong, nonatomic) id <SOLMessageService> service;
 @end
 
 @implementation SOLDialogListTableViewController
@@ -29,13 +30,14 @@
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Dialog"];
     
     typeof(self) __weak weakSelf = self;
-    id <SOLMessageService> service = [SOLMessageServiceAssembly messageService];
-    [service updateDialogWithPredicate:nil completionBlock:^(NSArray<SOLMessagePlainObject *> *list, NSError *error) {
+    self.service = [SOLMessageServiceAssembly messageService];
+    [_service updateDialogWithPredicate:nil completionBlock:^(NSArray<SOLMessagePlainObject *> *list, NSError *error) {
+        typeof(self) __strong strongSelf = weakSelf;
         
-        if(weakSelf) {
+        if(strongSelf) {
             
-            weakSelf.dialogList = list;
-            [weakSelf.tableView reloadData];
+            strongSelf.dialogList = list;
+            [strongSelf.tableView reloadData];
         }
     }];
 }
@@ -64,7 +66,7 @@
     SOLMessagePlainObject *dialog = [self.dialogList objectAtIndex:indexPath.row];
     NSString *body = dialog.body;
     cell.textLabel.text = body;
-    NSLog(@"indexpath: %li, body: %@", (long)indexPath.row, body);
+//    NSLog(@"indexpath: %li, body: %@", (long)indexPath.row, body);
     
     return cell;
 }

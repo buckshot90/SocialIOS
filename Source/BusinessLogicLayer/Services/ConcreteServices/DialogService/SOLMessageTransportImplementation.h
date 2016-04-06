@@ -10,5 +10,4 @@
 #import "SOLMessageTransport.h"
 
 @interface SOLMessageTransportImplementation : NSObject <SOLMessageTransport>
-
 @end

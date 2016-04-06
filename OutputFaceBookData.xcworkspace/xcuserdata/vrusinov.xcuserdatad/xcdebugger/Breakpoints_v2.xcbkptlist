@@ -9,13 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Source/ApplicationLayer/ThirdPartiesConfigurator/SOLThirdPartiesConfiguratorImplementation.m"
-            timestampString = "481620224.940066"
+            filePath = "Source/BusinessLogicLayer/Services/ConcreteServices/DialogService/SOLMessageServiceImplementation.m"
+            timestampString = "481668267.418054"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-applicationDidBecomeActive:"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "-updateDialogWithPredicate:completionBlock:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

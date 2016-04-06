@@ -24,17 +24,6 @@
 
 + (id<SOLMessageService>)messageService {
     
-    static id <SOLMessageService> sharedService = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        SOLMessageServiceAssembly *assembly = [[SOLMessageServiceAssembly alloc] init];
-        sharedService = [assembly p_messageService];
-    });
-    return sharedService;
-}
-
-- (id<SOLMessageService>)p_messageService {
-    
     id <SOLMessageService> service = [[SOLMessageServiceImplementation alloc] init];
     service.transport = [[SOLMessageTransportImplementation alloc] init];
     service.mapper = [[SOLMessageMapperImplementation alloc] init];
