@@ -29,7 +29,7 @@
             
             if (completionBlock) {
                 
-                completionBlock(nil, error);
+                completionBlock([weakSelf.cache cacheWithPredicate:predicate mapper:weakSelf.mapper], error);
             }
         }
     }];

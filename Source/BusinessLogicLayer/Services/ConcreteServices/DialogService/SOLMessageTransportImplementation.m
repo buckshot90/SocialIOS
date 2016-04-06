@@ -18,8 +18,6 @@
         
         if ([response.json isKindOfClass:[NSDictionary class]]) {
             
-            NSLog(@"dialog json: %@", [response.json objectForKey:@"items"]);
-            
             if ([[response.json objectForKey:@"items"] isKindOfClass:[NSArray class]]) {
                 
                 completionBlock([[response.json objectForKey:@"items"] copy], nil);

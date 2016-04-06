@@ -22,10 +22,30 @@
         
         plain.title = [[dictionary objectForKey:@"message"] objectForKey:@"title"];
         plain.body = [[dictionary objectForKey:@"message"] objectForKey:@"body"];
-        plain.guid = @"12213";//[[dictionary objectForKey:@"message"] objectForKey:@"id"];
+        
+        id guid = [[dictionary objectForKey:@"message"] objectForKey:@"id"];
+        if([guid isKindOfClass:[NSString class]]) {
+            
+            plain.guid = (NSString *)guid;
+        } else if([guid isKindOfClass:[NSNumber class]]) {
+            
+            plain.guid = ((NSNumber *)guid).stringValue;
+        } else {
+            
+            //should stop
+        }
+        
         plain.userId = [[dictionary objectForKey:@"message"] objectForKey:@"userId"];
         plain.readState = [[dictionary objectForKey:@"message"] objectForKey:@"readState"];
-        plain.date = [NSDate date];//[[dictionary objectForKey:@"message"] objectForKey:@"date"];
+        
+        id date = [[dictionary objectForKey:@"message"] objectForKey:@"date"];
+        if([date isKindOfClass:[NSNumber class]]) {
+            
+            plain.date = [NSDate dateWithTimeIntervalSince1970:((NSNumber *)date).integerValue];
+        } else {
+            
+            //should stop
+        }
     }
     
     return plain;
@@ -70,7 +90,7 @@
 }
 
 - (Message *)objectFromPlainObject:(SOLMessagePlainObject *)plainObject {
-    Message *managed = [Message MR_createEntity];
+    Message *managed = [Message MR_findFirstOrCreateByAttribute:@"guid" withValue:plainObject.guid];
     if(plainObject) {
         
         managed.title = plainObject.title;

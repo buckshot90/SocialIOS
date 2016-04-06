@@ -20,13 +20,14 @@
             [mapper arrayFromPlainObject:[mapper arrayFromExternalRepresentation:messages]];
         }];
     }
+    
     NSArray *dialogs;
     if(predicate) {
         
-        dialogs = [Message MR_findAllWithPredicate:predicate];
+        dialogs = [Message MR_findAllSortedBy:@"date" ascending:NO withPredicate:predicate];
     } else {
         
-        dialogs = [Message MR_findAll];
+        dialogs = [Message MR_findAllSortedBy:@"date" ascending:NO];
     }
     
     return [mapper arrayFromManagedObject:dialogs];
