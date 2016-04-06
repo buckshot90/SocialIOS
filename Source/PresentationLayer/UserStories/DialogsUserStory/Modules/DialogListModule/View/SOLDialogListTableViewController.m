@@ -7,9 +7,12 @@
 //
 
 #import "SOLDialogListTableViewController.h"
+#import "SOLMessageService.h"
+#import "SOLMessageServiceImplementation.h"
+#import "SOLMessageServiceAssembly.h"
 
 @interface SOLDialogListTableViewController ()
-
+@property (strong, nonatomic) NSArray<SOLMessagePlainObject *> *dialogList;
 @end
 
 @implementation SOLDialogListTableViewController
@@ -22,6 +25,19 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Dialog"];
+    
+    typeof(self) __weak weakSelf = self;
+    id <SOLMessageService> service = [SOLMessageServiceAssembly messageService];
+    [service updateDialogWithPredicate:nil completionBlock:^(NSArray<SOLMessagePlainObject *> *list, NSError *error) {
+        
+        if(weakSelf) {
+            
+            weakSelf.dialogList = list;
+            [weakSelf.tableView reloadData];
+        }
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +48,27 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return _dialogList.count;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Dialog" forIndexPath:indexPath];
     
-    // Configure the cell...
+    SOLMessagePlainObject *dialog = [self.dialogList objectAtIndex:indexPath.row];
+    NSString *body = dialog.body;
+    cell.textLabel.text = body;
+    NSLog(@"indexpath: %li, body: %@", (long)indexPath.row, body);
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

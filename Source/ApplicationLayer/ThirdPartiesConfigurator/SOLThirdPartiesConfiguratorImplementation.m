@@ -8,6 +8,9 @@
 
 #import "SOLThirdPartiesConfiguratorImplementation.h"
 #import <VK_ios_sdk/VKSdk.h>
+#import <MagicalRecord/MagicalRecord.h>
+
+static NSString * const kRCFCoreDataStoreName = @"OutputFaceBookData";
 
 @interface SOLThirdPartiesConfiguratorImplementation () <VKSdkUIDelegate, VKSdkDelegate>
 @property (strong, nonatomic) UIViewController *rootController;
@@ -24,6 +27,7 @@
     self.rootController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
     
     [self p_setupVkSdk];
+    [self setupCoreDataStack];
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options {
@@ -39,6 +43,12 @@
 
 #pragma mark - Private method
 
+- (void)setupCoreDataStack {
+    
+    [MagicalRecord setupCoreDataStackWithStoreNamed:kRCFCoreDataStoreName];
+}
+
+
 - (void)p_setupVkSdk {
     
     VKSdk *sdkInstance = [VKSdk initializeWithAppId:@"5399134"];
@@ -50,10 +60,10 @@
         
         if (state == VKAuthorizationAuthorized) {
             // Authorized and ready to go
-//            [self.rootController dismissViewControllerAnimated:YES completion:^{}];
+            [self.rootController dismissViewControllerAnimated:YES completion:^{}];
         } else if (error) {
             
-            [UIAlertController alertControllerWithTitle:nil message:[error description] preferredStyle: UIAlertControllerStyleAlert];
+//            [UIAlertController alertControllerWithTitle:nil message:[error description] preferredStyle: UIAlertControllerStyleAlert];
         }
     }];
 }
@@ -72,7 +82,7 @@
  */
 - (void)vkSdkUserAuthorizationFailed {
  
-    [UIAlertController alertControllerWithTitle:nil message:@"Access denied" preferredStyle: UIAlertControllerStyleAlert];
+//    [UIAlertController alertControllerWithTitle:nil message:@"Access denied" preferredStyle: UIAlertControllerStyleAlert];
 //    [self.rootController.navigationController popToRootViewControllerAnimated:YES];
 }
 

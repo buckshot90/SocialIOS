@@ -21,9 +21,15 @@
 		5633E36E1CB2CFEB0025D290 /* SOLDialogListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E36D1CB2CFEB0025D290 /* SOLDialogListInteractor.m */; };
 		5633E3741CB2D0FD0025D290 /* SOLDialogListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3731CB2D0FD0025D290 /* SOLDialogListPresenter.m */; };
 		5633E3771CB2D15E0025D290 /* SOLDialogListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3761CB2D15E0025D290 /* SOLDialogListRouter.m */; };
-		5633E37E1CB2D9D20025D290 /* SOLDialogService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E37D1CB2D9D20025D290 /* SOLDialogService.m */; };
-		5633E3811CB2D9EF0025D290 /* SOLDialogPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3801CB2D9EF0025D290 /* SOLDialogPlainObject.m */; };
+		5633E37E1CB2D9D20025D290 /* SOLMessageServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E37D1CB2D9D20025D290 /* SOLMessageServiceImplementation.m */; };
+		5633E3811CB2D9EF0025D290 /* SOLMessagePlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3801CB2D9EF0025D290 /* SOLMessagePlainObject.m */; };
 		56D067B11CB40BD000B58F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D067B01CB40BD000B58F98 /* Main.storyboard */; };
+		56D067B91CB51A6300B58F98 /* Message+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067B61CB51A6300B58F98 /* Message+CoreDataProperties.m */; };
+		56D067BA1CB51A6300B58F98 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067B81CB51A6300B58F98 /* Message.m */; };
+		56D067BF1CB52AAA00B58F98 /* SOLMessageMapperImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067BE1CB52AAA00B58F98 /* SOLMessageMapperImplementation.m */; };
+		56D067C31CB5350000B58F98 /* SOLMessageTransportImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067C21CB5350000B58F98 /* SOLMessageTransportImplementation.m */; };
+		56D067C61CB537AA00B58F98 /* SOLMessageServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067C51CB537AA00B58F98 /* SOLMessageServiceAssembly.m */; };
+		56D067CA1CB53FC600B58F98 /* SOLMessageCacheImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067C91CB53FC600B58F98 /* SOLMessageCacheImplementation.m */; };
 		90DE2C4B2DABE0FEC00E6FE5 /* Pods_OutputFaceBookData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B304144E35EBA7533DC18954 /* Pods_OutputFaceBookData.framework */; };
 		D225FB8A1BDA6CE100711C53 /* String+Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = D225FB891BDA6CE100711C53 /* String+Md5.m */; };
 		D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2587DC01C6A2434006FAB08 /* StringLocalizer.m */; };
@@ -76,11 +82,28 @@
 		5633E3781CB2D1860025D290 /* SOLDialogListRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListRouterInput.h; sourceTree = "<group>"; };
 		5633E3791CB2D3070025D290 /* SOLDialogListViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListViewInput.h; sourceTree = "<group>"; };
 		5633E37A1CB2D31E0025D290 /* SOLDialogListViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListViewOutput.h; sourceTree = "<group>"; };
-		5633E37C1CB2D9D20025D290 /* SOLDialogService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogService.h; path = DialogService/SOLDialogService.h; sourceTree = "<group>"; };
-		5633E37D1CB2D9D20025D290 /* SOLDialogService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogService.m; path = DialogService/SOLDialogService.m; sourceTree = "<group>"; };
-		5633E37F1CB2D9EF0025D290 /* SOLDialogPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogPlainObject.h; sourceTree = "<group>"; };
-		5633E3801CB2D9EF0025D290 /* SOLDialogPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogPlainObject.m; sourceTree = "<group>"; };
+		5633E37C1CB2D9D20025D290 /* SOLMessageServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageServiceImplementation.h; path = DialogService/SOLMessageServiceImplementation.h; sourceTree = "<group>"; };
+		5633E37D1CB2D9D20025D290 /* SOLMessageServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLMessageServiceImplementation.m; path = DialogService/SOLMessageServiceImplementation.m; sourceTree = "<group>"; };
+		5633E37F1CB2D9EF0025D290 /* SOLMessagePlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessagePlainObject.h; sourceTree = "<group>"; };
+		5633E3801CB2D9EF0025D290 /* SOLMessagePlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLMessagePlainObject.m; sourceTree = "<group>"; };
 		56D067B01CB40BD000B58F98 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		56D067B31CB500A200B58F98 /* SOLMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageService.h; path = DialogService/SOLMessageService.h; sourceTree = "<group>"; };
+		56D067B51CB51A6300B58F98 /* Message+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Message+CoreDataProperties.h"; path = "ManagedObjects/Message+CoreDataProperties.h"; sourceTree = "<group>"; };
+		56D067B61CB51A6300B58F98 /* Message+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Message+CoreDataProperties.m"; path = "ManagedObjects/Message+CoreDataProperties.m"; sourceTree = "<group>"; };
+		56D067B71CB51A6300B58F98 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = ManagedObjects/Message.h; sourceTree = "<group>"; };
+		56D067B81CB51A6300B58F98 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = ManagedObjects/Message.m; sourceTree = "<group>"; };
+		56D067BB1CB51E1C00B58F98 /* SOLMessageSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageSerializer.h; path = DialogService/SOLMessageSerializer.h; sourceTree = "<group>"; };
+		56D067BC1CB5266400B58F98 /* SOLMessageMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageMapper.h; path = DialogService/SOLMessageMapper.h; sourceTree = "<group>"; };
+		56D067BD1CB52AAA00B58F98 /* SOLMessageMapperImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageMapperImplementation.h; path = DialogService/SOLMessageMapperImplementation.h; sourceTree = "<group>"; };
+		56D067BE1CB52AAA00B58F98 /* SOLMessageMapperImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLMessageMapperImplementation.m; path = DialogService/SOLMessageMapperImplementation.m; sourceTree = "<group>"; };
+		56D067C01CB5342F00B58F98 /* SOLMessageTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageTransport.h; path = DialogService/SOLMessageTransport.h; sourceTree = "<group>"; };
+		56D067C11CB5350000B58F98 /* SOLMessageTransportImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageTransportImplementation.h; path = DialogService/SOLMessageTransportImplementation.h; sourceTree = "<group>"; };
+		56D067C21CB5350000B58F98 /* SOLMessageTransportImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLMessageTransportImplementation.m; path = DialogService/SOLMessageTransportImplementation.m; sourceTree = "<group>"; };
+		56D067C41CB537AA00B58F98 /* SOLMessageServiceAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageServiceAssembly.h; path = DialogService/SOLMessageServiceAssembly.h; sourceTree = "<group>"; };
+		56D067C51CB537AA00B58F98 /* SOLMessageServiceAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLMessageServiceAssembly.m; path = DialogService/SOLMessageServiceAssembly.m; sourceTree = "<group>"; };
+		56D067C71CB53E7A00B58F98 /* SOLMessageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageCache.h; path = DialogService/SOLMessageCache.h; sourceTree = "<group>"; };
+		56D067C81CB53FC600B58F98 /* SOLMessageCacheImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLMessageCacheImplementation.h; path = DialogService/SOLMessageCacheImplementation.h; sourceTree = "<group>"; };
+		56D067C91CB53FC600B58F98 /* SOLMessageCacheImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLMessageCacheImplementation.m; path = DialogService/SOLMessageCacheImplementation.m; sourceTree = "<group>"; };
 		B304144E35EBA7533DC18954 /* Pods_OutputFaceBookData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OutputFaceBookData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D225FB881BDA6CE100711C53 /* String+Md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "String+Md5.h"; sourceTree = "<group>"; };
 		D225FB891BDA6CE100711C53 /* String+Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "String+Md5.m"; sourceTree = "<group>"; };
@@ -159,7 +182,7 @@
 		5633E31F1CB2876E0025D290 /* ConcreteServices */ = {
 			isa = PBXGroup;
 			children = (
-				5633E37B1CB2D9A50025D290 /* DialogsService */,
+				5633E37B1CB2D9A50025D290 /* MessageService */,
 				5633E3201CB2876E0025D290 /* AudioService */,
 				5633E3231CB2876E0025D290 /* AuthService */,
 				5633E3261CB2876E0025D290 /* FriendService */,
@@ -207,8 +230,9 @@
 		5633E32C1CB2876E0025D290 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DF2F60D61CB39F50006352D9 /* CoreDataModel */,
 				5633E32D1CB2876E0025D290 /* PlainObjects */,
+				56D067B41CB5179200B58F98 /* ManagedObjects */,
+				DF2F60D61CB39F50006352D9 /* CoreDataModel */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -222,8 +246,8 @@
 				5633E3311CB2876E0025D290 /* SOLFriendPlainObject.m */,
 				5633E3321CB2876E0025D290 /* SOLUserPlainObject.h */,
 				5633E3331CB2876E0025D290 /* SOLUserPlainObject.m */,
-				5633E37F1CB2D9EF0025D290 /* SOLDialogPlainObject.h */,
-				5633E3801CB2D9EF0025D290 /* SOLDialogPlainObject.m */,
+				5633E37F1CB2D9EF0025D290 /* SOLMessagePlainObject.h */,
+				5633E3801CB2D9EF0025D290 /* SOLMessagePlainObject.m */,
 			);
 			path = PlainObjects;
 			sourceTree = "<group>";
@@ -352,13 +376,37 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
-		5633E37B1CB2D9A50025D290 /* DialogsService */ = {
+		5633E37B1CB2D9A50025D290 /* MessageService */ = {
 			isa = PBXGroup;
 			children = (
-				5633E37C1CB2D9D20025D290 /* SOLDialogService.h */,
-				5633E37D1CB2D9D20025D290 /* SOLDialogService.m */,
+				56D067C41CB537AA00B58F98 /* SOLMessageServiceAssembly.h */,
+				56D067C51CB537AA00B58F98 /* SOLMessageServiceAssembly.m */,
+				56D067B31CB500A200B58F98 /* SOLMessageService.h */,
+				5633E37C1CB2D9D20025D290 /* SOLMessageServiceImplementation.h */,
+				5633E37D1CB2D9D20025D290 /* SOLMessageServiceImplementation.m */,
+				56D067BB1CB51E1C00B58F98 /* SOLMessageSerializer.h */,
+				56D067BC1CB5266400B58F98 /* SOLMessageMapper.h */,
+				56D067BD1CB52AAA00B58F98 /* SOLMessageMapperImplementation.h */,
+				56D067BE1CB52AAA00B58F98 /* SOLMessageMapperImplementation.m */,
+				56D067C01CB5342F00B58F98 /* SOLMessageTransport.h */,
+				56D067C11CB5350000B58F98 /* SOLMessageTransportImplementation.h */,
+				56D067C21CB5350000B58F98 /* SOLMessageTransportImplementation.m */,
+				56D067C71CB53E7A00B58F98 /* SOLMessageCache.h */,
+				56D067C81CB53FC600B58F98 /* SOLMessageCacheImplementation.h */,
+				56D067C91CB53FC600B58F98 /* SOLMessageCacheImplementation.m */,
 			);
-			name = DialogsService;
+			name = MessageService;
+			sourceTree = "<group>";
+		};
+		56D067B41CB5179200B58F98 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				56D067B51CB51A6300B58F98 /* Message+CoreDataProperties.h */,
+				56D067B61CB51A6300B58F98 /* Message+CoreDataProperties.m */,
+				56D067B71CB51A6300B58F98 /* Message.h */,
+				56D067B81CB51A6300B58F98 /* Message.m */,
+			);
+			name = ManagedObjects;
 			sourceTree = "<group>";
 		};
 		57AB0CB99FB116F2D773AD4D /* Pods */ = {
@@ -637,7 +685,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5633E37E1CB2D9D20025D290 /* SOLDialogService.m in Sources */,
+				5633E37E1CB2D9D20025D290 /* SOLMessageServiceImplementation.m in Sources */,
+				56D067BA1CB51A6300B58F98 /* Message.m in Sources */,
 				5633E36E1CB2CFEB0025D290 /* SOLDialogListInteractor.m in Sources */,
 				5633E3741CB2D0FD0025D290 /* SOLDialogListPresenter.m in Sources */,
 				5633E3351CB2876E0025D290 /* SOLAuthService.m in Sources */,
@@ -647,14 +696,19 @@
 				DF3BFE281CB4CC100017ADA5 /* SOLApplicationAssembly.m in Sources */,
 				D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */,
 				5633E3371CB2876E0025D290 /* SOLUserService.m in Sources */,
+				56D067B91CB51A6300B58F98 /* Message+CoreDataProperties.m in Sources */,
+				56D067C31CB5350000B58F98 /* SOLMessageTransportImplementation.m in Sources */,
 				5633E3361CB2876E0025D290 /* SOLFriendService.m in Sources */,
-				5633E3811CB2D9EF0025D290 /* SOLDialogPlainObject.m in Sources */,
+				5633E3811CB2D9EF0025D290 /* SOLMessagePlainObject.m in Sources */,
 				D2A8CBA51BC7A62C006BF1F6 /* main.m in Sources */,
 				5633E36B1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m in Sources */,
 				5633E3681CB2C4FF0025D290 /* AppDelegate.m in Sources */,
+				56D067BF1CB52AAA00B58F98 /* SOLMessageMapperImplementation.m in Sources */,
 				DF2F60DC1CB39F50006352D9 /* OutputFaceBookData.xcdatamodeld in Sources */,
+				56D067C61CB537AA00B58F98 /* SOLMessageServiceAssembly.m in Sources */,
 				5633E3341CB2876E0025D290 /* SOLAudioService.m in Sources */,
 				5633E3381CB2876E0025D290 /* SOLAudioPlainObject.m in Sources */,
+				56D067CA1CB53FC600B58F98 /* SOLMessageCacheImplementation.m in Sources */,
 				5633E3771CB2D15E0025D290 /* SOLDialogListRouter.m in Sources */,
 				5633E3391CB2876E0025D290 /* SOLFriendPlainObject.m in Sources */,
 				DF3BFE231CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m in Sources */,

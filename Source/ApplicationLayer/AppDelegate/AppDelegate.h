@@ -14,14 +14,14 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) NSManagedObjectModel *managedObjectModel;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-@property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (strong, nonatomic) id <SOLThirdPartiesConfigurator> thirdPartiesConfigurator;
 
-@property (strong, nonatomic) id <SOLThirdPartiesConfigurator> thirdpartiesConfigurator;
+//@property (strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+//@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+//@property (strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
-- (NSString *)applicationDocumentsDirectory;
-- (void)saveContext;
+//- (NSString *)applicationDocumentsDirectory;
+//- (void)saveContext;
 
 @end
 

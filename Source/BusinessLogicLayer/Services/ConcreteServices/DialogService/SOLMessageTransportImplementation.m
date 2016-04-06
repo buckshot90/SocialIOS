@@ -1,0 +1,35 @@
+//
+//  SOLMessageTransportImplementation.m
+//  OutputFaceBookData
+//
+//  Created by Vitaliy Rusinov on 4/6/16.
+//  Copyright © 2016 Oleh Petrunko. All rights reserved.
+//
+
+#import "SOLMessageTransportImplementation.h"
+#import <VK_ios_sdk/VKSdk.h>
+
+@implementation SOLMessageTransportImplementation
+
+- (void)getDialogsWithCompletionBlock:(SOLMessageTransportCompletionBlock)completionBlock {
+    
+    VKRequest *getDialogs = [VKRequest requestWithMethod:@"messages.getDialogs" andParameters:@{VK_API_COUNT: @200}];
+    [getDialogs executeWithResultBlock:^(VKResponse *response) {
+        
+        if ([response.json isKindOfClass:[NSDictionary class]]) {
+            
+            NSLog(@"dialog json: %@", [response.json objectForKey:@"items"]);
+            
+            if ([[response.json objectForKey:@"items"] isKindOfClass:[NSArray class]]) {
+                
+                completionBlock([[response.json objectForKey:@"items"] copy], nil);
+            }
+        }
+        
+    } errorBlock:^(NSError *error) {
+        NSLog(@"Error: %@", error);
+        completionBlock(nil, error);
+    }];
+}
+
+@end

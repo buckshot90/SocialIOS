@@ -21,15 +21,13 @@
 - (AppDelegate *)p_appDelegate {
 
     AppDelegate *appDelegateAssebly = [[UIApplication sharedApplication] delegate];
-    appDelegateAssebly.thirdpartiesConfigurator = [self p_thirdPartiesConfigurator];
+    appDelegateAssebly.thirdPartiesConfigurator = [self p_thirdPartiesConfigurator];
     return appDelegateAssebly;
 }
 
 - (id <SOLThirdPartiesConfigurator>)p_thirdPartiesConfigurator {
     
     id <SOLThirdPartiesConfigurator> third = [[SOLThirdPartiesConfiguratorImplementation alloc] init];
-//    third.rootViewController = initialViewController;
-    
     return third;
 }
 
