@@ -14,7 +14,9 @@
 @protocol SOLDialogListRouterInput;
 
 @interface SOLDialogListPresenter : NSObject <SOLDialogListInteractorOutput, SOLDialogListViewOutput>
+
 @property (weak, nonatomic) id<SOLDialogListViewInput> view;
 @property (strong, nonatomic) id<SOLDialogListInteractorInput> interactor;
 @property (strong, nonatomic) id<SOLDialogListRouterInput> router;
+
 @end

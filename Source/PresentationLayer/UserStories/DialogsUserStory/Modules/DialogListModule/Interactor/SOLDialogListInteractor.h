@@ -11,5 +11,7 @@
 @protocol SOLDialogListInteractorOutput;
 
 @interface SOLDialogListInteractor : NSObject <SOLDialogListInteractorInput>
+
 @property (weak, nonatomic) id <SOLDialogListInteractorOutput> output;
+
 @end

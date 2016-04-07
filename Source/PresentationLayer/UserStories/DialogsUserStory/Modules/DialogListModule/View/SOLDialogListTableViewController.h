@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "SOLDialogListViewInput.h"
 @protocol SOLDialogListViewOutput;
+@class SOLDialogDataDisplayManager;
 
 @interface SOLDialogListTableViewController : UITableViewController <SOLDialogListViewInput>
+
 @property (strong, nonatomic) id<SOLDialogListViewOutput> output;
+@property (strong, nonatomic) SOLDialogDataDisplayManager *dataDisplayManager;
+
 @end

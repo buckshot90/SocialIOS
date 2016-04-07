@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'E172D1783E0F5B2D646077F0'
+               BlueprintIdentifier = 'A9ADAF2BC38D1290E0B324E5'
                BlueprintName = 'Pods-OutputFaceBookData'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_OutputFaceBookData.framework'>

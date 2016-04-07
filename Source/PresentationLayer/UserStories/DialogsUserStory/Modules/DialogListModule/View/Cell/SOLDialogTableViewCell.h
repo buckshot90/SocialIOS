@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class SOLDialogTableViewCellObject;
 
 @interface SOLDialogTableViewCell : UITableViewCell
+
+- (BOOL)shouldUpdateCellWithObject:(SOLDialogTableViewCellObject *)object;
++ (CGFloat)heightForObject:(SOLDialogTableViewCellObject *)object atIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView;
 
 @end

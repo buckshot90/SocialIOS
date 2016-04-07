@@ -12,6 +12,9 @@
 #import "SOLDialogListPresenter.h"
 #import "SOLDialogListInteractor.h"
 #import "SOLDialogListRouter.h"
+#import "SOLDialogDataDisplayManager.h"
+
+#import "SOLDialogCellObjectBuilder.h"
 
 @interface SOLDialogListModuleAssembly ()
 @property (weak, nonatomic) IBOutlet SOLDialogListTableViewController *viewController;
@@ -35,15 +38,44 @@
 
 - (void)configure:(SOLDialogListTableViewController *)viewController {
     
-    SOLDialogListRouter *router = [[SOLDialogListRouter alloc] init];
-    SOLDialogListPresenter *presenter = [[SOLDialogListPresenter alloc] init];
-    SOLDialogListInteractor *interactor = [[SOLDialogListInteractor alloc] init];
+    SOLDialogListPresenter *presenter = [self presenter];
+    presenter.view = viewController;
     
+    viewController.output = presenter;
+    viewController.dataDisplayManager = [self dataDisplayManager];
+}
+
+- (SOLDialogListPresenter *)presenter {
+    
+    SOLDialogListInteractor *interactor = [self interactor];
+    SOLDialogListPresenter *presenter = [[SOLDialogListPresenter alloc] init];
     interactor.output = presenter;
     presenter.interactor = interactor;
-    presenter.router = router;
-    presenter.view = viewController;
-    viewController.output = presenter;
+    presenter.router = [self router];
+    
+    return presenter;
+}
+
+- (id<SOLDialogListInteractorInput>)interactor {
+
+    return [[SOLDialogListInteractor alloc] init];
+}
+
+- (id<SOLDialogListRouterInput>)router {
+    
+    return [[SOLDialogListRouter alloc] init];
+}
+
+- (SOLDialogDataDisplayManager *)dataDisplayManager {
+    
+    SOLDialogDataDisplayManager *dataDisplayManager = [[SOLDialogDataDisplayManager alloc] init];
+    dataDisplayManager.cellObjectBuilder = [self cellObjectBuilder];
+    return dataDisplayManager;
+}
+
+- (id<SOLCellObjectBuilder>)cellObjectBuilder {
+    
+    return [[SOLDialogCellObjectBuilder alloc] init];
 }
 
 @end

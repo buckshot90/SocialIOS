@@ -41,7 +41,7 @@
         id date = [[dictionary objectForKey:@"message"] objectForKey:@"date"];
         if([date isKindOfClass:[NSNumber class]]) {
             
-            plain.date = [NSDate dateWithTimeIntervalSince1970:((NSNumber *)date).integerValue];
+            plain.date = (NSNumber *)date; 
         } else {
             
             //should stop
