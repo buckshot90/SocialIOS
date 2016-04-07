@@ -15,8 +15,6 @@
 
 @property (strong, nonatomic) NSArray<SOLDialogTableViewCellObject *> *cellObjs;
 @property (strong, nonatomic) NSArray *plainObjs;
-
-@property (strong, nonatomic) UITableView *tableView;
 @property (assign, nonatomic) BOOL registeredNib;
 
 @end
