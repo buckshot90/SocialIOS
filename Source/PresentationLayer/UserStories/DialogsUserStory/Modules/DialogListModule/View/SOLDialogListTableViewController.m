@@ -10,6 +10,7 @@
 #import "SOLMessageService.h"
 #import "SOLMessageServiceImplementation.h"
 #import "SOLMessageServiceAssembly.h"
+#import "SOLDialogTableViewCell.h"
 
 @interface SOLDialogListTableViewController ()
 @property (strong, nonatomic) NSArray<SOLMessagePlainObject *> *dialogList;
@@ -27,7 +28,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Dialog"];
+    [self.tableView registerClass:[SOLDialogTableViewCell class] forCellReuseIdentifier:@"SOLDialogTableViewCell"];
     
     typeof(self) __weak weakSelf = self;
     self.service = [SOLMessageServiceAssembly messageService];
@@ -61,11 +62,11 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Dialog" forIndexPath:indexPath];
+    SOLDialogTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SOLDialogTableViewCell" forIndexPath:indexPath];
     
     SOLMessagePlainObject *dialog = [self.dialogList objectAtIndex:indexPath.row];
     NSString *body = dialog.body;
-    cell.textLabel.text = body;
+    cell
 //    NSLog(@"indexpath: %li, body: %@", (long)indexPath.row, body);
     
     return cell;

@@ -39,6 +39,8 @@
 		D2A8CBC31BC7A979006BF1F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A8CBBD1BC7A93F006BF1F6 /* Foundation.framework */; };
 		D2F8AC3A1C4E746E00FB1DB0 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F8AC391C4E746E00FB1DB0 /* Contacts.framework */; };
 		D2FBF0071C1F0BAC005CEACA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FBF0061C1F0BAC005CEACA /* SafariServices.framework */; };
+		DF0E7DD91CB6314B007E67E6 /* SOLDialogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0E7DD81CB6314B007E67E6 /* SOLDialogTableViewCell.m */; };
+		DF0E7DDB1CB63170007E67E6 /* SOLDialogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0E7DDA1CB63170007E67E6 /* SOLDialogTableViewCell.xib */; };
 		DF21C7E51CB4DB5400635062 /* SOLInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF21C7E41CB4DB5400635062 /* SOLInitializer.m */; };
 		DF2F60D31CB39EA4006352D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF2F60D11CB39EA4006352D9 /* Localizable.strings */; };
 		DF2F60D51CB39EDE006352D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF2F60D41CB39EDE006352D9 /* Assets.xcassets */; };
@@ -121,6 +123,9 @@
 		D2DEDF881C4AA705006ED545 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		D2F8AC391C4E746E00FB1DB0 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		D2FBF0061C1F0BAC005CEACA /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		DF0E7DD71CB6314B007E67E6 /* SOLDialogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogTableViewCell.h; path = Cell/SOLDialogTableViewCell.h; sourceTree = "<group>"; };
+		DF0E7DD81CB6314B007E67E6 /* SOLDialogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogTableViewCell.m; path = Cell/SOLDialogTableViewCell.m; sourceTree = "<group>"; };
+		DF0E7DDA1CB63170007E67E6 /* SOLDialogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SOLDialogTableViewCell.xib; path = Cell/SOLDialogTableViewCell.xib; sourceTree = "<group>"; };
 		DF21C7E31CB4DB5400635062 /* SOLInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLInitializer.h; sourceTree = "<group>"; };
 		DF21C7E41CB4DB5400635062 /* SOLInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLInitializer.m; sourceTree = "<group>"; };
 		DF2F60D21CB39EA4006352D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -340,6 +345,7 @@
 		5633E35B1CB291F40025D290 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DF0E7DD61CB6301C007E67E6 /* Cell */,
 				5633E3611CB297520025D290 /* SOLDialogListTableViewController.h */,
 				5633E3621CB297520025D290 /* SOLDialogListTableViewController.m */,
 				5633E3791CB2D3070025D290 /* SOLDialogListViewInput.h */,
@@ -483,6 +489,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DF0E7DD61CB6301C007E67E6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DF0E7DD71CB6314B007E67E6 /* SOLDialogTableViewCell.h */,
+				DF0E7DD81CB6314B007E67E6 /* SOLDialogTableViewCell.m */,
+				DF0E7DDA1CB63170007E67E6 /* SOLDialogTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
 		DF21C7E21CB4DB5400635062 /* Initializer */ = {
 			isa = PBXGroup;
 			children = (
@@ -623,6 +639,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF0E7DDB1CB63170007E67E6 /* SOLDialogTableViewCell.xib in Resources */,
 				56D067B11CB40BD000B58F98 /* Main.storyboard in Resources */,
 				DF2F60D51CB39EDE006352D9 /* Assets.xcassets in Resources */,
 				DF2F60D31CB39EA4006352D9 /* Localizable.strings in Resources */,
@@ -686,6 +703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5633E37E1CB2D9D20025D290 /* SOLMessageServiceImplementation.m in Sources */,
+				DF0E7DD91CB6314B007E67E6 /* SOLDialogTableViewCell.m in Sources */,
 				56D067BA1CB51A6300B58F98 /* Message.m in Sources */,
 				5633E36E1CB2CFEB0025D290 /* SOLDialogListInteractor.m in Sources */,
 				5633E3741CB2D0FD0025D290 /* SOLDialogListPresenter.m in Sources */,
