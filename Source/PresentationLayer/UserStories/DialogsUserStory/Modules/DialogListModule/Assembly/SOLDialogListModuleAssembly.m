@@ -15,6 +15,7 @@
 #import "SOLDialogDataDisplayManager.h"
 
 #import "SOLDialogCellObjectBuilder.h"
+#import "SOLMessageServiceAssembly.h"
 
 @interface SOLDialogListModuleAssembly ()
 @property (weak, nonatomic) IBOutlet SOLDialogListTableViewController *viewController;
@@ -47,21 +48,23 @@
 
 - (SOLDialogListPresenter *)presenter {
     
-    SOLDialogListInteractor *interactor = [self interactor];
+    SOLDialogListInteractor *intr = [self interactor];
     SOLDialogListPresenter *presenter = [[SOLDialogListPresenter alloc] init];
-    interactor.output = presenter;
-    presenter.interactor = interactor;
+    intr.output = presenter;
+    presenter.interactor = intr;
     presenter.router = [self router];
     
     return presenter;
 }
 
-- (id<SOLDialogListInteractorInput>)interactor {
-
-    return [[SOLDialogListInteractor alloc] init];
+- (SOLDialogListInteractor *)interactor {
+    
+    SOLDialogListInteractor *intr = [[SOLDialogListInteractor alloc] init];
+    intr.messageService = [SOLMessageServiceAssembly messageService];
+    return intr;
 }
 
-- (id<SOLDialogListRouterInput>)router {
+- (SOLDialogListRouter *)router {
     
     return [[SOLDialogListRouter alloc] init];
 }
@@ -73,7 +76,7 @@
     return dataDisplayManager;
 }
 
-- (id<SOLCellObjectBuilder>)cellObjectBuilder {
+- (SOLDialogCellObjectBuilder *)cellObjectBuilder {
     
     return [[SOLDialogCellObjectBuilder alloc] init];
 }

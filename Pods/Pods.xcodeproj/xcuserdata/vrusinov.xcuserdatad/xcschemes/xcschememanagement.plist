@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>MagicalRecord.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -38,7 +43,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>65217AA8A250EB108470C98FA9A59E45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B19E45826E1835BAA9267F4CC351EA67</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -54,6 +69,11 @@
 			<true/>
 		</dict>
 		<key>E798CB9777B7BD4B42ED57F70F76AEF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EF434F39B184DE90740865935AFD579C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

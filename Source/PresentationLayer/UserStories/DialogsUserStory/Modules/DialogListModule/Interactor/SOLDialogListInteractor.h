@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "SOLDialogListInteractorInput.h"
+
+#import "SOLMessageService.h"
+
 @protocol SOLDialogListInteractorOutput;
 
 @interface SOLDialogListInteractor : NSObject <SOLDialogListInteractorInput>
 
 @property (weak, nonatomic) id <SOLDialogListInteractorOutput> output;
+@property (strong, nonatomic) id <SOLMessageService> messageService;
 
 @end

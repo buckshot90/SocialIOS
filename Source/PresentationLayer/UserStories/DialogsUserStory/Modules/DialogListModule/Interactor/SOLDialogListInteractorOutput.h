@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@class SOLMessagePlainObject;
+
 @protocol SOLDialogListInteractorOutput <NSObject>
+
+- (void)didUpdateDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs;
 
 @end

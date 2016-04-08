@@ -20,7 +20,9 @@
             
             if ([[response.json objectForKey:@"items"] isKindOfClass:[NSArray class]]) {
                 
-                completionBlock([[response.json objectForKey:@"items"] copy], nil);
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    completionBlock([[response.json objectForKey:@"items"] copy], nil);
+                });
             }
         }
         

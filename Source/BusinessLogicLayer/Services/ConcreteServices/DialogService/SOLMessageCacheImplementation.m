@@ -21,15 +21,7 @@
         }];
     }
     
-    NSArray *dialogs;
-    if(predicate) {
-        
-        dialogs = [Message MR_findAllSortedBy:@"date" ascending:NO withPredicate:predicate];
-    } else {
-        
-        dialogs = [Message MR_findAllSortedBy:@"date" ascending:NO];
-    }
-    
+    NSArray *dialogs = predicate ? [Message MR_findAllWithPredicate:predicate] : [Message MR_findAll];
     return [mapper arrayFromManagedObject:dialogs];
 }
 

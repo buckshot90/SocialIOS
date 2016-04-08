@@ -11,7 +11,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
-static CGFloat const kReportListTableViewCellHeight = 58.0f;
+static CGFloat const kReportListTableViewCellHeight = 60.0f;
 
 @interface SOLDialogTableViewCell ()
 

@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class SOLMessagePlainObject;
 
 @protocol SOLDialogListViewOutput <NSObject>
+
+- (void)setupView;
+- (void)didTriggerTapCellWithMessage:(SOLMessagePlainObject *)message;
 
 @end

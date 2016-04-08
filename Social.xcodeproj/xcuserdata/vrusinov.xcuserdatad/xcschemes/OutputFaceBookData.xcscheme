@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2A8CB9F1BC7A62C006BF1F6"
-               BuildableName = "OutputFaceBookData.app"
-               BlueprintName = "OutputFaceBookData"
-               ReferencedContainer = "container:OutputFaceBookData.xcodeproj">
+               BuildableName = "Social.app"
+               BlueprintName = "Social"
+               ReferencedContainer = "container:Social.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2A8CB9F1BC7A62C006BF1F6"
-            BuildableName = "OutputFaceBookData.app"
-            BlueprintName = "OutputFaceBookData"
-            ReferencedContainer = "container:OutputFaceBookData.xcodeproj">
+            BuildableName = "Social.app"
+            BlueprintName = "Social"
+            ReferencedContainer = "container:Social.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2A8CB9F1BC7A62C006BF1F6"
-            BuildableName = "OutputFaceBookData.app"
-            BlueprintName = "OutputFaceBookData"
-            ReferencedContainer = "container:OutputFaceBookData.xcodeproj">
+            BuildableName = "Social.app"
+            BlueprintName = "Social"
+            ReferencedContainer = "container:Social.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2A8CB9F1BC7A62C006BF1F6"
-            BuildableName = "OutputFaceBookData.app"
-            BlueprintName = "OutputFaceBookData"
-            ReferencedContainer = "container:OutputFaceBookData.xcodeproj">
+            BuildableName = "Social.app"
+            BlueprintName = "Social"
+            ReferencedContainer = "container:Social.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

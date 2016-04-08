@@ -12,6 +12,8 @@
 #import "SOLMessageServiceAssembly.h"
 #import "SOLDialogTableViewCell.h"
 #import "SOLDialogDataDisplaymanager.h"
+#import "SOLDialogListViewInput.h"
+#import "SOLDialogListViewOutput.h"
 
 @interface SOLDialogListTableViewController () <SOLDialogDataDisplayManagerDelegate>
 
@@ -29,21 +31,22 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+
+    [self.output setupView];
+}
+
+#pragma mark - SOLDialogListViewInput
+
+- (void)setupViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs {
     
     _dataDisplayManager.delegate = self;
     self.tableView.delegate = _dataDisplayManager;
     self.tableView.dataSource = _dataDisplayManager;
+}
+
+- (void)updateViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs {
     
-    typeof(self) __weak weakSelf = self;
-    self.service = [SOLMessageServiceAssembly messageService];
-    [_service updateDialogWithPredicate:nil completionBlock:^(NSArray<SOLMessagePlainObject *> *list, NSError *error) {
-        typeof(self) __strong strongSelf = weakSelf;
-        
-        if(strongSelf) {
-            
-            [strongSelf.dataDisplayManager updateTableViewModelWithPlainObjects: list];
-        }
-    }];
+    [self.dataDisplayManager updateTableViewModelWithPlainObjects: dialogs];
 }
 
 #pragma mark - SOLDialogDataDisplayManagerDelegate
@@ -55,21 +58,7 @@
 
 - (void)didTapCellWithDialog:(SOLMessagePlainObject *)dialog {
     
+    [self.output didTriggerTapCellWithMessage:dialog];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

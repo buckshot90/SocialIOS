@@ -127,7 +127,7 @@
 		D2587DBF1C6A2434006FAB08 /* StringLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLocalizer.h; sourceTree = "<group>"; };
 		D2587DC01C6A2434006FAB08 /* StringLocalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringLocalizer.m; sourceTree = "<group>"; };
 		D26918F51C98548F00FD90C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		D2A8CBA01BC7A62C006BF1F6 /* OutputFaceBookData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutputFaceBookData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A8CBA01BC7A62C006BF1F6 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8CBA41BC7A62C006BF1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2A8CBB41BC7A62C006BF1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A8CBBD1BC7A93F006BF1F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -518,7 +518,7 @@
 		D2A8CBA11BC7A62C006BF1F6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2A8CBA01BC7A62C006BF1F6 /* OutputFaceBookData.app */,
+				D2A8CBA01BC7A62C006BF1F6 /* Social.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -650,9 +650,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2A8CB9F1BC7A62C006BF1F6 /* OutputFaceBookData */ = {
+		D2A8CB9F1BC7A62C006BF1F6 /* Social */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2A8CBB71BC7A62C006BF1F6 /* Build configuration list for PBXNativeTarget "OutputFaceBookData" */;
+			buildConfigurationList = D2A8CBB71BC7A62C006BF1F6 /* Build configuration list for PBXNativeTarget "Social" */;
 			buildPhases = (
 				609E5837B22474F20BB0126C /* Check Pods Manifest.lock */,
 				D2A8CB9C1BC7A62C006BF1F6 /* Sources */,
@@ -665,9 +665,9 @@
 			);
 			dependencies = (
 			);
-			name = OutputFaceBookData;
+			name = Social;
 			productName = OutputFaceBookData;
-			productReference = D2A8CBA01BC7A62C006BF1F6 /* OutputFaceBookData.app */;
+			productReference = D2A8CBA01BC7A62C006BF1F6 /* Social.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -684,7 +684,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D2A8CB9B1BC7A62C006BF1F6 /* Build configuration list for PBXProject "OutputFaceBookData" */;
+			buildConfigurationList = D2A8CB9B1BC7A62C006BF1F6 /* Build configuration list for PBXProject "Social" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -698,7 +698,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2A8CB9F1BC7A62C006BF1F6 /* OutputFaceBookData */,
+				D2A8CB9F1BC7A62C006BF1F6 /* Social */,
 			);
 		};
 /* End PBXProject section */
@@ -920,7 +920,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.social.vk;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Social;
 			};
 			name = Debug;
 		};
@@ -944,14 +944,14 @@
 					"$(inherited)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.social.vk;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Social;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2A8CB9B1BC7A62C006BF1F6 /* Build configuration list for PBXProject "OutputFaceBookData" */ = {
+		D2A8CB9B1BC7A62C006BF1F6 /* Build configuration list for PBXProject "Social" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2A8CBB51BC7A62C006BF1F6 /* Debug */,
@@ -960,7 +960,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2A8CBB71BC7A62C006BF1F6 /* Build configuration list for PBXNativeTarget "OutputFaceBookData" */ = {
+		D2A8CBB71BC7A62C006BF1F6 /* Build configuration list for PBXNativeTarget "Social" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2A8CBB81BC7A62C006BF1F6 /* Debug */,

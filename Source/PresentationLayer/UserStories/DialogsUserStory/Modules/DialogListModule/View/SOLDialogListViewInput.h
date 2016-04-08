@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class SOLMessagePlainObject;
 
 @protocol SOLDialogListViewInput <NSObject>
+
+- (void)setupViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs;
+- (void)updateViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs;
 
 @end
