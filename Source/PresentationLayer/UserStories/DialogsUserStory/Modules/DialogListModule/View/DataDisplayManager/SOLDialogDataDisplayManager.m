@@ -11,27 +11,11 @@
 #import "SOLDialogTableViewCell.h"
 #import "SOLDataDisplayManager.h"
 
-@interface SOLDialogDataDisplayManager ()
-
-@property (strong, nonatomic) NSArray<SOLDialogTableViewCellObject *> *cellObjsSearch;
-@property (strong, nonatomic) NSArray<SOLDialogTableViewCellObject *> *cellObjs;
-@property (strong, nonatomic) NSArray *plainObjs;
-@property (assign, nonatomic) BOOL registeredNib;
-
-@end
-
 @implementation SOLDialogDataDisplayManager
-
-- (void)updateTableViewModelWithPlainObjects:(NSArray *)plainObjs {
-    
-    self.plainObjs = plainObjs;
-    self.cellObjs = [self.cellObjectBuilder cellObjectsForPlainObjects:_plainObjs];
-    [self.delegate didUpdateTableView];
-}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    return [SOLDialogTableViewCell heightForObject:_cellObjs[indexPath.row] atIndexPath:indexPath tableView:tableView];
+    return [SOLDialogTableViewCell heightForObject:self.cellObjs[indexPath.row] atIndexPath:indexPath tableView:tableView];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -44,10 +28,10 @@
     NSUInteger count = 0;
     if ([self.dataSource searchResultsController].active && ![[self.dataSource  searchResultsController].searchBar.text isEqualToString:@""]) {
         
-        count = _cellObjsSearch.count;
+        count = self.cellObjsSearch.count;
     } else {
         
-        count = _cellObjs.count;
+        count = self.cellObjs.count;
     }
     
     return count;
@@ -55,7 +39,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    if (!_registeredNib) {
+    if (!self.registeredNib) {
         
         self.registeredNib = YES;
         [tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SOLDialogTableViewCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([SOLDialogTableViewCell class])];
@@ -65,10 +49,10 @@
     
     if ([self.dataSource searchResultsController].active && ![[self.dataSource  searchResultsController].searchBar.text isEqualToString:@""]) {
         
-        [cell shouldUpdateCellWithObject:_cellObjsSearch[indexPath.row]];
+        [cell shouldUpdateCellWithObject:self.cellObjsSearch[indexPath.row]];
     } else {
         
-        [cell shouldUpdateCellWithObject:_cellObjs[indexPath.row]];
+        [cell shouldUpdateCellWithObject:self.cellObjs[indexPath.row]];
     }
     
     return cell;
@@ -83,7 +67,7 @@
 //        [self.delegate didTapCellWithDialog:_plainObjs[indexPath.row]];
     } else {
         
-        [self.delegate didTapCellWithDialog:_plainObjs[indexPath.row]];
+        [self.delegate didTapCellWithPlainObject:self.plainObjs[indexPath.row]];
     }
 }
 
@@ -91,31 +75,19 @@
 
 - (void)searchBar:(UISearchBar *)searchBar selectedScopeButtonIndexDidChange:(NSInteger)selectedScope {
     
-    [self filterContentForSearchText:searchBar.text scope:searchBar.scopeButtonTitles[selectedScope]];
+    NSString *searchText = searchBar.text;
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"dialogBody contains[cd] %@ OR dialogTitle contains[c] %@", searchText.lowercaseString, searchText.lowercaseString];
+//    scope:searchBar.scopeButtonTitles[selectedScope]
+    [self filterContentForPredicate:predicate];
 }
 
 #pragma mark - UISearchResultsUpdating
 
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     
-    [self filterContentForSearchText:searchController.searchBar.text scope:searchController.searchBar.scopeButtonTitles[searchController.searchBar.selectedScopeButtonIndex]];
-}
-
-#pragma mark - Filter
-
-- (void)filterContentForSearchText:(NSString *)searchText scope:(NSString *)scope {
-    
+    NSString *searchText = searchController.searchBar.text;
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"dialogBody contains[cd] %@ OR dialogTitle contains[c] %@", searchText.lowercaseString, searchText.lowercaseString];
-    self.cellObjsSearch = [_cellObjs filteredArrayUsingPredicate:predicate];
-    [self.delegate didUpdateTableView];
+    [self filterContentForPredicate:predicate];
 }
-
-//func filterContentForSearchText(searchText: String, scope: String = "All") {
-//    filteredCandies = candies.filter({( candy : Candy) -> Bool in
-//        let categoryMatch = (scope == "All") || (candy.category == scope)
-//        return categoryMatch && candy.name.lowercaseString.containsString(searchText.lowercaseString)
-//    })
-//    tableView.reloadData()
-//}
 
 @end

@@ -10,16 +10,12 @@
 #import "SOLMessageService.h"
 #import "SOLMessageServiceImplementation.h"
 #import "SOLMessageServiceAssembly.h"
-#import "SOLDialogTableViewCell.h"
-#import "SOLDialogDataDisplaymanager.h"
+#import "SOLDataDisplayManager.h"
+#import "SOLDialogDataDisplayManager.h"
 #import "SOLDialogListViewInput.h"
 #import "SOLDialogListViewOutput.h"
 
-#import "SOLUserService.h"
-#import "SOLUserServiceImplementation.h"
-#import "SOLUserServiceAssembly.h"
-
-@interface SOLDialogListTableViewController () <SOLDialogDataDisplayManagerDelegate, SOLDialogDataDisplayManagerDataSource>
+@interface SOLDialogListTableViewController () <SOLDataDisplayManagerDelegate, SOLDataDisplayManagerDataSource>
 
 @property (strong, nonatomic) UISearchController *searchController;
 
@@ -49,11 +45,6 @@
     
     self.searchController.searchBar.scopeButtonTitles = @[@"Dialogs", @"Messages"];
     self.tableView.tableHeaderView = self.searchController.searchBar;
-    
-    SOLUserServiceImplementation *service = [SOLUserServiceAssembly userService];
-    [service updateUsersWithPredicate:nil completionBlock:^(NSArray<SOLUserPlainObject *> *list, NSError *error) {
-        
-    }];
 }
 
 - (void)updateViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs {
@@ -68,9 +59,9 @@
     [self.tableView reloadData];
 }
 
-- (void)didTapCellWithDialog:(SOLMessagePlainObject *)dialog {
+- (void)didTapCellWithPlainObject:(id<SOLPlainObject>)plainObj {
     
-    [self.output didTriggerTapCellWithMessage:dialog];
+    [self.output didTriggerTapCellWithMessage:plainObj];
 }
 
 - (UISearchController *)searchResultsController {

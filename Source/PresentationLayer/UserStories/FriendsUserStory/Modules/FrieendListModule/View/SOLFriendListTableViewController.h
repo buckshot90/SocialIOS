@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SOLFriendListDataDisplayManager.h"
 
 @interface SOLFriendListTableViewController : UITableViewController
+
+@property (strong, nonatomic) SOLFriendListDataDisplayManager *dataDisplayManager;
 
 @end

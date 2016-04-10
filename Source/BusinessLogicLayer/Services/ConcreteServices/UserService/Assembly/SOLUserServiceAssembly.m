@@ -18,7 +18,7 @@
 + (id<SOLUserService>)userService {
     
     SOLUserServiceImplementation *service = [[SOLUserServiceImplementation alloc] init];
-    service.transport = [[SOLUserTransportImplementation alloc] init];
+    service.transport = [SOLUserTransportImplementation new];
     service.cache = [SOLUserCacheImplementation new];
     service.mapper = [SOLUserMapperImplementation new];
     

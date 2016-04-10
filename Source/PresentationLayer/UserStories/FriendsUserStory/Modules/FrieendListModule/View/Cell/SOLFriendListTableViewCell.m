@@ -7,6 +7,12 @@
 //
 
 #import "SOLFriendListTableViewCell.h"
+#import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIImageView+AFNetworking.h>
+
+#import "SOLFriendListTableViewCellObject.h"
+
+static CGFloat const kReportListTableViewCellHeight = 60.0f;
 
 @interface SOLFriendListTableViewCell ()
 
@@ -19,15 +25,17 @@
 
 @implementation SOLFriendListTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
+- (BOOL)shouldUpdateCellWithObject:(SOLFriendListTableViewCellObject *)object {
+    
+    self.userName.text = object.userName;
+    [self.userPhoto setImageWithURL:object.userPhoto placeholderImage:nil];
+    
+    return YES;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
++ (CGFloat)heightForObject:(id)object atIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView {
+    
+    return kReportListTableViewCellHeight;
 }
 
 @end

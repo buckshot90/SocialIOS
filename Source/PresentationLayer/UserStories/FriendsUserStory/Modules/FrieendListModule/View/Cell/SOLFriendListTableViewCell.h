@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SOLFriendListTableViewCellObject.h"
 
 @interface SOLFriendListTableViewCell : UITableViewCell
 
-//- (BOOL)shouldUpdateCellWithObject:(SOLDialogTableViewCellObject *)object;
-//+ (CGFloat)heightForObject:(SOLDialogTableViewCellObject *)object atIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView;
+- (BOOL)shouldUpdateCellWithObject:(SOLFriendListTableViewCellObject *)object;
++ (CGFloat)heightForObject:(SOLFriendListTableViewCellObject *)object atIndexPath:(NSIndexPath *)indexPath tableView:(UITableView *)tableView;
 
 @end

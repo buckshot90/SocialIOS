@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="2rU-eX-Icc">
             <objects>
-                <tableViewController id="qLx-Nv-Cde" customClass="SOLFriendListTableViewController" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="SOLFriendListTableViewController" storyboardIdentifier="SOLFriendListTableViewController" id="qLx-Nv-Cde" customClass="SOLFriendListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sze-nB-v78">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

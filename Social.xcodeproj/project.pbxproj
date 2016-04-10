@@ -55,6 +55,7 @@
 		DF0818F41CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818F31CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m */; };
 		DF0818F71CBAC38F00BACB69 /* SOLFriendListModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818F61CBAC38F00BACB69 /* SOLFriendListModuleAssembly.m */; };
 		DF0818FB1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818FA1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m */; };
+		DF0818FE1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818FD1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m */; };
 		DF0E7DD91CB6314B007E67E6 /* SOLDialogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0E7DD81CB6314B007E67E6 /* SOLDialogTableViewCell.m */; };
 		DF0E7DDB1CB63170007E67E6 /* SOLDialogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0E7DDA1CB63170007E67E6 /* SOLDialogTableViewCell.xib */; };
 		DF21C7E51CB4DB5400635062 /* SOLInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF21C7E41CB4DB5400635062 /* SOLInitializer.m */; };
@@ -176,6 +177,8 @@
 		DF0818F61CBAC38F00BACB69 /* SOLFriendListModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListModuleAssembly.m; sourceTree = "<group>"; };
 		DF0818F91CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListDataDisplayManager.h; sourceTree = "<group>"; };
 		DF0818FA1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListDataDisplayManager.m; sourceTree = "<group>"; };
+		DF0818FC1CBAF63100BACB69 /* SOLBaseDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLBaseDataDisplayManager.h; path = Common/DataDisplayManager/SOLBaseDataDisplayManager.h; sourceTree = "<group>"; };
+		DF0818FD1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLBaseDataDisplayManager.m; path = Common/DataDisplayManager/SOLBaseDataDisplayManager.m; sourceTree = "<group>"; };
 		DF0E7DD71CB6314B007E67E6 /* SOLDialogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogTableViewCell.h; path = Cell/SOLDialogTableViewCell.h; sourceTree = "<group>"; };
 		DF0E7DD81CB6314B007E67E6 /* SOLDialogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogTableViewCell.m; path = Cell/SOLDialogTableViewCell.m; sourceTree = "<group>"; };
 		DF0E7DDA1CB63170007E67E6 /* SOLDialogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SOLDialogTableViewCell.xib; path = Cell/SOLDialogTableViewCell.xib; sourceTree = "<group>"; };
@@ -466,6 +469,8 @@
 			isa = PBXGroup;
 			children = (
 				569BD8C41CB6AB0600201B59 /* SOLDataDisplayManager.h */,
+				DF0818FC1CBAF63100BACB69 /* SOLBaseDataDisplayManager.h */,
+				DF0818FD1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m */,
 			);
 			name = DataDisplayManager;
 			sourceTree = "<group>";
@@ -1028,6 +1033,7 @@
 			files = (
 				DF0818D01CBAA91100BACB69 /* User.m in Sources */,
 				DF0818F41CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m in Sources */,
+				DF0818FE1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m in Sources */,
 				56E09D861CB66A7300E54B87 /* SOLDialogDataDisplayManager.m in Sources */,
 				DF0E7DD91CB6314B007E67E6 /* SOLDialogTableViewCell.m in Sources */,
 				56E09D7F1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m in Sources */,

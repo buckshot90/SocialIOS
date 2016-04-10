@@ -40,10 +40,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="3CQ-dk-6MF" kind="relationship" relationship="rootViewController" id="hmj-SN-rp1"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fjg-SA-rpn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="237" y="331"/>
+        </scene>
+        <!--SOLFriendListTableViewController-->
+        <scene sceneID="5H2-pc-Ru9">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SOLFriendListTableViewController" storyboardName="Friends" referencedIdentifier="SOLFriendListTableViewController" id="3CQ-dk-6MF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="POm-p7-lSi"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vi9-Fi-h6T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770.5" y="331"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="FHj-0i-tPZ">

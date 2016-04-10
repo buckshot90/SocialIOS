@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SOLDataDisplayManager.h"
+#import "SOLBaseDataDisplayManager.h"
+#import "SOLCellObjectBuilder.h"
 
-@interface SOLFriendListDataDisplayManager : NSObject <SOLDataDisplayManager>
+@interface SOLFriendListDataDisplayManager : SOLBaseDataDisplayManager
 
 @end

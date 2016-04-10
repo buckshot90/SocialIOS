@@ -3,17 +3,25 @@
 //  Social
 //
 //  Created by Vitaliy Rusinov on 4/10/16.
-//  Copyright © 2016 Oleh Petrunko. All rights reserved.
 //
 
 #import "SOLFriendListCellObjectBuilder.h"
 #import "SOLCellObjectBuilder.h"
+#import "SOLUserPlainObject.h"
+#import "SOLFriendListTableViewCellObject.h"
 
 @implementation SOLFriendListCellObjectBuilder
 
 - (NSArray *)cellObjectsForPlainObjects:(NSArray *)plainObjects {
     
-    return @[];
+    NSMutableArray *manageObjs = [[NSMutableArray alloc] init];
+    for (SOLUserPlainObject *plain in plainObjects) {
+        
+        SOLFriendListTableViewCellObject *cellObj = [SOLFriendListTableViewCellObject objectWithUser:plain];
+        [manageObjs addObject:cellObj];
+    }
+    
+    return manageObjs;
 }
 
 @end
