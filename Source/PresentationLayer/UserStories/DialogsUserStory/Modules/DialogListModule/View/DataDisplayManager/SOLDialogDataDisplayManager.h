@@ -12,6 +12,12 @@
 
 @class SOLMessagePlainObject;
 
+@protocol SOLDialogDataDisplayManagerDataSource
+
+- (UISearchController *)searchResultsController;
+
+@end
+
 @protocol SOLDialogDataDisplayManagerDelegate
 
 - (void)didUpdateTableView;
@@ -19,10 +25,11 @@
 
 @end
 
-@interface SOLDialogDataDisplayManager : NSObject <SOLDataDisplayManager, UITableViewDelegate, UITableViewDataSource>
+@interface SOLDialogDataDisplayManager : NSObject <SOLDataDisplayManager, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchResultsUpdating>
 
 @property (strong, nonatomic) id<SOLCellObjectBuilder> cellObjectBuilder;
 @property (weak, nonatomic) id<SOLDialogDataDisplayManagerDelegate> delegate;
+@property (weak, nonatomic) id<SOLDialogDataDisplayManagerDataSource> dataSource;
 
 - (void)updateTableViewModelWithPlainObjects:(NSArray *)plainObjs;
 

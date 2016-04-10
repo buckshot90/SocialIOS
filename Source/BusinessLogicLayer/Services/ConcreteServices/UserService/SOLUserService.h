@@ -1,13 +1,20 @@
 //
 //  SOLUserService.h
-//  OutputFaceBookData
+//  Social
 //
-//  Created by Vitaliy Rusinov on 4/3/16.
-//  Copyright © 2016 Oleh Petrunko. All rights reserved.
+//  Created by Vitaliy Rusinov on 4/10/16.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface SOLUserService : NSObject
+@class SOLUserPlainObject;
+@class NSPredicate;
+
+typedef void (^SOLUserCompletionBlock) (NSArray<SOLUserPlainObject *> * list, NSError *error);
+
+@protocol SOLUserService <NSObject>
+
+- (NSArray<SOLUserPlainObject *> *)obtainUsersWithPredicate:(NSPredicate *)predicate;
+- (void)updateUsersWithPredicate:(NSPredicate *)predicate completionBlock:(SOLUserCompletionBlock)completionBlock;
 
 @end

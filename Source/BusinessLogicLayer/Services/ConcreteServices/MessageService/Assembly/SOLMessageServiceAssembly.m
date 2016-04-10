@@ -24,7 +24,7 @@
 
 + (id<SOLMessageService>)messageService {
     
-    id <SOLMessageService> service = [[SOLMessageServiceImplementation alloc] init];
+    SOLMessageServiceImplementation *service = [[SOLMessageServiceImplementation alloc] init];
     service.transport = [[SOLMessageTransportImplementation alloc] init];
     service.mapper = [[SOLMessageMapperImplementation alloc] init];
     service.cache = [[SOLMessageCacheImplementation alloc] init];

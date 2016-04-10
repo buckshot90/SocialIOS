@@ -10,4 +10,9 @@
 
 @implementation SOLUserPlainObject
 
+- (NSString *)description {
+    
+    return [NSString stringWithFormat:@"name: %@", self.firstName];
+}
+
 @end

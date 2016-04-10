@@ -27,7 +27,7 @@
     if (self) {
         
         NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"MM/dd/yyyy hh:mma"];
+        [formatter setDateFormat:@"hh:mm"];
         _dialogDate = [formatter stringFromDate:[NSDate dateWithTimeIntervalSince1970: message.date.doubleValue]];
         
         _dialogTitle = message.title;

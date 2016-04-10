@@ -15,9 +15,13 @@
 #import "SOLDialogListViewInput.h"
 #import "SOLDialogListViewOutput.h"
 
-@interface SOLDialogListTableViewController () <SOLDialogDataDisplayManagerDelegate>
+#import "SOLUserService.h"
+#import "SOLUserServiceImplementation.h"
+#import "SOLUserServiceAssembly.h"
 
-@property (strong, nonatomic) id <SOLMessageService> service;
+@interface SOLDialogListTableViewController () <SOLDialogDataDisplayManagerDelegate, SOLDialogDataDisplayManagerDataSource>
+
+@property (strong, nonatomic) UISearchController *searchController;
 
 @end
 
@@ -25,12 +29,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 
     [self.output setupView];
 }
@@ -40,8 +38,22 @@
 - (void)setupViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs {
     
     _dataDisplayManager.delegate = self;
+    _dataDisplayManager.dataSource = self;
     self.tableView.delegate = _dataDisplayManager;
     self.tableView.dataSource = _dataDisplayManager;
+    
+    self.searchController = [[UISearchController alloc] initWithSearchResultsController:nil];
+    self.searchController.searchResultsUpdater = _dataDisplayManager;
+    self.searchController.searchBar.delegate = _dataDisplayManager;
+    self.searchController.dimsBackgroundDuringPresentation = NO;
+    
+    self.searchController.searchBar.scopeButtonTitles = @[@"Dialogs", @"Messages"];
+    self.tableView.tableHeaderView = self.searchController.searchBar;
+    
+    SOLUserServiceImplementation *service = [SOLUserServiceAssembly userService];
+    [service updateUsersWithPredicate:nil completionBlock:^(NSArray<SOLUserPlainObject *> *list, NSError *error) {
+        
+    }];
 }
 
 - (void)updateViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs {
@@ -59,6 +71,11 @@
 - (void)didTapCellWithDialog:(SOLMessagePlainObject *)dialog {
     
     [self.output didTriggerTapCellWithMessage:dialog];
+}
+
+- (UISearchController *)searchResultsController {
+    
+    return _searchController;
 }
 
 @end

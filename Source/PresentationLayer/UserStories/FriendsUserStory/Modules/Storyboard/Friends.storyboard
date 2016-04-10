@@ -5,37 +5,37 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="5iF-YA-ate">
+        <scene sceneID="2rU-eX-Icc">
             <objects>
-                <tableViewController storyboardIdentifier="SOLDialogListTableViewController" id="S0x-wc-Jmq" customClass="SOLDialogListTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yZt-lg-Tma">
+                <tableViewController id="qLx-Nv-Cde" customClass="SOLFriendListTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sze-nB-v78">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="72x-7y-ayf">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="x4O-nN-9kF">
                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="72x-7y-ayf" id="r9x-4O-9AO">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="x4O-nN-9kF" id="YDP-Ni-Y7R">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="S0x-wc-Jmq" id="Ui0-JT-Jij"/>
-                            <outlet property="delegate" destination="S0x-wc-Jmq" id="4bc-82-vte"/>
+                            <outlet property="dataSource" destination="qLx-Nv-Cde" id="DxP-xd-7m1"/>
+                            <outlet property="delegate" destination="qLx-Nv-Cde" id="ZYM-lq-D6a"/>
                         </connections>
                     </tableView>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0jO-N2-vkz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="Wui-9Z-1z5" customClass="SOLDialogListModuleAssembly">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJs-cV-NLE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="JHN-rb-B8Z" customClass="SOLFriendListModuleAssembly">
                     <connections>
-                        <outlet property="viewController" destination="S0x-wc-Jmq" id="HTe-1E-bYD"/>
+                        <outlet property="viewController" destination="qLx-Nv-Cde" id="XVl-Wk-A5v"/>
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="343" y="598"/>
+            <point key="canvasLocation" x="597" y="456"/>
         </scene>
     </scenes>
 </document>

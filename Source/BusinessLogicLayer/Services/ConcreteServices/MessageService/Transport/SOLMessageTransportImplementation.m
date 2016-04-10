@@ -13,8 +13,8 @@
 
 - (void)getDialogsWithCompletionBlock:(SOLMessageTransportCompletionBlock)completionBlock {
     
-    VKRequest *getDialogs = [VKRequest requestWithMethod:@"messages.getDialogs" andParameters:@{VK_API_COUNT: @200}];
-    [getDialogs executeWithResultBlock:^(VKResponse *response) {
+    VKRequest *getMessages = [VKRequest requestWithMethod:@"messages.getDialogs" andParameters:@{VK_API_COUNT: @200}];
+    [getMessages executeWithResultBlock:^(VKResponse *response) {
         
         if ([response.json isKindOfClass:[NSDictionary class]]) {
             
@@ -22,6 +22,7 @@
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
                     completionBlock([[response.json objectForKey:@"items"] copy], nil);
+                    NSLog(@"Message json: %@", [response.json objectForKey:@"items"]);
                 });
             }
         }

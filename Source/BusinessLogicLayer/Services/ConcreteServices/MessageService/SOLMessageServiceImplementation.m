@@ -7,18 +7,15 @@
 //
 
 #import "SOLMessageServiceImplementation.h"
-#import <MagicalRecord/MagicalRecord.h>
 
 @implementation SOLMessageServiceImplementation
 
-@synthesize transport = _transport, mapper = _mapper, cache = _cache;
-
-- (void)updateDialogWithPredicate:(NSPredicate *)predicate completionBlock:(SOLMessageCompletionBlock)completionBlock {
+- (void)updateMessagesWithPredicate:(NSPredicate *)predicate completionBlock:(SOLMessageCompletionBlock)completionBlock {
     
     typeof(self) __weak weakSelf = self;
     [self.transport getDialogsWithCompletionBlock:^(id data, NSError *error) {
-        typeof(self) __strong strongSelf = weakSelf;
         
+        typeof(self) __strong strongSelf = weakSelf;
         if (strongSelf && [data isKindOfClass:[NSArray class]]) {
             
             NSArray *list = (NSArray *)data;
@@ -36,7 +33,7 @@
     }];
 }
 
-- (id)obtainDialogWithPredicate:(NSPredicate *)predicate {
+- (NSArray<SOLMessagePlainObject *> *)obtainMessagesWithPredicate:(NSPredicate *)predicate {
     
     return [self.cache cacheWithPredicate:predicate mapper:self.mapper];
 }

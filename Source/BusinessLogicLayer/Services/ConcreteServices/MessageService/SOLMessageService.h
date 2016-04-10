@@ -17,11 +17,7 @@ typedef void (^SOLMessageCompletionBlock) (NSArray<SOLMessagePlainObject *> * li
 
 @protocol SOLMessageService <NSObject>
 
-@property (strong, nonatomic) id <SOLMessageMapper> mapper;
-@property (strong, nonatomic) id <SOLMessageTransport> transport;
-@property (strong, nonatomic) id <SOLMessageCache> cache;
-
-- (id)obtainDialogWithPredicate:(NSPredicate *)predicate;
-- (void)updateDialogWithPredicate:(NSPredicate *)predicate completionBlock:(SOLMessageCompletionBlock)completionBlock;
+- (NSArray<SOLMessagePlainObject *> *)obtainMessagesWithPredicate:(NSPredicate *)predicate;
+- (void)updateMessagesWithPredicate:(NSPredicate *)predicate completionBlock:(SOLMessageCompletionBlock)completionBlock;
 
 @end

@@ -10,4 +10,9 @@
 #import "SOLMessageService.h"
 
 @interface SOLMessageServiceImplementation : NSObject <SOLMessageService>
+
+@property (strong, nonatomic) id <SOLMessageMapper> mapper;
+@property (strong, nonatomic) id <SOLMessageTransport> transport;
+@property (strong, nonatomic) id <SOLMessageCache> cache;
+
 @end

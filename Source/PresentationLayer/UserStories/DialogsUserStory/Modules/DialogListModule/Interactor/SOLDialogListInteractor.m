@@ -16,7 +16,7 @@
 - (void)updateDialogList {
     
     typeof(self) __weak weakSelf = self;
-    [self.messageService updateDialogWithPredicate:nil completionBlock:^(NSArray<SOLMessagePlainObject *> *list, NSError *error) {
+    [self.messageService updateMessagesWithPredicate:nil completionBlock:^(NSArray<SOLMessagePlainObject *> *list, NSError *error) {
         
         typeof(self) __strong strongSelf = weakSelf;
         NSArray<SOLMessagePlainObject *> *sortedMessages = [strongSelf sortByDateWithMessages:list];
@@ -26,7 +26,7 @@
 
 - (NSArray<SOLMessagePlainObject *> *)obtainDialogList {
     
-    NSArray<SOLMessagePlainObject *> *messages = [self.messageService obtainDialogWithPredicate:nil];
+    NSArray<SOLMessagePlainObject *> *messages = [self.messageService obtainMessagesWithPredicate:nil];
     return [self sortByDateWithMessages:messages];
 }
 
