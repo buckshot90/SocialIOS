@@ -46,7 +46,7 @@
     }];
 }
 
-#pragma mark - SOLDialogDataDisplayManagerDelegate
+#pragma mark - SOLDataDisplayManagerDelegate
 
 - (void)didUpdateTableView {
     
@@ -56,6 +56,8 @@
 - (void)didTapCellWithPlainObject:(id<SOLPlainObject>)plainObj {
     
 }
+
+#pragma mark - SOLDataDisplayManagerDataSource
 
 - (UISearchController *)searchResultsController {
     

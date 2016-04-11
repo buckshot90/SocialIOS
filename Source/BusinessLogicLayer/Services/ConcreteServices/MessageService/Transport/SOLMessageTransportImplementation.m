@@ -21,8 +21,9 @@
             if ([[response.json objectForKey:@"items"] isKindOfClass:[NSArray class]]) {
                 
                 dispatch_async(dispatch_get_main_queue(), ^{
+                    
                     completionBlock([[response.json objectForKey:@"items"] copy], nil);
-                    NSLog(@"Message json: %@", [response.json objectForKey:@"items"]);
+//                    NSLog(@"Message json: %@", [response.json objectForKey:@"items"]);
                 });
             }
         }
