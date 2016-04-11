@@ -36,6 +36,13 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:self.navigationItem.backBarButtonItem.style target:nil action:nil];
 }
 
+- (void)viewDidLayoutSubviews {
+    [self roundTopCornersRadius:6.0f textField:self.phone];
+    [self roundBottomCornersRadius:0.0f textField:self.firstName];
+    [self roundBottomCornersRadius:0.0f textField:self.lastName];
+    [self roundBottomCornersRadius:6.0f textField:self.password];
+}
+
 - (void)buildHeader {
     [self.view setBackgroundColor:[UIColor colorWithPatternImage:[UIImage imageNamed: @"Background"]]];
     [self.navigationController.navigationBar setBackgroundImage:[[UIImage imageNamed:@"Header"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
@@ -205,8 +212,7 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
     [self.lastName setPlaceholder:[@"lastNameText" localized]];
     
     self.phone = [[UITextField alloc] init];
-    [self.phone setBorderStyle:UITextBorderStyleNone];
-    [self.phone setBackgroundColor:[UIColor whiteColor]];
+    [self.phone setBorderStyle:UITextBorderStyleRoundedRect];
     [self.phone setPlaceholder:[@"phoneText" localized]];
     [self.phone setPlaceholder:[@"380995031116" localized]];
     
@@ -241,7 +247,7 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
         self.phone.translatesAutoresizingMaskIntoConstraints = NO;
         self.password.translatesAutoresizingMaskIntoConstraints = NO;
         // textfiled name
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.firstName attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:80]];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.firstName attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.phone attribute:NSLayoutAttributeBottom multiplier:1.0f constant:0]];
         
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.firstName attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:kConstsIndent]];
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.firstName attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:kConstsIndent]];
@@ -250,13 +256,17 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
         
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.lastName attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:kConstsIndent]];
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view   attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.lastName attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:kConstsIndent]];
+        
         // textfiled phone
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.phone attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.lastName attribute:NSLayoutAttributeBottom multiplier:1.0f constant:0]];
+        
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.phone attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeTop multiplier:1.0f constant:80]];
         
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.phone attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:kConstsIndent]];
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.phone attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:kConstsIndent]];
+        
         //    textfiled password
-        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.password attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.phone attribute:NSLayoutAttributeBottom multiplier:1.0f constant:0]];
+        
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.password attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self.lastName attribute:NSLayoutAttributeBottom multiplier:1.0f constant:0]];
         
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.password attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:self.view attribute:NSLayoutAttributeLeading multiplier:1.0f constant:kConstsIndent]];
         [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:self.password attribute:NSLayoutAttributeTrailing multiplier:1.0f constant:kConstsIndent]];
@@ -268,7 +278,39 @@ typedef void (^CompletionHandler)(NSUInteger response, NSError *error);
     }
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
+- (void)roundCorners:(UIRectCorner)corners radius:(CGFloat)radius textField:(UITextField *)textField
+{
+    CGRect bounds = CGRectMake(0, 0, textField.frame.size.width, textField.frame.size.height);
+    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:bounds
+                                                   byRoundingCorners:corners
+                                                         cornerRadii:CGSizeMake(radius, radius)];
+    
+    CAShapeLayer *maskLayer = [CAShapeLayer layer];
+    maskLayer.frame = bounds;
+    maskLayer.path = maskPath.CGPath;
+    
+    textField.layer.mask = maskLayer;
+    
+    CAShapeLayer*   frameLayer = [CAShapeLayer layer];
+    frameLayer.frame = bounds;
+    frameLayer.path = maskPath.CGPath;
+    frameLayer.strokeColor = [UIColor blackColor].CGColor;
+    frameLayer.fillColor = nil;
+    
+    [textField.layer addSublayer:frameLayer];
+}
+
+- (void)roundTopCornersRadius:(CGFloat)radius textField:(UITextField *)textField
+{
+    [self roundCorners:(UIRectCornerTopLeft|UIRectCornerTopRight) radius:radius textField:textField];
+}
+
+- (void)roundBottomCornersRadius:(CGFloat)radius textField:(UITextField *)textField
+{
+    [self roundCorners:(UIRectCornerBottomLeft|UIRectCornerBottomRight) radius:radius textField:textField];
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
 

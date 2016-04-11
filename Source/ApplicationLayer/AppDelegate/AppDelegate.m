@@ -8,10 +8,14 @@
 
 #import "AppDelegate.h"
 #import <CoreData/CoreData.h>
+#import "POOMessagesViewController.h"
+#import "POOLogInVKViewController.h"
+#import "POOLikedViewController.h"
+
 
 static NSArray *SCOPE = nil;
 
-@interface AppDelegate ()
+@interface AppDelegate () <VKSdkDelegate, VKSdkUIDelegate>
 
 @end
 
@@ -19,8 +23,8 @@ static NSArray *SCOPE = nil;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    SCOPE = @[VK_PER_FRIENDS, VK_PER_WALL, VK_PER_AUDIO, VK_PER_PHOTOS, VK_PER_NOHTTPS, VK_PER_EMAIL, VK_PER_MESSAGES];
-    
+    [self initVKSdk];
+    //[VKSdk forceLogout];
     self.friendListViewController = [[POFriendsListViewController alloc]init];
     UINavigationController *friendListNavigationConrloller = [[UINavigationController alloc] initWithRootViewController:self.friendListViewController];
     friendListNavigationConrloller.tabBarItem.title = @"Friend list Tab";
@@ -39,21 +43,43 @@ static NSArray *SCOPE = nil;
     POOFacebookData *facebookDateViewController = [[POOFacebookData alloc] init];
     UINavigationController *navigationFacebookDateViewController = [[UINavigationController alloc] initWithRootViewController:facebookDateViewController];
     
-//    [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
-//        if (state == VKAuthorizationAuthorized) {
-//            
-//        } else {
-//            
-//            [VKSdk authorize:SCOPE];
-//        }
-//    }];
-
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window setRootViewController:navigationFacebookDateViewController];
-    [self.window makeKeyAndVisible];
+    
+    
+    [VKSdk wakeUpSession:SCOPE completeBlock:^(VKAuthorizationState state, NSError *error) {
+        if (state == VKAuthorizationAuthorized) {
+            [self buildTabBar];
+            [self.window setRootViewController:self.tabBarController];
+            [self.window makeKeyAndVisible];
+        } else {
+            self.window.backgroundColor = [UIColor whiteColor];
+            [self.window setRootViewController:navigationFacebookDateViewController];
+            [self.window makeKeyAndVisible];
+        }
+    }];
     
     return [[FBSDKApplicationDelegate sharedInstance] application:application
                                                       didFinishLaunchingWithOptions:launchOptions];
+}
+
+- (void)initVKSdk {
+    SCOPE = @[VK_PER_FRIENDS, VK_PER_WALL, VK_PER_AUDIO, VK_PER_PHOTOS, VK_PER_NOHTTPS, VK_PER_EMAIL, VK_PER_MESSAGES];
+    [[VKSdk initializeWithAppId:@"5187957"] registerDelegate:self];
+    //[[VKSdk instance] setUiDelegate:self];
+}
+
+- (void)buildTabBar {
+    UINavigationController *navControllerloginViewController = [[UINavigationController alloc] initWithRootViewController:[[POOLogInVKViewController alloc] init]];
+    navControllerloginViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Contacts" image:[UIImage imageNamed:@"DockContacts"] tag:0];
+    
+    UINavigationController *navControllerMessagesViewController = [[UINavigationController alloc] initWithRootViewController:[[POOMessagesViewController alloc] init]];
+    navControllerMessagesViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Message" image:[UIImage imageNamed:@"DockMessages"] tag:1];
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([POOLikedViewController class]) bundle:nil];
+    POOLikedViewController *likedViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([POOLikedViewController class])];
+    UINavigationController *likedViewControllerNavigationController = [[UINavigationController alloc] initWithRootViewController:likedViewController];
+    likedViewControllerNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Liked" image:[UIImage imageNamed:@"DockFaves"] tag:2];
+    
+    self.tabBarController.viewControllers = @[likedViewControllerNavigationController,  navControllerMessagesViewController, navControllerloginViewController];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
@@ -150,6 +176,26 @@ static NSArray *SCOPE = nil;
 
 - (NSURL *)applicationDocumentsDirectory {
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (void) vkSdkAccessAuthorizationFinishedWithResult:(VKAuthorizationResult *)result {
+    if (result.token) {
+        
+    }
+    if (result.error) {
+        NSLog(@"Error:%@",result.error);
+    }
+}
+
+- (void)vkSdkUserAuthorizationFailed {
+    NSLog(@"vkSdkUserAuthorizationFailed");
+}
+
+- (void)vkSdkShouldPresentViewController:(UIViewController *)controller {
+}
+
+- (void)vkSdkNeedCaptchaEnter:(VKError *)captchaError {
+    NSLog(@"vkSdkNeedCaptchaEnter");
 }
 
 @end

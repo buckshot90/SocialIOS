@@ -12,11 +12,8 @@
 
 + (instancetype)cell;
 + (NSString *)identifier;
-+ (CGFloat)heightWithPOOFriendText:(NSString *)title subTitle:(NSString *)subTitle andMaxWidth:(CGFloat)maxWidth;
 
 - (void)configureWithTitleLabel:(NSString *)titleString  andSubtitleLabel:(NSString *) SubTitleString;
-- (void) loadImageFromURL:(NSString *)URL;
-- (void)configureWithName:(NSString *)name  SecondName:(NSString *) secondName online:(NSInteger) online image:(NSString *) image;
 - (void)configureWithName:(NSString *)name  SecondName:(NSString *) secondName;
 
 @end

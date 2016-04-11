@@ -62,7 +62,11 @@
 		D2A8CBCF1BC7A9B1006BF1F6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A8CBC81BC7A9B1006BF1F6 /* FBSDKLoginKit.framework */; };
 		D2A8CBD51BC7B874006BF1F6 /* POOTESTFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CBD41BC7B874006BF1F6 /* POOTESTFriend.m */; };
 		D2A8CBDF1BC7CD9A006BF1F6 /* POFriendsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CBDD1BC7CD9A006BF1F6 /* POFriendsListViewController.m */; };
+		D2AB05E51CBB940F0078FAE1 /* POOLikedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AB05E41CBB940F0078FAE1 /* POOLikedViewController.m */; };
+		D2AB05E71CBB94380078FAE1 /* POOLikedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2AB05E61CBB94380078FAE1 /* POOLikedViewController.storyboard */; };
 		D2C43ABD1BE3AE7000E0C170 /* POOWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C43ABC1BE3AE7000E0C170 /* POOWebController.m */; };
+		D2E742EB1CB4220600F0632C /* POOVkFriendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E742E91CB4220600F0632C /* POOVkFriendTableViewCell.m */; };
+		D2E742EC1CB4220600F0632C /* POOVkFriendTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2E742EA1CB4220600F0632C /* POOVkFriendTableViewCell.xib */; };
 		D2F8AC381C4E6A3A00FB1DB0 /* POOPhoneBookContact.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F8AC371C4E6A3A00FB1DB0 /* POOPhoneBookContact.m */; };
 		D2F8AC3A1C4E746E00FB1DB0 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F8AC391C4E746E00FB1DB0 /* Contacts.framework */; };
 		D2FBF0071C1F0BAC005CEACA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FBF0061C1F0BAC005CEACA /* SafariServices.framework */; };
@@ -184,11 +188,17 @@
 		D2A8CBD41BC7B874006BF1F6 /* POOTESTFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOTESTFriend.m; sourceTree = "<group>"; };
 		D2A8CBDC1BC7CD9A006BF1F6 /* POFriendsListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POFriendsListViewController.h; sourceTree = "<group>"; };
 		D2A8CBDD1BC7CD9A006BF1F6 /* POFriendsListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POFriendsListViewController.m; sourceTree = "<group>"; };
+		D2AB05E31CBB940F0078FAE1 /* POOLikedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOLikedViewController.h; sourceTree = "<group>"; };
+		D2AB05E41CBB940F0078FAE1 /* POOLikedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOLikedViewController.m; sourceTree = "<group>"; };
+		D2AB05E61CBB94380078FAE1 /* POOLikedViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = POOLikedViewController.storyboard; sourceTree = "<group>"; };
 		D2C43ABB1BE3AE7000E0C170 /* POOWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOWebController.h; sourceTree = "<group>"; };
 		D2C43ABC1BE3AE7000E0C170 /* POOWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOWebController.m; sourceTree = "<group>"; };
 		D2C4FECD1CA32D8C00E7F621 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "Pods/../build/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
 		D2C4FECF1CA32D9100E7F621 /* VK_ios_sdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VK_ios_sdk.framework; path = "Pods/../build/Debug-iphoneos/VK_ios_sdk.framework"; sourceTree = "<group>"; };
 		D2DEDF881C4AA705006ED545 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D2E742E81CB4220600F0632C /* POOVkFriendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOVkFriendTableViewCell.h; sourceTree = "<group>"; };
+		D2E742E91CB4220600F0632C /* POOVkFriendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOVkFriendTableViewCell.m; sourceTree = "<group>"; };
+		D2E742EA1CB4220600F0632C /* POOVkFriendTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = POOVkFriendTableViewCell.xib; sourceTree = "<group>"; };
 		D2F8AC361C4E6A3A00FB1DB0 /* POOPhoneBookContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POOPhoneBookContact.h; sourceTree = "<group>"; };
 		D2F8AC371C4E6A3A00FB1DB0 /* POOPhoneBookContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POOPhoneBookContact.m; sourceTree = "<group>"; };
 		D2F8AC391C4E746E00FB1DB0 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
@@ -468,6 +478,9 @@
 				D26918F01C98244000FD90C6 /* POOMessagesViewController.h */,
 				D26918F11C98244000FD90C6 /* POOMessagesViewController.m */,
 				D26918F31C98280200FD90C6 /* POOMessagesViewController.storyboard */,
+				D2AB05E31CBB940F0078FAE1 /* POOLikedViewController.h */,
+				D2AB05E41CBB940F0078FAE1 /* POOLikedViewController.m */,
+				D2AB05E61CBB94380078FAE1 /* POOLikedViewController.storyboard */,
 			);
 			name = "VK Controllers";
 			sourceTree = "<group>";
@@ -528,6 +541,9 @@
 				D26919001C9AA21700FD90C6 /* POOVkMessageTableViewCell.h */,
 				D26919011C9AA21700FD90C6 /* POOVkMessageTableViewCell.m */,
 				D26919021C9AA21700FD90C6 /* POOVkMessageTableViewCell.xib */,
+				D2E742E81CB4220600F0632C /* POOVkFriendTableViewCell.h */,
+				D2E742E91CB4220600F0632C /* POOVkFriendTableViewCell.m */,
+				D2E742EA1CB4220600F0632C /* POOVkFriendTableViewCell.xib */,
 			);
 			name = VKCell;
 			sourceTree = "<group>";
@@ -730,8 +746,10 @@
 				D26C192A1C6A3D39007B3CB4 /* Localizable.strings in Resources */,
 				D27085051C5A51B9004B1822 /* POOTableViewCell.xib in Resources */,
 				D2A8CBAE1BC7A62C006BF1F6 /* Main.storyboard in Resources */,
+				D2AB05E71CBB94380078FAE1 /* POOLikedViewController.storyboard in Resources */,
 				D24BAD311BE7B7E0003C96A9 /* POOFeedTableViewCell.xib in Resources */,
 				D26919041C9AA21700FD90C6 /* POOVkMessageTableViewCell.xib in Resources */,
+				D2E742EC1CB4220600F0632C /* POOVkFriendTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -811,6 +829,7 @@
 				5633E3361CB2876E0025D290 /* SOLFriendService.m in Sources */,
 				D293A2131C47D0A300EDDF59 /* POOLogInVKViewController.m in Sources */,
 				D225FB851BDA398900711C53 /* POOCache.m in Sources */,
+				D2AB05E51CBB940F0078FAE1 /* POOLikedViewController.m in Sources */,
 				D26F11251C9F15DA004DE72C /* POORequstManager.m in Sources */,
 				5633E3811CB2D9EF0025D290 /* SOLDialogPlainObject.m in Sources */,
 				D26918FC1C9854D300FD90C6 /* OutputFaceBookData.xcdatamodeld in Sources */,
@@ -825,6 +844,7 @@
 				5633E3341CB2876E0025D290 /* SOLAudioService.m in Sources */,
 				D2F8AC381C4E6A3A00FB1DB0 /* POOPhoneBookContact.m in Sources */,
 				5633E3381CB2876E0025D290 /* SOLAudioPlainObject.m in Sources */,
+				D2E742EB1CB4220600F0632C /* POOVkFriendTableViewCell.m in Sources */,
 				D2C43ABD1BE3AE7000E0C170 /* POOWebController.m in Sources */,
 				5633E3771CB2D15E0025D290 /* SOLDialogListRouter.m in Sources */,
 				D24BAD341BE7C0E4003C96A9 /* POOFeedViewController.m in Sources */,

@@ -13,6 +13,10 @@ typedef void (^CompletionHandlerWithDictionary)(NSUInteger code, NSDictionary *r
 
 @interface POORequstManager : NSObject
 
++ (void)GetFollowersWithId:(NSString *)id offset:(NSInteger)offset count:(NSInteger)count block:(compliteHendler)block;
+
++ (void)getSuggestionsWithFilter:(NSString *)filter count:(NSInteger)count offset:(NSInteger)offset block:(compliteHendler)block;
+
 + (void)getDialogs:(NSInteger)count offset:(NSInteger)offset block:(compliteHendler)block;
 - (void) getDialogsCountWithNoVkSdk:(NSInteger)cout accesToken:(NSString *)accesToken block:(compliteHendler)block;
 

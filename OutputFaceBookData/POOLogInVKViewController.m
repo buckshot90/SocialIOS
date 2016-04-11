@@ -8,6 +8,7 @@
 
 #import <Contacts/Contacts.h>
 #import "POOLogInVKViewController.h"
+#import "POOVkFriendTableViewCell.h"
 #import "POOVKUserModel.h"
 #import "POOTableViewCell.h"
 #import "POOPhoneBookContact.h"
@@ -18,6 +19,8 @@
 #import "POOVKTableViewCell.h"
 #import "Consts.h"
 #import "POORequstManager.h"
+
+static NSString *MyIdentifier = @"identefire_name";
 
 typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSError *error);
 
@@ -31,7 +34,8 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSMutableDictionary *namesBySection;
 @property (strong, nonatomic) NSArray *sectionSource;
-@property (strong, nonatomic)NSArray *invates;
+@property (strong, nonatomic) NSMutableArray *secondSegmentSource;
+@property (strong, nonatomic) NSArray *sectionSourceSeocndSegment;
 
 @property (strong, nonatomic) NSString *userId;
 
@@ -49,7 +53,8 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
         self.namesBySection = [[NSMutableDictionary alloc] init];
         self.sectionSource = [[NSMutableArray alloc] init];
         self.phoneContact = [[NSMutableArray alloc] init];
-        self.invates = [[NSArray alloc] init];
+        self.secondSegmentSource = [[NSMutableArray alloc] init];
+        self.sectionSourceSeocndSegment = self.secondSegmentSource;
     }
     
     return self;
@@ -68,7 +73,7 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
     self.sectionSource = [self getSortedArrayBySection:_phoneContact];
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle {
+- (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
 
@@ -92,13 +97,12 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
             important++;
         }
     }
-    
     return [self sortedKeys:sectionsKey];
 }
 
 - (NSArray *)sortedKeys:(NSMutableArray *)keys {
     [keys sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
-        if ([obj1 isEqual: @"Important"])
+        if ([obj1 isEqual: [@"importantKey" localized]] )
             return NSOrderedSame;
         
         else if (obj1 < obj2 )
@@ -107,20 +111,19 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
             return NSOrderedDescending;
     }];
     
-    return [keys copy];
+    return keys;
 }
 
 - (void)creatArrayUsersModel:(id)object sectionsKey:(NSMutableArray *)sectionsKey important:(NSInteger)important {
     POOVKUserModel *user = (POOVKUserModel *)object;
     NSString *sectionName;
+    NSMutableArray *nameInSection = nil;
 
-    if (important > 4 || self.segmentController.selectedSegmentIndex == 2) {
+    if (important > 4 || self.segmentController.selectedSegmentIndex == 2 || self.searchController.active) {
         sectionName = [user.name substringToIndex:1];
     } else {
         sectionName = [@"importantKey" localized];
     }
-    
-    NSMutableArray *nameInSection = nil;
     
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF == %@", sectionName];
     NSArray *foundSection = [sectionsKey filteredArrayUsingPredicate:predicate];
@@ -157,9 +160,28 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
 
 #pragma mark - Get Contacts, Friends, Invate methods
 - (void)getInvites {
-    
-    [POORequstManager getInvitesWith:YES needMutual:YES out:YES block:^(NSArray *response, NSError *error) {
-        self.invates = response;
+    [self.secondSegmentSource removeLastObject];
+    [POORequstManager getInvitesWith:YES needMutual:YES out:NO block:^(NSArray *response, NSError *error) {
+        [self.secondSegmentSource addObject:response];
+        
+        [POORequstManager getInvitesWith:YES needMutual:YES out:YES block:^(NSArray *response, NSError *error) {
+            [self.secondSegmentSource addObject:response];
+            [self getFollowers];
+            [self getSuggestions];
+        }];
+    }];
+}
+
+- (void)getSuggestions {
+    [POORequstManager getSuggestionsWithFilter:@"mutual" count:20 offset:0 block:^(NSArray *response, NSError *error) {
+        [self.secondSegmentSource addObject:response];
+        [self.tableView reloadData];
+    }];
+}
+
+- (void)getFollowers {
+    [POORequstManager GetFollowersWithId:self.userId offset:0 count:20 block:^(NSArray *response, NSError *error) {
+        [self.secondSegmentSource addObject:response];
     }];
 }
 
@@ -197,60 +219,106 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
             return [_sectionSource subarrayWithRange:NSMakeRange(1, self.sectionSource.count - 1)];
         }
     }
+    
+    if (self.segmentController.selectedSegmentIndex == 2) {
+        return nil;
+    }
+    
     return _sectionSource;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    if (self.segmentController.selectedSegmentIndex == 2) {
+        return self.secondSegmentSource.count;
+    }
     return _namesBySection.allKeys.count ;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    if (self.segmentController.selectedSegmentIndex == 2) {
+        NSArray *array = [self.secondSegmentSource objectAtIndex:section];
+        return array.count;
+    }
+    
     NSString *currentKey = [_sectionSource objectAtIndex:section];
     NSArray *currentNames = [_namesBySection objectForKey:currentKey];
     
     return currentNames.count;
 }
 
-- (NSString*)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if (self.segmentController.selectedSegmentIndex == 2) {
+        NSArray *header = @[[@"addToFriend" localized],
+                            [@"iSigned" localized],
+                            [@"Followers" localized],
+                            [@"Suggestions" localized]];
+        return [header objectAtIndex:section];
+    }
     return [_sectionSource objectAtIndex:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *MyIdentifier = @"identefire_name";
-    
     if (_segmentController.selectedSegmentIndex == 0) {
-        POOVKTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-        
-        if (cell == nil) {
-            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"POOVKTableViewCell" owner:self options:nil];
-            cell = [nib objectAtIndex:0];
-        }
-        NSString *curentKey = [_sectionSource objectAtIndex:indexPath.section];
-        NSArray * currentNames = [_namesBySection objectForKey:curentKey];
-        POOPhoneBookContact *phoneContact = [currentNames objectAtIndex:indexPath.row];
-        
-        [cell configureWithName:phoneContact.name SecondName:phoneContact.secondName];
-        
-        return cell;
+        return [self tableCellForZeroSegmentWithTable:tableView indexPath:indexPath];
     }
 
-    if (_segmentController.selectedSegmentIndex == 1 || _segmentController.selectedSegmentIndex == 2) {
-        POOVKTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
-        
-        if (cell == nil) {
-            NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"POOVKTableViewCell" owner:self options:nil];
-            cell = [nib objectAtIndex:0];
-        }
-        NSString *curentKey = [_sectionSource objectAtIndex:indexPath.section];
-        NSArray * currentNames = [_namesBySection objectForKey:curentKey];
-        POOVKUserModel *user = [currentNames objectAtIndex:indexPath.row];
-        
-        [cell configureWithName:user.name SecondName:user.lastName online:user.online image:user.image];
-        
-        return cell;
+    if (_segmentController.selectedSegmentIndex == 1) {
+        return [self tableCellForFirstSegmentWithTable:tableView indexPath:indexPath];
+    }
+    
+    if (_segmentController.selectedSegmentIndex == 2) {
+        return [self tableCellForSecondSegmentWithTable:tableView indexPath:indexPath];
     }
     
     return NULL;
+}
+
+- (UITableViewCell *)tableCellForZeroSegmentWithTable:(UITableView *)tableView indexPath:(NSIndexPath *) indexPath{
+    POOVKTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"POOVKTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    NSString *curentKey = [_sectionSource objectAtIndex:indexPath.section];
+    NSArray * currentNames = [_namesBySection objectForKey:curentKey];
+    POOPhoneBookContact *phoneContact = [currentNames objectAtIndex:indexPath.row];
+    
+    [cell configureWithName:phoneContact.name SecondName:phoneContact.secondName];
+    
+    return cell;
+}
+
+- (UITableViewCell *)tableCellForFirstSegmentWithTable:(UITableView *)tableView indexPath:(NSIndexPath *) indexPath {
+    POOVkFriendTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"POOVkFriendTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    NSString *curentKey = [_sectionSource objectAtIndex:indexPath.section];
+    NSArray * currentNames = [_namesBySection objectForKey:curentKey];
+    POOVKUserModel *user = [currentNames objectAtIndex:indexPath.row];
+    
+    [cell configWithName:user.name secondName:user.lastName online:user.online image:user.image];
+    
+    return cell;
+}
+
+- (UITableViewCell *)tableCellForSecondSegmentWithTable:(UITableView *)tableView indexPath:(NSIndexPath *) indexPath {
+    POOVkFriendTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+    
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"POOVkFriendTableViewCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    NSArray *sourceArrayForSegment = [self.secondSegmentSource objectAtIndex:indexPath.section];
+    POOVKUserModel *user = [sourceArrayForSegment objectAtIndex:indexPath.row];
+    
+    [cell configWithName:user.name secondName:user.lastName online:user.online image:user.image];
+    
+    return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -267,14 +335,6 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
     }
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSString *curentKey = [_sectionSource objectAtIndex:indexPath.section];
-    NSArray * currentNames = [_namesBySection objectForKey:curentKey];
-    POOVKUserModel *friend = [currentNames objectAtIndex:indexPath.row];
-    
-    return [POOTableViewCell heightWithPOOFriendText:friend.name subTitle:@"oline" andMaxWidth:CGRectGetWidth(_tableView.bounds)];
-}
-
 #pragma mark - Search Delegate
 - (void)updateSearchResultsForSearchController:(UISearchController *)searchController {
     NSString *searchString = searchController.searchBar.text;
@@ -283,19 +343,21 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
     if (![searchString isEqualToString:@""]) {
         if (_segmentController.selectedSegmentIndex == 0) {
             [self addContactsToArray:filtreadArray bySearchString:searchString];
+            _sectionSource = [self getSortedArrayBySection:filtreadArray];
         } if (_segmentController.selectedSegmentIndex == 1) {
             [self addFriendsToArray:filtreadArray bySearchString:searchString];
+            _sectionSource = [self getSortedArrayBySection:filtreadArray];
         } if (_segmentController.selectedSegmentIndex == 2) {
             [self addInvitesToArray:filtreadArray bySearchString:searchString];
+            _secondSegmentSource = filtreadArray;
         }
-        _sectionSource = [self getSortedArrayBySection:filtreadArray];
     } else {
         if (_segmentController.selectedSegmentIndex == 0) {
             _sectionSource = [self getSortedArrayBySection:_phoneContact];
         } if (_segmentController.selectedSegmentIndex == 1) {
             _sectionSource = [self getSortedArrayBySection:_friends];
         } if (_segmentController.selectedSegmentIndex == 2) {
-            _sectionSource = [self getSortedArrayBySection:_invates];
+            _secondSegmentSource = [_sectionSourceSeocndSegment mutableCopy];
         }
     }
     
@@ -319,10 +381,15 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
 }
 
 - (void) addInvitesToArray:(NSMutableArray *)array bySearchString:(NSString *)searchString {
-    for (POOVKUserModel *friend in _invates) {
-        if ([friend.name localizedCaseInsensitiveContainsString:searchString] || [friend.lastName localizedCaseInsensitiveContainsString:searchString]) {
-            [array addObject:friend];
+    
+    for (NSArray *usersArray in self.secondSegmentSource) {
+        NSMutableArray *tmpArray = [NSMutableArray array];
+        for (POOVKUserModel *user in usersArray) {
+            if ([user.name localizedCaseInsensitiveContainsString:searchString] || [user.lastName localizedCaseInsensitiveContainsString:searchString]) {
+                [tmpArray addObject:user];
+            }
         }
+        [array addObject:tmpArray];
     }
 }
 
@@ -354,37 +421,37 @@ typedef void (^CompletionHandler)(NSUInteger code, NSDictionary *response, NSErr
     [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:_tableView attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]];
 }
 
-
 - (void)creatSegmentController {
     self.segmentController = [[UISegmentedControl alloc] initWithItems:@[[@"segmentControllerContactText" localized],[@"segmentControllerFriendsText" localized], [@"segmentControllerInvitesText" localized]]];
+    
+    self.segmentController.layer.cornerRadius = 6.0f;
+    self.segmentController.clipsToBounds = YES;
     
     [self.segmentController setWidth:(self.view.frame.size.width / 3) -10 forSegmentAtIndex:0];
     [self.segmentController setWidth:(self.view.frame.size.width / 3) -10 forSegmentAtIndex:1];
     [self.segmentController setWidth:(self.view.frame.size.width / 3) -10 forSegmentAtIndex:2];
+    
     self.segmentController.tintColor = [UIColor whiteColor];
+    [self.segmentController setBackgroundImage:[UIImage imageNamed:@"Button_tab"] forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
     [self.segmentController addTarget:self action:@selector(segmentSwithcher:) forControlEvents:UIControlEventValueChanged];
+    
     self.navigationItem.titleView = _segmentController;
     self.segmentController.selectedSegmentIndex = 0;
 }
 
 - (void)segmentSwithcher:(UISegmentedControl *)segment {
     if (segment.selectedSegmentIndex == 0) {
-        
         self.sectionSource = [self getSortedArrayBySection:_phoneContact];
-        [self.tableView reloadData];
     }
     
     if (segment.selectedSegmentIndex == 1) {
-        
         self.sectionSource = [self getSortedArrayBySection:_friends];
-        [self.tableView reloadData];
     }
     
     if (segment.selectedSegmentIndex == 2) {
-        
-        self.sectionSource = [self getSortedArrayBySection:_invates];
-        [self.tableView reloadData];
     }
+    
+    [self.tableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -34,9 +34,21 @@
 
 // POOContactInfoViewController
 "sendMessageText" = "Send Message";
+"backButtonTitle" = "Назад";
+"addToFavorites" = "Добавить в избранное";
 
 // POOLogInVKViewController
 "segmentControllerContactText" = " Контакты";
 "segmentControllerFriendsText" = "Друзья";
 "segmentControllerInvitesText" = "Заявки";
 "importantKey" = " Важные";
+"iSigned" = "Я подписан";
+"Suggestions" = "Предпологаемые друзья";
+"addToFriend" = "Заявки в друзья";
+"Followers" = "Подписчики";
+
+// POOLikeViewController
+"Liked" = "Избранное";
+"POOLikedViewController.editButton" = "Ред.";
+"FooterTitle" = "Вы можете пригласить своих друзей и знакомых из записной книжки для обменная быстрыми и бесплатными сообщениями";
+"invaiteFriends" = "Пригласить друзей";

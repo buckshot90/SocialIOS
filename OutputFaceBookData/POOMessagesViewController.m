@@ -125,39 +125,4 @@ static NSString *MessagesIdent = @"MessagesIdent";
     NSLog(@"Memory worning");
 }
 
-//- (void)friendWithId:(NSArray *)usersId {
-//    NSString *ids = [usersId componentsJoinedByString:@","];
-//    NSString *stringFriendsRequest = [NSString
-//                                      stringWithFormat:@"http://api.vk.com/method/users.get?user_ids=%@&fields=online,photo_100",
-//                                      ids];
-//
-//    [self doRequestWithString:stringFriendsRequest block:^(NSArray *response, NSError *error) {
-//        if (response) {
-//            for (NSDictionary *dictionary in response) {
-//                POOVKUserModel *userModel = [[POOVKUserModel alloc] initWithDictionary:dictionary];
-//
-//                if (userModel) {
-//                    [self.friends addObject:userModel];
-//                }
-//            }
-//        } else {
-//            //TODO:make some code
-//        }
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            [self.tableView reloadData];
-//        });
-//    }];
-//}
-
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

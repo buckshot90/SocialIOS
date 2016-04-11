@@ -34,9 +34,21 @@
 
 // POOContactInfoViewController
 "sendMessageText" = "Send Message";
+"backButtonTitle" = "Back";
+"addToFavorites" = "Add to favorites";
 
 // POOLogInVKViewController
 "segmentControllerContactText" = "Contacts";
 "segmentControllerFriendsText" = "Friends";
 "segmentControllerInvitesText" = "Invites";
 "importantKey" = "Important";
+"iSigned" = "I signed";
+"Suggestions" = "Suggestions";
+"addToFriend" = "Applications Friend";
+"Followers" = "Followers";
+
+// POOLikeViewController
+"Liked" = "Liked";
+"POOLikedViewController.editButton" = "Edit";
+"FooterTitle" = "You can invite your friends and acquaintances from the notebook to exchange fast and free messaging";
+"invaiteFriends" = "Invaite Friends";

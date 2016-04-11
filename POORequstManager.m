@@ -17,6 +17,49 @@
 @implementation POORequstManager
 
 #pragma mark - vkSdkRequests
+
++ (void)GetFollowersWithId:(NSString *)id offset:(NSInteger)offset count:(NSInteger)count block:(compliteHendler)block {
+    VKRequest *requst = [VKRequest requestWithMethod:@"users.getFollowers"
+                                       andParameters:@{VK_API_USER_ID : [NSString stringWithFormat:@"%@",id],
+                                                       VK_API_OFFSET : [NSString stringWithFormat:@"%li",offset],
+                                                       VK_API_COUNT : [NSString stringWithFormat:@"%li",count],
+                                                       VK_API_FIELDS : @[VK_API_PHOTO,
+                                                                         VK_API_ONLINE]}];
+    [requst executeWithResultBlock:^(VKResponse *response) {
+        if([response.json isKindOfClass:[NSDictionary class]]) {
+            NSMutableArray *array = [NSMutableArray array];
+            
+            for (NSDictionary *dictionary in [response.json objectForKey:@"items"]) {
+                [array addObject:[[POOVKUserModel alloc] initWithDictionary:dictionary]];
+            }
+            block(array, nil);
+        }
+    } errorBlock:^(NSError *error) {
+        block(nil, error);
+    }];
+}
+
+//filter - the parameters, separated by commas
++ (void)getSuggestionsWithFilter:(NSString *)filter count:(NSInteger)count offset:(NSInteger)offset block:(compliteHendler)block {
+    VKRequest *request = [VKRequest requestWithMethod:@"friends.getSuggestions"
+                                       andParameters:@{@"filter" : filter,
+                                                       VK_API_COUNT : [NSNumber numberWithInteger:count]}];
+    NSMutableArray *ids = [NSMutableArray array];
+    [request executeWithResultBlock:^(VKResponse *response) {
+        if ([response.json isKindOfClass:[NSDictionary class]]) {
+            for (NSDictionary *dictonary in [response.json objectForKey:@"items"] ) {
+                [ids addObject:[dictonary objectForKey:@"id"]];
+            }
+            
+            [[self class] getUserInfoWithIds:ids block:^(NSArray *response, NSError *error) {
+                block(response, nil);
+            }];
+        }
+    } errorBlock:^(NSError *error) {
+        block(nil, error);
+    }];
+}
+
 + (void)getDialogs:(NSInteger)count offset:(NSInteger)offset block:(compliteHendler)block {
     VKRequest *requst = [VKRequest requestWithMethod:@"messages.getDialogs"
                                        andParameters:@{VK_API_COUNT : [NSNumber numberWithInteger:count],
@@ -39,6 +82,10 @@
 }
 
 + (void)getUserInfoWithIds:(NSArray *)friends block:(compliteHendler)block {
+    if (friends.count == 0) {
+        block(@[],nil);
+    }
+    
     VKRequest *request = [VKRequest requestWithMethod:@"users.get"
                                        andParameters:@{VK_API_USER_IDS : [friends componentsJoinedByString:@","],
                                                        VK_API_FIELDS : @[VK_API_ONLINE,

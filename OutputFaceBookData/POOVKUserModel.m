@@ -19,13 +19,17 @@
         id objectOnline = [dictionary objectForKey:@"online"];
         if ([objectOnline isKindOfClass:[NSNumber class]]) {
             
-            _online = ((NSNumber *)objectOnline).integerValue;
+            _online = ((NSNumber *)objectOnline).boolValue;
         }
         _image = [dictionary objectForKey:@"photo"];
         
         return self;
     }
     return nil;
+}
+
+- (NSString *)description {
+    return [NSString stringWithFormat:@"Name:%@\n LastName:%@",_name, _lastName];
 }
 
 @end

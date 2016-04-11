@@ -12,6 +12,7 @@
 #import "POOFacebookFeed.h"
 #import "POOLogInVKViewController.h"
 #import "POOMessagesViewController.h"
+#import "POOLikedViewController.h"
 #import "vkSdk.h"
 #import "StringLocalizer.h"
 #import "Consts.h"
@@ -64,8 +65,11 @@ static NSArray *SCOPE = nil;
     UINavigationController *navControllerMessagesViewController = [[UINavigationController alloc] initWithRootViewController:[[POOMessagesViewController alloc] init]];
     navControllerMessagesViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Message" image:[UIImage imageNamed:@"DockMessages"] tag:1];
     
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([POOLikedViewController class]) bundle:nil];
+    POOLikedViewController *likedViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([POOLikedViewController class])];
     
-    self.tabBarController.viewControllers = @[navControllerloginViewController, navControllerMessagesViewController];
+    
+    self.tabBarController.viewControllers = @[likedViewController, navControllerloginViewController, navControllerMessagesViewController];
 }
 
 #pragma mark - Button cliked
