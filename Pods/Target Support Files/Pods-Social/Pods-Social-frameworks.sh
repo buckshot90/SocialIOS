@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-OutputFaceBookData/AFNetworking.framework"
-  install_framework "Pods-OutputFaceBookData/MagicalRecord.framework"
-  install_framework "Pods-OutputFaceBookData/VK_ios_sdk.framework"
+  install_framework "Pods-Social/AFNetworking.framework"
+  install_framework "Pods-Social/MagicalRecord.framework"
+  install_framework "Pods-Social/VK_ios_sdk.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-OutputFaceBookData/AFNetworking.framework"
-  install_framework "Pods-OutputFaceBookData/MagicalRecord.framework"
-  install_framework "Pods-OutputFaceBookData/VK_ios_sdk.framework"
+  install_framework "Pods-Social/AFNetworking.framework"
+  install_framework "Pods-Social/MagicalRecord.framework"
+  install_framework "Pods-Social/VK_ios_sdk.framework"
 fi
