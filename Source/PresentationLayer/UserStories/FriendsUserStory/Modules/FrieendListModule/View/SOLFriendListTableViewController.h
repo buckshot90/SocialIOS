@@ -3,14 +3,16 @@
 //  Social
 //
 //  Created by Vitaliy Rusinov on 4/10/16.
-//  Copyright © 2016 Oleh Petrunko. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import "SOLFriendListDataDisplayManager.h"
+#import "SOLFriendListViewInput.h"
+#import "SOLFriendListViewOutput.h"
 
-@interface SOLFriendListTableViewController : UITableViewController
+@interface SOLFriendListTableViewController : UITableViewController <SOLFriendListViewInput>
 
+@property (strong, nonatomic) id<SOLFriendListViewOutput> output;
 @property (strong, nonatomic) SOLFriendListDataDisplayManager *dataDisplayManager;
 
 @end

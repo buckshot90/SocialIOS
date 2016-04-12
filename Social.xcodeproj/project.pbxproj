@@ -64,6 +64,9 @@
 		DF2F60DC1CB39F50006352D9 /* OutputFaceBookData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60D91CB39F50006352D9 /* OutputFaceBookData.xcdatamodeld */; };
 		DF3BFE231CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BFE221CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m */; };
 		DF3BFE281CB4CC100017ADA5 /* SOLApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BFE271CB4CC100017ADA5 /* SOLApplicationAssembly.m */; };
+		DF9A59BA1CBCD01E00E36683 /* SOLFriendListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A59B91CBCD01E00E36683 /* SOLFriendListInteractor.m */; };
+		DF9A59C01CBCD10700E36683 /* SOLFriendListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A59BF1CBCD10700E36683 /* SOLFriendListPresenter.m */; };
+		DF9A59C31CBCD12300E36683 /* SOLFriendListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A59C21CBCD12300E36683 /* SOLFriendListRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -192,6 +195,17 @@
 		DF3BFE221CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLThirdPartiesConfiguratorImplementation.m; sourceTree = "<group>"; };
 		DF3BFE261CB4CC100017ADA5 /* SOLApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLApplicationAssembly.h; sourceTree = "<group>"; };
 		DF3BFE271CB4CC100017ADA5 /* SOLApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLApplicationAssembly.m; sourceTree = "<group>"; };
+		DF9A59B81CBCD01E00E36683 /* SOLFriendListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListInteractor.h; sourceTree = "<group>"; };
+		DF9A59B91CBCD01E00E36683 /* SOLFriendListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListInteractor.m; sourceTree = "<group>"; };
+		DF9A59BC1CBCD0AA00E36683 /* SOLFriendListInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListInteractorOutput.h; sourceTree = "<group>"; };
+		DF9A59BD1CBCD0DF00E36683 /* SOLFriendListInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListInteractorInput.h; sourceTree = "<group>"; };
+		DF9A59BE1CBCD10700E36683 /* SOLFriendListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListPresenter.h; sourceTree = "<group>"; };
+		DF9A59BF1CBCD10700E36683 /* SOLFriendListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListPresenter.m; sourceTree = "<group>"; };
+		DF9A59C11CBCD12300E36683 /* SOLFriendListRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListRouter.h; sourceTree = "<group>"; };
+		DF9A59C21CBCD12300E36683 /* SOLFriendListRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListRouter.m; sourceTree = "<group>"; };
+		DF9A59C41CBCD29400E36683 /* SOLFriendListViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListViewInput.h; sourceTree = "<group>"; };
+		DF9A59C51CBCD2B300E36683 /* SOLFriendListViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListViewOutput.h; sourceTree = "<group>"; };
+		DF9A59C61CBCD5FB00E36683 /* SOLFriendListRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListRouterInput.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -748,6 +762,10 @@
 		DF0818DA1CBAB08300BACB69 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				DF9A59B81CBCD01E00E36683 /* SOLFriendListInteractor.h */,
+				DF9A59B91CBCD01E00E36683 /* SOLFriendListInteractor.m */,
+				DF9A59BD1CBCD0DF00E36683 /* SOLFriendListInteractorInput.h */,
+				DF9A59BC1CBCD0AA00E36683 /* SOLFriendListInteractorOutput.h */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -755,6 +773,8 @@
 		DF0818DB1CBAB08300BACB69 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				DF9A59BE1CBCD10700E36683 /* SOLFriendListPresenter.h */,
+				DF9A59BF1CBCD10700E36683 /* SOLFriendListPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -762,6 +782,9 @@
 		DF0818DC1CBAB08300BACB69 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				DF9A59C11CBCD12300E36683 /* SOLFriendListRouter.h */,
+				DF9A59C21CBCD12300E36683 /* SOLFriendListRouter.m */,
+				DF9A59C61CBCD5FB00E36683 /* SOLFriendListRouterInput.h */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -775,6 +798,8 @@
 				DF0818F81CBAC89E00BACB69 /* DataDisplayManager */,
 				DF0818DE1CBAB0BA00BACB69 /* SOLFriendListTableViewController.h */,
 				DF0818DF1CBAB0BA00BACB69 /* SOLFriendListTableViewController.m */,
+				DF9A59C41CBCD29400E36683 /* SOLFriendListViewInput.h */,
+				DF9A59C51CBCD2B300E36683 /* SOLFriendListViewOutput.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -935,7 +960,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
-				ORGANIZATIONNAME = "Oleh Petrunko";
+				ORGANIZATIONNAME = OCP;
 				TargetAttributes = {
 					D2A8CB9F1BC7A62C006BF1F6 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -1038,6 +1063,7 @@
 				DF0E7DD91CB6314B007E67E6 /* SOLDialogTableViewCell.m in Sources */,
 				56E09D7F1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m in Sources */,
 				56D067BA1CB51A6300B58F98 /* Message.m in Sources */,
+				DF9A59C31CBCD12300E36683 /* SOLFriendListRouter.m in Sources */,
 				5633E36E1CB2CFEB0025D290 /* SOLDialogListInteractor.m in Sources */,
 				5633E3741CB2D0FD0025D290 /* SOLDialogListPresenter.m in Sources */,
 				DF0818C51CBA98B200BACB69 /* SOLUserMapperImplementation.m in Sources */,
@@ -1050,8 +1076,10 @@
 				5633E33A1CB2876E0025D290 /* SOLUserPlainObject.m in Sources */,
 				DF3BFE281CB4CC100017ADA5 /* SOLApplicationAssembly.m in Sources */,
 				D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */,
+				DF9A59C01CBCD10700E36683 /* SOLFriendListPresenter.m in Sources */,
 				DF0818E01CBAB0BA00BACB69 /* SOLFriendListTableViewController.m in Sources */,
 				DF0818CA1CBAA39800BACB69 /* SOLUserCacheImplementation.m in Sources */,
+				DF9A59BA1CBCD01E00E36683 /* SOLFriendListInteractor.m in Sources */,
 				56D067B91CB51A6300B58F98 /* Message+CoreDataProperties.m in Sources */,
 				56E09D7B1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m in Sources */,
 				5633E3811CB2D9EF0025D290 /* SOLMessagePlainObject.m in Sources */,
