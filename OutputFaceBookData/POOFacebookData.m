@@ -67,9 +67,10 @@ static NSArray *SCOPE = nil;
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([POOLikedViewController class]) bundle:nil];
     POOLikedViewController *likedViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([POOLikedViewController class])];
+    UINavigationController *likedViewControllerNavigationController = [[UINavigationController alloc] initWithRootViewController:likedViewController];
+    likedViewControllerNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Liked" image:[UIImage imageNamed:@"DockFaves"] tag:2];
     
-    
-    self.tabBarController.viewControllers = @[likedViewController, navControllerloginViewController, navControllerMessagesViewController];
+    self.tabBarController.viewControllers = @[likedViewControllerNavigationController,  navControllerMessagesViewController, navControllerloginViewController];
 }
 
 #pragma mark - Button cliked
@@ -168,6 +169,8 @@ static NSArray *SCOPE = nil;
     [vkRegistration setBackgroundImage:[UIImage imageNamed:@"RegButton"] forState:UIControlStateNormal];
     [vkRegistration setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
     [vkRegistration addTarget:self action:@selector(vkRegistration) forControlEvents:UIControlEventTouchDown];
+    vkRegistration.titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+    vkRegistration.titleLabel.textAlignment = NSTextAlignmentCenter;
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"Header"] forBarMetrics:UIBarMetricsDefault];
     
