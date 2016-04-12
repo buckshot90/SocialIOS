@@ -1,7 +1,7 @@
 //
-//  VKRelative.h
+//  VKDocs.h
 //
-//  Copyright (c) 2014 VK.com
+//  Copyright (c) 2016 VK.com
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of
 //  this software and associated documentation files (the "Software"), to deal in
@@ -11,7 +11,7 @@
 //  subject to the following conditions:
 //
 //  The above copyright notice and this permission notice shall be included in all
-//  copies or suabstantial portions of the Software.
+//  copies or substantial portions of the Software.
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
@@ -20,15 +20,29 @@
 //  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 //  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
+#import <Foundation/Foundation.h>
+#import "VKApiObject.h"
 #import "VKApiObjectArray.h"
 
-@interface VKRelative : VKApiObject
+@class VKDocs;
 
+/**
+ Docs type of VK API. See descriptions here https://vk.com/dev/doc
+ */
+@interface VKDocs : VKApiObject
 @property(nonatomic, strong) NSNumber *id;
-@property(nonatomic, strong) NSString *type;
-
+@property(nonatomic, strong) NSNumber *owner_id;
+@property(nonatomic, copy) NSString *title;
+@property(nonatomic, strong) NSNumber *size;
+@property(nonatomic, copy) NSString *ext;
+@property(nonatomic, copy) NSString *url;
+@property(nonatomic, copy) NSString *photo_100;
+@property(nonatomic, copy) NSString *photo_130;
+@property(nonatomic, strong) NSNumber *date;
 @end
 
-@interface VKRelativities : VKApiObjectArray
-
+/**
+ Array of API docs objects
+ */
+@interface VKDocsArray : VKApiObjectArray
 @end

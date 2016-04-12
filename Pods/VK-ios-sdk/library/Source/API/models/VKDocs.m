@@ -1,7 +1,7 @@
 //
-//  VKRelative.h
+//  VKDocs.m
 //
-//  Copyright (c) 2014 VK.com
+//  Copyright (c) 2016 VK.com
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of
 //  this software and associated documentation files (the "Software"), to deal in
@@ -11,7 +11,7 @@
 //  subject to the following conditions:
 //
 //  The above copyright notice and this permission notice shall be included in all
-//  copies or suabstantial portions of the Software.
+//  copies or substantial portions of the Software.
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 //  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
@@ -20,15 +20,15 @@
 //  IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 //  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "VKApiObjectArray.h"
 
-@interface VKRelative : VKApiObject
+#import "VKDocs.h"
 
-@property(nonatomic, strong) NSNumber *id;
-@property(nonatomic, strong) NSString *type;
+@implementation VKDocs
 
 @end
 
-@interface VKRelativities : VKApiObjectArray
-
+@implementation VKDocsArray
+- (instancetype)initWithDictionary:(NSDictionary *)dict {
+  return [super initWithDictionary:dict objectClass:[VKDocs class]];
+}
 @end

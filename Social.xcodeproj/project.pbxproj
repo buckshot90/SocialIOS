@@ -10,29 +10,20 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>00DD6C2D9FF0CDE3ACDEE050</key>
+		<key>08AFDA533BD510CF96386493</key>
 		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
 			<key>includeInIndex</key>
-			<string>1</string>
+			<string>0</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-OutputFaceBookData.debug.xcconfig</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-OutputFaceBookData/Pods-OutputFaceBookData.debug.xcconfig</string>
+			<string>Pods_Social.framework</string>
 			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>0183319998005A5005EC1BAC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7B482C41190C2D38834E7F4D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0954B568C54480590B5A8386</key>
+		<key>0BC4F9BA3B39B88A172D20A8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -41,9 +32,9 @@
 			<key>lastKnownFileType</key>
 			<string>text.xcconfig</string>
 			<key>name</key>
-			<string>Pods-OutputFaceBookData.release.xcconfig</string>
+			<string>Pods-Social.release.xcconfig</string>
 			<key>path</key>
-			<string>Pods/Target Support Files/Pods-OutputFaceBookData/Pods-OutputFaceBookData.release.xcconfig</string>
+			<string>Pods/Target Support Files/Pods-Social/Pods-Social.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -70,6 +61,13 @@
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
+		</dict>
+		<key>2EAF6E56DCD2F189A5ADF12C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>08AFDA533BD510CF96386493</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>5633E31C1CB2876E0025D290</key>
 		<dict>
@@ -1263,8 +1261,8 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>00DD6C2D9FF0CDE3ACDEE050</string>
-				<string>0954B568C54480590B5A8386</string>
+				<string>F569A988A172467CA446CEA3</string>
+				<string>0BC4F9BA3B39B88A172D20A8</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -1326,39 +1324,6 @@ fi
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
-		</dict>
-		<key>7B482C41190C2D38834E7F4D</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Social.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>90DE2C4B2DABE0FEC00E6FE5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B304144E35EBA7533DC18954</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B304144E35EBA7533DC18954</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_OutputFaceBookData.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
 		<key>D225FB871BDA6CB000711C53</key>
 		<dict>
@@ -1646,8 +1611,7 @@ fi
 				<string>D2FBF0071C1F0BAC005CEACA</string>
 				<string>D2A8CBC31BC7A979006BF1F6</string>
 				<string>D2A8CBC01BC7A94B006BF1F6</string>
-				<string>90DE2C4B2DABE0FEC00E6FE5</string>
-				<string>0183319998005A5005EC1BAC</string>
+				<string>2EAF6E56DCD2F189A5ADF12C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -1955,7 +1919,7 @@ fi
 		<key>D2A8CBB81BC7A62C006BF1F6</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>00DD6C2D9FF0CDE3ACDEE050</string>
+			<string>F569A988A172467CA446CEA3</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -1963,11 +1927,7 @@ fi
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Developer</string>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)/OutputFaceBookData</string>
-					<string>$(PROJECT_DIR)/build/Debug-iphoneos</string>
-				</array>
+				<string>$(inherited)</string>
 				<key>INFOPLIST_FILE</key>
 				<string>OutputFaceBookData/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
@@ -1993,7 +1953,7 @@ fi
 		<key>D2A8CBB91BC7A62C006BF1F6</key>
 		<dict>
 			<key>baseConfigurationReference</key>
-			<string>0954B568C54480590B5A8386</string>
+			<string>0BC4F9BA3B39B88A172D20A8</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
@@ -2001,11 +1961,7 @@ fi
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Developer</string>
 				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)/OutputFaceBookData</string>
-					<string>$(PROJECT_DIR)/build/Debug-iphoneos</string>
-				</array>
+				<string>$(inherited)</string>
 				<key>INFOPLIST_FILE</key>
 				<string>OutputFaceBookData/Info.plist</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>
@@ -2080,8 +2036,7 @@ fi
 				<string>D24BAC2E1BE7A5F2003C96A9</string>
 				<string>D2A8CBBF1BC7A94B006BF1F6</string>
 				<string>D2A8CBBD1BC7A93F006BF1F6</string>
-				<string>B304144E35EBA7533DC18954</string>
-				<string>7B482C41190C2D38834E7F4D</string>
+				<string>08AFDA533BD510CF96386493</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -3853,6 +3808,21 @@ fi
 			<string>sourcecode.c.h</string>
 			<key>path</key>
 			<string>SOLFriendListRouterInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F569A988A172467CA446CEA3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-Social.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-Social/Pods-Social.debug.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
