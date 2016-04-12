@@ -12,7 +12,7 @@
 
 - (NSString *)description {
     
-    return [NSString stringWithFormat:@"name: %@", self.firstName];
+    return [NSString stringWithFormat:@"name: %@, online: %i, onlineMobile: %i", _firstName, _online, _onlineMobile];
 }
 
 @end

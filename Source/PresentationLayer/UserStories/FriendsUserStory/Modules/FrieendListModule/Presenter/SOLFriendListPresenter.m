@@ -9,4 +9,25 @@
 
 @implementation SOLFriendListPresenter
 
+#pragma mark - SOLFriendListInteractorOutput
+
+- (void)didUpdateFriendList:(NSArray<SOLUserPlainObject *> *)friends {
+    
+    [_view updateViewWithFriendList:friends];
+}
+
+#pragma mark - SOLFriendListViewOutput
+
+- (void)viewDidLoad {
+    
+    NSArray <SOLUserPlainObject *> *plainObjs = [_interactor obtainFriendList];
+    [_view setupViewWithFriendList:plainObjs];
+    [_interactor updateFriendList];
+}
+
+- (void)didSelectCellWithFriend:(SOLUserPlainObject *)friend {
+    
+//    _router
+}
+
 @end

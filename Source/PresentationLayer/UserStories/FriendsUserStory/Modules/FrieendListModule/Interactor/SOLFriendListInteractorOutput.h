@@ -6,7 +6,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SOLUserPlainObject.h"
 
 @protocol SOLFriendListInteractorOutput <NSObject>
+
+- (void)didUpdateFriendList:(NSArray<SOLUserPlainObject *> *)friends;
 
 @end

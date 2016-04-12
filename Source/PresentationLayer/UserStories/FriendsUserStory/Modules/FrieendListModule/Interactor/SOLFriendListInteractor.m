@@ -9,4 +9,19 @@
 
 @implementation SOLFriendListInteractor
 
+#pragma mark - SOLFriendListInteractorInput
+
+- (void)updateFriendList {
+    
+    [_service updateUsersWithPredicate:nil completionBlock:^(NSArray<SOLUserPlainObject *> *list, NSError *error) {
+       
+        [_output didUpdateFriendList:list];
+    }];
+}
+
+- (NSArray<SOLUserPlainObject *> *)obtainFriendList {
+    
+    return [_service obtainUsersWithPredicate:nil];
+}
+
 @end

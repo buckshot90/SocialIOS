@@ -18,7 +18,7 @@
         
         typeof(self) __strong strongSelf = weakSelf;
         if (completionBlock) {
-            
+//            NSLog(@"friends json: %@", data);
             completionBlock([strongSelf.cache cacheExternalRepresentation:data mapper:strongSelf.mapper predicate:predicate], error);
         }
     }];

@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SOLFriendListRouterInput.h"
 
-@interface SOLFriendListRouter : NSObject
+@interface SOLFriendListRouter : NSObject <SOLFriendListRouterInput>
 
 @end

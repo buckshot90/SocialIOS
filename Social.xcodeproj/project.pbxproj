@@ -1,3833 +1,1316 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>08AFDA533BD510CF96386493</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Social.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0BC4F9BA3B39B88A172D20A8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Social.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Social/Pods-Social.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>16D27A9E16054CBF525AF73A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Social/Pods-Social-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>2EAF6E56DCD2F189A5ADF12C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>08AFDA533BD510CF96386493</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E31C1CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3641CB2C2080025D290</string>
-				<string>5633E31D1CB2876E0025D290</string>
-				<string>5633E33C1CB288EF0025D290</string>
-				<string>5633E32C1CB2876E0025D290</string>
-				<string>DF2F60CE1CB39EA4006352D9</string>
-				<string>DF3BFE291CB4D2B40017ADA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Source</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E31D1CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E31E1CB2876E0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>BusinessLogicLayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E31E1CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E31F1CB2876E0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Services</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E31F1CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3291CB2876E0025D290</string>
-				<string>DF0818941CBA745000BACB69</string>
-				<string>5633E3201CB2876E0025D290</string>
-				<string>5633E3231CB2876E0025D290</string>
-				<string>5633E3261CB2876E0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ConcreteServices</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3201CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3211CB2876E0025D290</string>
-				<string>5633E3221CB2876E0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AudioService</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3211CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLAudioService.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3221CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLAudioService.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3231CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3241CB2876E0025D290</string>
-				<string>5633E3251CB2876E0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AuthService</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3241CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLAuthService.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3251CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLAuthService.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3261CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>FriendService</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3291CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818931CBA738500BACB69</string>
-				<string>DF0818B21CBA776800BACB69</string>
-				<string>DF0818B31CBA776800BACB69</string>
-				<string>DF0818B51CBA795A00BACB69</string>
-				<string>DF0818B61CBA795A00BACB69</string>
-				<string>DF0818B71CBA795A00BACB69</string>
-				<string>DF0818B81CBA795A00BACB69</string>
-				<string>DF0818B91CBA795A00BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UserService</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E32C1CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E32D1CB2876E0025D290</string>
-				<string>56D067B41CB5179200B58F98</string>
-				<string>DF2F60D61CB39F50006352D9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E32D1CB2876E0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>569BD8C21CB69DF000201B59</string>
-				<string>5633E32E1CB2876E0025D290</string>
-				<string>5633E32F1CB2876E0025D290</string>
-				<string>5633E3301CB2876E0025D290</string>
-				<string>5633E3311CB2876E0025D290</string>
-				<string>5633E3321CB2876E0025D290</string>
-				<string>5633E3331CB2876E0025D290</string>
-				<string>5633E37F1CB2D9EF0025D290</string>
-				<string>5633E3801CB2D9EF0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>PlainObjects</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E32E1CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLAudioPlainObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E32F1CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLAudioPlainObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3301CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendPlainObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3311CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendPlainObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3321CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserPlainObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3331CB2876E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLUserPlainObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3341CB2876E0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3221CB2876E0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E3351CB2876E0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3251CB2876E0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E3381CB2876E0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E32F1CB2876E0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E3391CB2876E0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3311CB2876E0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E33A1CB2876E0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3331CB2876E0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E33C1CB288EF0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>569BD8BF1CB69CE400201B59</string>
-				<string>5633E33D1CB288EF0025D290</string>
-				<string>56D067B01CB40BD000B58F98</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>PresentationLayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E33D1CB288EF0025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818D11CBAAE7900BACB69</string>
-				<string>5633E3541CB291F40025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>UserStories</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3541CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3551CB291F40025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DialogsUserStory</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3551CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3561CB291F40025D290</string>
-				<string>5633E35C1CB291F40025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Modules</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3561CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3571CB291F40025D290</string>
-				<string>5633E3581CB291F40025D290</string>
-				<string>5633E3591CB291F40025D290</string>
-				<string>5633E35A1CB291F40025D290</string>
-				<string>5633E35B1CB291F40025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DialogListModule</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3571CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3691CB2CC3E0025D290</string>
-				<string>5633E36A1CB2CC3E0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Assembly</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3581CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E36C1CB2CFEB0025D290</string>
-				<string>5633E36D1CB2CFEB0025D290</string>
-				<string>5633E36F1CB2D03A0025D290</string>
-				<string>5633E3701CB2D0620025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Interactor</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3591CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3721CB2D0FD0025D290</string>
-				<string>5633E3731CB2D0FD0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Presenter</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E35A1CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3751CB2D15E0025D290</string>
-				<string>5633E3761CB2D15E0025D290</string>
-				<string>5633E3781CB2D1860025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Router</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E35B1CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>56E09D781CB659F700E54B87</string>
-				<string>56E09D7C1CB661C300E54B87</string>
-				<string>DF0E7DD61CB6301C007E67E6</string>
-				<string>56E09D801CB66A0E00E54B87</string>
-				<string>5633E3611CB297520025D290</string>
-				<string>5633E3621CB297520025D290</string>
-				<string>5633E3791CB2D3070025D290</string>
-				<string>5633E37A1CB2D31E0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E35C1CB291F40025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E35F1CB294DF0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E35F1CB294DF0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Dialogs.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3601CB294DF0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E35F1CB294DF0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E3611CB297520025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListTableViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3621CB297520025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLDialogListTableViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3631CB297520025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3621CB297520025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E3641CB2C2080025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF21C7E21CB4DB5400635062</string>
-				<string>DF3BFE241CB4CBF00017ADA5</string>
-				<string>5633E3651CB2C4370025D290</string>
-				<string>DF3BFE1F1CB4C7A00017ADA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ApplicationLayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3651CB2C4370025D290</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E3661CB2C4FF0025D290</string>
-				<string>5633E3671CB2C4FF0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AppDelegate</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3661CB2C4FF0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AppDelegate.h</string>
-			<key>path</key>
-			<string>ApplicationLayer/AppDelegate/AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3671CB2C4FF0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>AppDelegate.m</string>
-			<key>path</key>
-			<string>ApplicationLayer/AppDelegate/AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3681CB2C4FF0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3671CB2C4FF0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E3691CB2CC3E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListModuleAssembly.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E36A1CB2CC3E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLDialogListModuleAssembly.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E36B1CB2CC3E0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E36A1CB2CC3E0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E36C1CB2CFEB0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListInteractor.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E36D1CB2CFEB0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLDialogListInteractor.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E36E1CB2CFEB0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E36D1CB2CFEB0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E36F1CB2D03A0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListInteractorInput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3701CB2D0620025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListInteractorOutput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3721CB2D0FD0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListPresenter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3731CB2D0FD0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLDialogListPresenter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3741CB2D0FD0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3731CB2D0FD0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E3751CB2D15E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListRouter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3761CB2D15E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLDialogListRouter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3771CB2D15E0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3761CB2D15E0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5633E3781CB2D1860025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListRouterInput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3791CB2D3070025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListViewInput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E37A1CB2D31E0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLDialogListViewOutput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E37F1CB2D9EF0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessagePlainObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3801CB2D9EF0025D290</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLMessagePlainObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5633E3811CB2D9EF0025D290</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5633E3801CB2D9EF0025D290</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>569BD8BF1CB69CE400201B59</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>569BD8C31CB6AAD200201B59</string>
-				<string>569BD8C01CB69D1F00201B59</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Common</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>569BD8C01CB69D1F00201B59</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>569BD8C11CB69D6E00201B59</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CellObjectBuilder</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>569BD8C11CB69D6E00201B59</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SOLCellObjectBuilder.h</string>
-			<key>path</key>
-			<string>Common/CellObjectBuilder/SOLCellObjectBuilder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>569BD8C21CB69DF000201B59</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLPlainObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>569BD8C31CB6AAD200201B59</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>569BD8C41CB6AB0600201B59</string>
-				<string>DF0818FC1CBAF63100BACB69</string>
-				<string>DF0818FD1CBAF63100BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DataDisplayManager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>569BD8C41CB6AB0600201B59</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SOLDataDisplayManager.h</string>
-			<key>path</key>
-			<string>Common/DataDisplayManager/SOLDataDisplayManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56D067B01CB40BD000B58F98</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56D067B11CB40BD000B58F98</key>
-		<dict>
-			<key>fileRef</key>
-			<string>56D067B01CB40BD000B58F98</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>56D067B41CB5179200B58F98</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818CB1CBAA91100BACB69</string>
-				<string>DF0818CC1CBAA91100BACB69</string>
-				<string>DF0818CD1CBAA91100BACB69</string>
-				<string>DF0818CE1CBAA91100BACB69</string>
-				<string>56D067B51CB51A6300B58F98</string>
-				<string>56D067B61CB51A6300B58F98</string>
-				<string>56D067B71CB51A6300B58F98</string>
-				<string>56D067B81CB51A6300B58F98</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ManagedObjects</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56D067B51CB51A6300B58F98</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Message+CoreDataProperties.h</string>
-			<key>path</key>
-			<string>ManagedObjects/Message+CoreDataProperties.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56D067B61CB51A6300B58F98</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Message+CoreDataProperties.m</string>
-			<key>path</key>
-			<string>ManagedObjects/Message+CoreDataProperties.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56D067B71CB51A6300B58F98</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>Message.h</string>
-			<key>path</key>
-			<string>ManagedObjects/Message.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56D067B81CB51A6300B58F98</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>Message.m</string>
-			<key>path</key>
-			<string>ManagedObjects/Message.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56D067B91CB51A6300B58F98</key>
-		<dict>
-			<key>fileRef</key>
-			<string>56D067B61CB51A6300B58F98</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>56D067BA1CB51A6300B58F98</key>
-		<dict>
-			<key>fileRef</key>
-			<string>56D067B81CB51A6300B58F98</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>56E09D781CB659F700E54B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>56E09D791CB65A8500E54B87</string>
-				<string>56E09D7A1CB65A8500E54B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CellObjects</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D791CB65A8500E54B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SOLDialogTableViewCellObject.h</string>
-			<key>path</key>
-			<string>CellObject/SOLDialogTableViewCellObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D7A1CB65A8500E54B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SOLDialogTableViewCellObject.m</string>
-			<key>path</key>
-			<string>CellObject/SOLDialogTableViewCellObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D7B1CB65A8500E54B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>56E09D7A1CB65A8500E54B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>56E09D7C1CB661C300E54B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>56E09D7D1CB6629100E54B87</string>
-				<string>56E09D7E1CB6629100E54B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DialogCellObjectBuilder</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D7D1CB6629100E54B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SOLDialogCellObjectBuilder.h</string>
-			<key>path</key>
-			<string>DialogCellObjectBuilder/SOLDialogCellObjectBuilder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D7E1CB6629100E54B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SOLDialogCellObjectBuilder.m</string>
-			<key>path</key>
-			<string>DialogCellObjectBuilder/SOLDialogCellObjectBuilder.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D7F1CB6629100E54B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>56E09D7E1CB6629100E54B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>56E09D801CB66A0E00E54B87</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>56E09D841CB66A7300E54B87</string>
-				<string>56E09D851CB66A7300E54B87</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>DataDisplayManager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D841CB66A7300E54B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SOLDialogDataDisplayManager.h</string>
-			<key>path</key>
-			<string>DataDisplayManager/SOLDialogDataDisplayManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D851CB66A7300E54B87</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SOLDialogDataDisplayManager.m</string>
-			<key>path</key>
-			<string>DataDisplayManager/SOLDialogDataDisplayManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>56E09D861CB66A7300E54B87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>56E09D851CB66A7300E54B87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>57AB0CB99FB116F2D773AD4D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F569A988A172467CA446CEA3</string>
-				<string>0BC4F9BA3B39B88A172D20A8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>609E5837B22474F20BB0126C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>6B5D800FA69B1B54AF9043DF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Social/Pods-Social-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D225FB871BDA6CB000711C53</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D225FB881BDA6CE100711C53</string>
-				<string>D225FB891BDA6CE100711C53</string>
-				<string>D2587DBF1C6A2434006FAB08</string>
-				<string>D2587DC01C6A2434006FAB08</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Utilits</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D225FB881BDA6CE100711C53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>String+Md5.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D225FB891BDA6CE100711C53</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>String+Md5.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D225FB8A1BDA6CE100711C53</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D225FB891BDA6CE100711C53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D24BAC2E1BE7A5F2003C96A9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D24BAC301BE7A641003C96A9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D2587DBC1C6A0C7F006FAB08</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Consts.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2587DBF1C6A2434006FAB08</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>StringLocalizer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2587DC01C6A2434006FAB08</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>StringLocalizer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2587DC11C6A2434006FAB08</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2587DC01C6A2434006FAB08</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D26918F51C98548F00FD90C6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreData.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreData.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D26918F61C98549000FD90C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D26918F51C98548F00FD90C6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A8CB971BC7A62C006BF1F6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5633E31C1CB2876E0025D290</string>
-				<string>D2A8CBD21BC7AA67006BF1F6</string>
-				<string>D2A8CBA21BC7A62C006BF1F6</string>
-				<string>D2A8CBA11BC7A62C006BF1F6</string>
-				<string>57AB0CB99FB116F2D773AD4D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A8CB981BC7A62C006BF1F6</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>OCP</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>D2A8CB9F1BC7A62C006BF1F6</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.0.1</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>D2A8CB9B1BC7A62C006BF1F6</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-				<string>ru</string>
-			</array>
-			<key>mainGroup</key>
-			<string>D2A8CB971BC7A62C006BF1F6</string>
-			<key>productRefGroup</key>
-			<string>D2A8CBA11BC7A62C006BF1F6</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>D2A8CB9F1BC7A62C006BF1F6</string>
-			</array>
-		</dict>
-		<key>D2A8CB9B1BC7A62C006BF1F6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D2A8CBB51BC7A62C006BF1F6</string>
-				<string>D2A8CBB61BC7A62C006BF1F6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D2A8CB9C1BC7A62C006BF1F6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DF0818D01CBAA91100BACB69</string>
-				<string>DF0818F41CBAC27B00BACB69</string>
-				<string>DF0818FE1CBAF63100BACB69</string>
-				<string>56E09D861CB66A7300E54B87</string>
-				<string>DF0E7DD91CB6314B007E67E6</string>
-				<string>56E09D7F1CB6629100E54B87</string>
-				<string>56D067BA1CB51A6300B58F98</string>
-				<string>DF9A59C31CBCD12300E36683</string>
-				<string>5633E36E1CB2CFEB0025D290</string>
-				<string>5633E3741CB2D0FD0025D290</string>
-				<string>DF0818C51CBA98B200BACB69</string>
-				<string>DF0818AC1CBA745000BACB69</string>
-				<string>DF0818A91CBA745000BACB69</string>
-				<string>5633E3351CB2876E0025D290</string>
-				<string>5633E3631CB297520025D290</string>
-				<string>DF0818ED1CBAB82E00BACB69</string>
-				<string>DF21C7E51CB4DB5400635062</string>
-				<string>5633E33A1CB2876E0025D290</string>
-				<string>DF3BFE281CB4CC100017ADA5</string>
-				<string>D2587DC11C6A2434006FAB08</string>
-				<string>DF9A59C01CBCD10700E36683</string>
-				<string>DF0818E01CBAB0BA00BACB69</string>
-				<string>DF0818CA1CBAA39800BACB69</string>
-				<string>DF9A59BA1CBCD01E00E36683</string>
-				<string>56D067B91CB51A6300B58F98</string>
-				<string>56E09D7B1CB65A8500E54B87</string>
-				<string>5633E3811CB2D9EF0025D290</string>
-				<string>DF0818BC1CBA79A900BACB69</string>
-				<string>DF0818F71CBAC38F00BACB69</string>
-				<string>D2A8CBA51BC7A62C006BF1F6</string>
-				<string>5633E36B1CB2CC3E0025D290</string>
-				<string>5633E3681CB2C4FF0025D290</string>
-				<string>DF2F60DC1CB39F50006352D9</string>
-				<string>5633E3341CB2876E0025D290</string>
-				<string>5633E3381CB2876E0025D290</string>
-				<string>DF0818AB1CBA745000BACB69</string>
-				<string>DF0818B41CBA776800BACB69</string>
-				<string>5633E3771CB2D15E0025D290</string>
-				<string>5633E3391CB2876E0025D290</string>
-				<string>DF0818CF1CBAA91100BACB69</string>
-				<string>DF0818AD1CBA745000BACB69</string>
-				<string>DF0818AA1CBA745000BACB69</string>
-				<string>DF3BFE231CB4C8200017ADA5</string>
-				<string>DF0818F11CBAB87F00BACB69</string>
-				<string>DF0818C11CBA82FB00BACB69</string>
-				<string>D225FB8A1BDA6CE100711C53</string>
-				<string>DF0818FB1CBAC8E700BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A8CB9D1BC7A62C006BF1F6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D26918F61C98549000FD90C6</string>
-				<string>D2F8AC3A1C4E746E00FB1DB0</string>
-				<string>D2FBF0071C1F0BAC005CEACA</string>
-				<string>D2A8CBC31BC7A979006BF1F6</string>
-				<string>D2A8CBC01BC7A94B006BF1F6</string>
-				<string>2EAF6E56DCD2F189A5ADF12C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A8CB9E1BC7A62C006BF1F6</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DF0818EE1CBAB82E00BACB69</string>
-				<string>DF0818D81CBAAEB100BACB69</string>
-				<string>DF0E7DDB1CB63170007E67E6</string>
-				<string>56D067B11CB40BD000B58F98</string>
-				<string>DF2F60D51CB39EDE006352D9</string>
-				<string>DF2F60D31CB39EA4006352D9</string>
-				<string>5633E3601CB294DF0025D290</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>D2A8CB9F1BC7A62C006BF1F6</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D2A8CBB71BC7A62C006BF1F6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>609E5837B22474F20BB0126C</string>
-				<string>D2A8CB9C1BC7A62C006BF1F6</string>
-				<string>D2A8CB9D1BC7A62C006BF1F6</string>
-				<string>D2A8CB9E1BC7A62C006BF1F6</string>
-				<string>6B5D800FA69B1B54AF9043DF</string>
-				<string>16D27A9E16054CBF525AF73A</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Social</string>
-			<key>productName</key>
-			<string>OutputFaceBookData</string>
-			<key>productReference</key>
-			<string>D2A8CBA01BC7A62C006BF1F6</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>D2A8CBA01BC7A62C006BF1F6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Social.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>D2A8CBA11BC7A62C006BF1F6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A8CBA01BC7A62C006BF1F6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A8CBA21BC7A62C006BF1F6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D225FB871BDA6CB000711C53</string>
-				<string>D2A8CBB41BC7A62C006BF1F6</string>
-				<string>D2A8CBA31BC7A62C006BF1F6</string>
-				<string>D2587DBC1C6A0C7F006FAB08</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OutputFaceBookData</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A8CBA31BC7A62C006BF1F6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D2A8CBA41BC7A62C006BF1F6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A8CBA41BC7A62C006BF1F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A8CBA51BC7A62C006BF1F6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A8CBA41BC7A62C006BF1F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A8CBB41BC7A62C006BF1F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2A8CBB51BC7A62C006BF1F6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D2A8CBB61BC7A62C006BF1F6</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D2A8CBB71BC7A62C006BF1F6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>D2A8CBB81BC7A62C006BF1F6</string>
-				<string>D2A8CBB91BC7A62C006BF1F6</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>D2A8CBB81BC7A62C006BF1F6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F569A988A172467CA446CEA3</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<string>$(inherited)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OutputFaceBookData/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>LIBRARY_SEARCH_PATHS</key>
-				<string>$(inherited)</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>-all_load</string>
-					<string>-ObjC</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.social.vk</string>
-				<key>PRODUCT_NAME</key>
-				<string>Social</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>D2A8CBB91BC7A62C006BF1F6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0BC4F9BA3B39B88A172D20A8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<string>$(inherited)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OutputFaceBookData/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>LIBRARY_SEARCH_PATHS</key>
-				<string>$(inherited)</string>
-				<key>OTHER_LDFLAGS</key>
-				<array>
-					<string>-all_load</string>
-					<string>-ObjC</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.social.vk</string>
-				<key>PRODUCT_NAME</key>
-				<string>Social</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>D2A8CBBD1BC7A93F006BF1F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D2A8CBBF1BC7A94B006BF1F6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D2A8CBC01BC7A94B006BF1F6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A8CBBF1BC7A94B006BF1F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A8CBC31BC7A979006BF1F6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2A8CBBD1BC7A93F006BF1F6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2A8CBD21BC7AA67006BF1F6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D26918F51C98548F00FD90C6</string>
-				<string>D2F8AC391C4E746E00FB1DB0</string>
-				<string>D2DEDF881C4AA705006ED545</string>
-				<string>D2FBF0061C1F0BAC005CEACA</string>
-				<string>D24BAC301BE7A641003C96A9</string>
-				<string>D24BAC2E1BE7A5F2003C96A9</string>
-				<string>D2A8CBBF1BC7A94B006BF1F6</string>
-				<string>D2A8CBBD1BC7A93F006BF1F6</string>
-				<string>08AFDA533BD510CF96386493</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D2DEDF881C4AA705006ED545</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AddressBook.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AddressBook.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D2F8AC391C4E746E00FB1DB0</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Contacts.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Contacts.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D2F8AC3A1C4E746E00FB1DB0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2F8AC391C4E746E00FB1DB0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D2FBF0061C1F0BAC005CEACA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SafariServices.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/SafariServices.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>D2FBF0071C1F0BAC005CEACA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D2FBF0061C1F0BAC005CEACA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818931CBA738500BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserService.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818941CBA745000BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818A21CBA745000BACB69</string>
-				<string>DF0818A31CBA745000BACB69</string>
-				<string>DF0818A41CBA745000BACB69</string>
-				<string>DF0818951CBA745000BACB69</string>
-				<string>DF0818981CBA745000BACB69</string>
-				<string>DF08189C1CBA745000BACB69</string>
-				<string>DF0818A01CBA745000BACB69</string>
-				<string>DF0818A51CBA745000BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MessageService</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818951CBA745000BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818961CBA745000BACB69</string>
-				<string>DF0818971CBA745000BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Assembly</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818961CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageServiceAssembly.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818971CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLMessageServiceAssembly.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818981CBA745000BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818991CBA745000BACB69</string>
-				<string>DF08189A1CBA745000BACB69</string>
-				<string>DF08189B1CBA745000BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Cache</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818991CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageCache.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF08189A1CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageCacheImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF08189B1CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLMessageCacheImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF08189C1CBA745000BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF08189D1CBA745000BACB69</string>
-				<string>DF08189E1CBA745000BACB69</string>
-				<string>DF08189F1CBA745000BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Mapper</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF08189D1CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageMapper.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF08189E1CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageMapperImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF08189F1CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLMessageMapperImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A01CBA745000BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818A11CBA745000BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Serializer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A11CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageSerializer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A21CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageService.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A31CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageServiceImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A41CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLMessageServiceImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A51CBA745000BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818A61CBA745000BACB69</string>
-				<string>DF0818A71CBA745000BACB69</string>
-				<string>DF0818A81CBA745000BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Transport</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A61CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageTransport.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A71CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLMessageTransportImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A81CBA745000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLMessageTransportImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818A91CBA745000BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818971CBA745000BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818AA1CBA745000BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF08189B1CBA745000BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818AB1CBA745000BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF08189F1CBA745000BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818AC1CBA745000BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818A41CBA745000BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818AD1CBA745000BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818A81CBA745000BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818B21CBA776800BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserServiceImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818B31CBA776800BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLUserServiceImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818B41CBA776800BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818B31CBA776800BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818B51CBA795A00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818BA1CBA79A900BACB69</string>
-				<string>DF0818BB1CBA79A900BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Assembly</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818B61CBA795A00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818C71CBAA19000BACB69</string>
-				<string>DF0818C81CBAA39800BACB69</string>
-				<string>DF0818C91CBAA39800BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Cache</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818B71CBA795A00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818C21CBA988600BACB69</string>
-				<string>DF0818C31CBA98B200BACB69</string>
-				<string>DF0818C41CBA98B200BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Mapper</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818B81CBA795A00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Serializer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818B91CBA795A00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818BD1CBA7B7400BACB69</string>
-				<string>DF0818BF1CBA82FB00BACB69</string>
-				<string>DF0818C01CBA82FB00BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Transport</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818BA1CBA79A900BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserServiceAssembly.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818BB1CBA79A900BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLUserServiceAssembly.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818BC1CBA79A900BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818BB1CBA79A900BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818BD1CBA7B7400BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserTransport.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818BF1CBA82FB00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserTransportImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818C01CBA82FB00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLUserTransportImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818C11CBA82FB00BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818C01CBA82FB00BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818C21CBA988600BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserMapper.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818C31CBA98B200BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserMapperImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818C41CBA98B200BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLUserMapperImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818C51CBA98B200BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818C41CBA98B200BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818C71CBAA19000BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserCache.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818C81CBAA39800BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLUserCacheImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818C91CBAA39800BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLUserCacheImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818CA1CBAA39800BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818C91CBAA39800BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818CB1CBAA91100BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>User+CoreDataProperties.h</string>
-			<key>path</key>
-			<string>ManagedObjects/User+CoreDataProperties.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818CC1CBAA91100BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>User+CoreDataProperties.m</string>
-			<key>path</key>
-			<string>ManagedObjects/User+CoreDataProperties.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818CD1CBAA91100BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>User.h</string>
-			<key>path</key>
-			<string>ManagedObjects/User.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818CE1CBAA91100BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>User.m</string>
-			<key>path</key>
-			<string>ManagedObjects/User.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818CF1CBAA91100BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818CC1CBAA91100BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818D01CBAA91100BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818CE1CBAA91100BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818D11CBAAE7900BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818D21CBAAE7900BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>FriendsUserStory</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818D21CBAAE7900BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818D31CBAAE7900BACB69</string>
-				<string>DF0818D41CBAAE7900BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Modules</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818D31CBAAE7900BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818D91CBAB08300BACB69</string>
-				<string>DF0818DA1CBAB08300BACB69</string>
-				<string>DF0818DB1CBAB08300BACB69</string>
-				<string>DF0818DC1CBAB08300BACB69</string>
-				<string>DF0818DD1CBAB08300BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>FrieendListModule</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818D41CBAAE7900BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818D71CBAAEB100BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818D71CBAAEB100BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>Friends.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818D81CBAAEB100BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818D71CBAAEB100BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818D91CBAB08300BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818F51CBAC38F00BACB69</string>
-				<string>DF0818F61CBAC38F00BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Assembly</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818DA1CBAB08300BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF9A59B81CBCD01E00E36683</string>
-				<string>DF9A59B91CBCD01E00E36683</string>
-				<string>DF9A59BD1CBCD0DF00E36683</string>
-				<string>DF9A59BC1CBCD0AA00E36683</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Interactor</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818DB1CBAB08300BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF9A59BE1CBCD10700E36683</string>
-				<string>DF9A59BF1CBCD10700E36683</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Presenter</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818DC1CBAB08300BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF9A59C11CBCD12300E36683</string>
-				<string>DF9A59C21CBCD12300E36683</string>
-				<string>DF9A59C61CBCD5FB00E36683</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Router</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818DD1CBAB08300BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818E71CBAB82E00BACB69</string>
-				<string>DF0818EB1CBAB82E00BACB69</string>
-				<string>DF0818EC1CBAB82E00BACB69</string>
-				<string>DF0818F81CBAC89E00BACB69</string>
-				<string>DF0818DE1CBAB0BA00BACB69</string>
-				<string>DF0818DF1CBAB0BA00BACB69</string>
-				<string>DF9A59C41CBCD29400E36683</string>
-				<string>DF9A59C51CBCD2B300E36683</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>View</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818DE1CBAB0BA00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListTableViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818DF1CBAB0BA00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListTableViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818E01CBAB0BA00BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818DF1CBAB0BA00BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818E71CBAB82E00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818E81CBAB82E00BACB69</string>
-				<string>DF0818E91CBAB82E00BACB69</string>
-				<string>DF0818EA1CBAB82E00BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Cell</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818E81CBAB82E00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818E91CBAB82E00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListTableViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818EA1CBAB82E00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>SOLFriendListTableViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818EB1CBAB82E00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818EF1CBAB87F00BACB69</string>
-				<string>DF0818F01CBAB87F00BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CellObjects</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818EC1CBAB82E00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818F21CBAC27B00BACB69</string>
-				<string>DF0818F31CBAC27B00BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CellObjectsBuilder</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818ED1CBAB82E00BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818E91CBAB82E00BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818EE1CBAB82E00BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818EA1CBAB82E00BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818EF1CBAB87F00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListTableViewCellObject.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818F01CBAB87F00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListTableViewCellObject.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818F11CBAB87F00BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818F01CBAB87F00BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818F21CBAC27B00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListCellObjectBuilder.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818F31CBAC27B00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListCellObjectBuilder.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818F41CBAC27B00BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818F31CBAC27B00BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818F51CBAC38F00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListModuleAssembly.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818F61CBAC38F00BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListModuleAssembly.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818F71CBAC38F00BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818F61CBAC38F00BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818F81CBAC89E00BACB69</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0818F91CBAC8E700BACB69</string>
-				<string>DF0818FA1CBAC8E700BACB69</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>DataDisplayManager</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818F91CBAC8E700BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListDataDisplayManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818FA1CBAC8E700BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListDataDisplayManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818FB1CBAC8E700BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818FA1CBAC8E700BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0818FC1CBAF63100BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SOLBaseDataDisplayManager.h</string>
-			<key>path</key>
-			<string>Common/DataDisplayManager/SOLBaseDataDisplayManager.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818FD1CBAF63100BACB69</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SOLBaseDataDisplayManager.m</string>
-			<key>path</key>
-			<string>Common/DataDisplayManager/SOLBaseDataDisplayManager.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0818FE1CBAF63100BACB69</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0818FD1CBAF63100BACB69</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0E7DD61CB6301C007E67E6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF0E7DD71CB6314B007E67E6</string>
-				<string>DF0E7DD81CB6314B007E67E6</string>
-				<string>DF0E7DDA1CB63170007E67E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Cell</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0E7DD71CB6314B007E67E6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SOLDialogTableViewCell.h</string>
-			<key>path</key>
-			<string>Cell/SOLDialogTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0E7DD81CB6314B007E67E6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SOLDialogTableViewCell.m</string>
-			<key>path</key>
-			<string>Cell/SOLDialogTableViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0E7DD91CB6314B007E67E6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0E7DD81CB6314B007E67E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF0E7DDA1CB63170007E67E6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>SOLDialogTableViewCell.xib</string>
-			<key>path</key>
-			<string>Cell/SOLDialogTableViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF0E7DDB1CB63170007E67E6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF0E7DDA1CB63170007E67E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF21C7E21CB4DB5400635062</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF21C7E31CB4DB5400635062</string>
-				<string>DF21C7E41CB4DB5400635062</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Initializer</string>
-			<key>path</key>
-			<string>ApplicationLayer/Initializer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF21C7E31CB4DB5400635062</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLInitializer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF21C7E41CB4DB5400635062</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLInitializer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF21C7E51CB4DB5400635062</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF21C7E41CB4DB5400635062</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF2F60CE1CB39EA4006352D9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF2F60CF1CB39EA4006352D9</string>
-				<string>DF2F60D01CB39EA4006352D9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF2F60CF1CB39EA4006352D9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF2F60D41CB39EDE006352D9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Images</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF2F60D01CB39EA4006352D9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF2F60D11CB39EA4006352D9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF2F60D11CB39EA4006352D9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF2F60D21CB39EA4006352D9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF2F60D21CB39EA4006352D9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF2F60D31CB39EA4006352D9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF2F60D11CB39EA4006352D9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF2F60D41CB39EDE006352D9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF2F60D51CB39EDE006352D9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF2F60D41CB39EDE006352D9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF2F60D61CB39F50006352D9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF2F60D91CB39F50006352D9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>CoreDataModel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF2F60D91CB39F50006352D9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF2F60DA1CB39F50006352D9</string>
-			</array>
-			<key>currentVersion</key>
-			<string>DF2F60DA1CB39F50006352D9</string>
-			<key>isa</key>
-			<string>XCVersionGroup</string>
-			<key>path</key>
-			<string>OutputFaceBookData.xcdatamodeld</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-			<key>versionGroupType</key>
-			<string>wrapper.xcdatamodel</string>
-		</dict>
-		<key>DF2F60DA1CB39F50006352D9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.xcdatamodel</string>
-			<key>path</key>
-			<string>OutputFaceBookData.xcdatamodel</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF2F60DC1CB39F50006352D9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF2F60D91CB39F50006352D9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF3BFE1F1CB4C7A00017ADA5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF3BFE201CB4C7C40017ADA5</string>
-				<string>DF3BFE211CB4C8200017ADA5</string>
-				<string>DF3BFE221CB4C8200017ADA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>ThirdPartiesConfigurator</string>
-			<key>path</key>
-			<string>ApplicationLayer/ThirdPartiesConfigurator</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3BFE201CB4C7C40017ADA5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLThirdPartiesConfigurator.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3BFE211CB4C8200017ADA5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLThirdPartiesConfiguratorImplementation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3BFE221CB4C8200017ADA5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLThirdPartiesConfiguratorImplementation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3BFE231CB4C8200017ADA5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF3BFE221CB4C8200017ADA5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF3BFE241CB4CBF00017ADA5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF3BFE251CB4CBF00017ADA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Assemblies</string>
-			<key>path</key>
-			<string>ApplicationLayer/Assemblies</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3BFE251CB4CBF00017ADA5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>DF3BFE261CB4CC100017ADA5</string>
-				<string>DF3BFE271CB4CC100017ADA5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>ApplicationAssembly</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3BFE261CB4CC100017ADA5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLApplicationAssembly.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3BFE271CB4CC100017ADA5</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLApplicationAssembly.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF3BFE281CB4CC100017ADA5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF3BFE271CB4CC100017ADA5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF3BFE291CB4D2B40017ADA5</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CoreLayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59B81CBCD01E00E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListInteractor.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59B91CBCD01E00E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListInteractor.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59BA1CBCD01E00E36683</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF9A59B91CBCD01E00E36683</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF9A59BC1CBCD0AA00E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListInteractorOutput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59BD1CBCD0DF00E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListInteractorInput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59BE1CBCD10700E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListPresenter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59BF1CBCD10700E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListPresenter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59C01CBCD10700E36683</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF9A59BF1CBCD10700E36683</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF9A59C11CBCD12300E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListRouter.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59C21CBCD12300E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SOLFriendListRouter.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59C31CBCD12300E36683</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DF9A59C21CBCD12300E36683</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DF9A59C41CBCD29400E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListViewInput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59C51CBCD2B300E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListViewOutput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DF9A59C61CBCD5FB00E36683</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SOLFriendListRouterInput.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F569A988A172467CA446CEA3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Social.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Social/Pods-Social.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D2A8CB981BC7A62C006BF1F6</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2EAF6E56DCD2F189A5ADF12C /* Pods_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08AFDA533BD510CF96386493 /* Pods_Social.framework */; };
+		5633E3341CB2876E0025D290 /* SOLAudioService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3221CB2876E0025D290 /* SOLAudioService.m */; };
+		5633E3351CB2876E0025D290 /* SOLAuthService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3251CB2876E0025D290 /* SOLAuthService.m */; };
+		5633E3381CB2876E0025D290 /* SOLAudioPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E32F1CB2876E0025D290 /* SOLAudioPlainObject.m */; };
+		5633E3391CB2876E0025D290 /* SOLFriendPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3311CB2876E0025D290 /* SOLFriendPlainObject.m */; };
+		5633E33A1CB2876E0025D290 /* SOLUserPlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3331CB2876E0025D290 /* SOLUserPlainObject.m */; };
+		5633E3601CB294DF0025D290 /* Dialogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5633E35F1CB294DF0025D290 /* Dialogs.storyboard */; };
+		5633E3631CB297520025D290 /* SOLDialogListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3621CB297520025D290 /* SOLDialogListTableViewController.m */; };
+		5633E3681CB2C4FF0025D290 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3671CB2C4FF0025D290 /* AppDelegate.m */; };
+		5633E36B1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E36A1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m */; };
+		5633E36E1CB2CFEB0025D290 /* SOLDialogListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E36D1CB2CFEB0025D290 /* SOLDialogListInteractor.m */; };
+		5633E3741CB2D0FD0025D290 /* SOLDialogListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3731CB2D0FD0025D290 /* SOLDialogListPresenter.m */; };
+		5633E3771CB2D15E0025D290 /* SOLDialogListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3761CB2D15E0025D290 /* SOLDialogListRouter.m */; };
+		5633E3811CB2D9EF0025D290 /* SOLMessagePlainObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 5633E3801CB2D9EF0025D290 /* SOLMessagePlainObject.m */; };
+		56CF94A31CBD381600C48330 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56CF94A21CBD381600C48330 /* Images.xcassets */; };
+		56CF94AB1CBD621F00C48330 /* ViperModuleInputPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CF94AA1CBD621F00C48330 /* ViperModuleInputPromise.m */; };
+		56CF94AE1CBD629600C48330 /* UIViewController+ViperTransitionModeratorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CF94AD1CBD629600C48330 /* UIViewController+ViperTransitionModeratorProtocol.m */; };
+		56CF94B41CBD640500C48330 /* ViperModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 56CF94B31CBD640500C48330 /* ViperModuleFactory.m */; };
+		56D067B11CB40BD000B58F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D067B01CB40BD000B58F98 /* Main.storyboard */; };
+		56D067B91CB51A6300B58F98 /* Message+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067B61CB51A6300B58F98 /* Message+CoreDataProperties.m */; };
+		56D067BA1CB51A6300B58F98 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067B81CB51A6300B58F98 /* Message.m */; };
+		56E09D7B1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D7A1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m */; };
+		56E09D7F1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D7E1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m */; };
+		56E09D861CB66A7300E54B87 /* SOLDialogDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D851CB66A7300E54B87 /* SOLDialogDataDisplayManager.m */; };
+		D225FB8A1BDA6CE100711C53 /* String+Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = D225FB891BDA6CE100711C53 /* String+Md5.m */; };
+		D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2587DC01C6A2434006FAB08 /* StringLocalizer.m */; };
+		D26918F61C98549000FD90C6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26918F51C98548F00FD90C6 /* CoreData.framework */; };
+		D2A8CBA51BC7A62C006BF1F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CBA41BC7A62C006BF1F6 /* main.m */; };
+		D2A8CBC01BC7A94B006BF1F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A8CBBF1BC7A94B006BF1F6 /* CoreGraphics.framework */; };
+		D2A8CBC31BC7A979006BF1F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A8CBBD1BC7A93F006BF1F6 /* Foundation.framework */; };
+		D2F8AC3A1C4E746E00FB1DB0 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F8AC391C4E746E00FB1DB0 /* Contacts.framework */; };
+		D2FBF0071C1F0BAC005CEACA /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FBF0061C1F0BAC005CEACA /* SafariServices.framework */; };
+		DF0818A91CBA745000BACB69 /* SOLMessageServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818971CBA745000BACB69 /* SOLMessageServiceAssembly.m */; };
+		DF0818AA1CBA745000BACB69 /* SOLMessageCacheImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF08189B1CBA745000BACB69 /* SOLMessageCacheImplementation.m */; };
+		DF0818AB1CBA745000BACB69 /* SOLMessageMapperImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF08189F1CBA745000BACB69 /* SOLMessageMapperImplementation.m */; };
+		DF0818AC1CBA745000BACB69 /* SOLMessageServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818A41CBA745000BACB69 /* SOLMessageServiceImplementation.m */; };
+		DF0818AD1CBA745000BACB69 /* SOLMessageTransportImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818A81CBA745000BACB69 /* SOLMessageTransportImplementation.m */; };
+		DF0818B41CBA776800BACB69 /* SOLUserServiceImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818B31CBA776800BACB69 /* SOLUserServiceImplementation.m */; };
+		DF0818BC1CBA79A900BACB69 /* SOLUserServiceAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818BB1CBA79A900BACB69 /* SOLUserServiceAssembly.m */; };
+		DF0818C11CBA82FB00BACB69 /* SOLUserTransportImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818C01CBA82FB00BACB69 /* SOLUserTransportImplementation.m */; };
+		DF0818C51CBA98B200BACB69 /* SOLUserMapperImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818C41CBA98B200BACB69 /* SOLUserMapperImplementation.m */; };
+		DF0818CA1CBAA39800BACB69 /* SOLUserCacheImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818C91CBAA39800BACB69 /* SOLUserCacheImplementation.m */; };
+		DF0818CF1CBAA91100BACB69 /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818CC1CBAA91100BACB69 /* User+CoreDataProperties.m */; };
+		DF0818D01CBAA91100BACB69 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818CE1CBAA91100BACB69 /* User.m */; };
+		DF0818D81CBAAEB100BACB69 /* Friends.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF0818D71CBAAEB100BACB69 /* Friends.storyboard */; };
+		DF0818E01CBAB0BA00BACB69 /* SOLFriendListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818DF1CBAB0BA00BACB69 /* SOLFriendListTableViewController.m */; };
+		DF0818ED1CBAB82E00BACB69 /* SOLFriendListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818E91CBAB82E00BACB69 /* SOLFriendListTableViewCell.m */; };
+		DF0818EE1CBAB82E00BACB69 /* SOLFriendListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0818EA1CBAB82E00BACB69 /* SOLFriendListTableViewCell.xib */; };
+		DF0818F11CBAB87F00BACB69 /* SOLFriendListTableViewCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818F01CBAB87F00BACB69 /* SOLFriendListTableViewCellObject.m */; };
+		DF0818F41CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818F31CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m */; };
+		DF0818F71CBAC38F00BACB69 /* SOLFriendListModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818F61CBAC38F00BACB69 /* SOLFriendListModuleAssembly.m */; };
+		DF0818FB1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818FA1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m */; };
+		DF0818FE1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0818FD1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m */; };
+		DF0E7DD91CB6314B007E67E6 /* SOLDialogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0E7DD81CB6314B007E67E6 /* SOLDialogTableViewCell.m */; };
+		DF0E7DDB1CB63170007E67E6 /* SOLDialogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF0E7DDA1CB63170007E67E6 /* SOLDialogTableViewCell.xib */; };
+		DF21C7E51CB4DB5400635062 /* SOLInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = DF21C7E41CB4DB5400635062 /* SOLInitializer.m */; };
+		DF2F60D31CB39EA4006352D9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF2F60D11CB39EA4006352D9 /* Localizable.strings */; };
+		DF2F60DC1CB39F50006352D9 /* OutputFaceBookData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF2F60D91CB39F50006352D9 /* OutputFaceBookData.xcdatamodeld */; };
+		DF3BFE231CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BFE221CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m */; };
+		DF3BFE281CB4CC100017ADA5 /* SOLApplicationAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3BFE271CB4CC100017ADA5 /* SOLApplicationAssembly.m */; };
+		DF9A59BA1CBCD01E00E36683 /* SOLFriendListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A59B91CBCD01E00E36683 /* SOLFriendListInteractor.m */; };
+		DF9A59C01CBCD10700E36683 /* SOLFriendListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A59BF1CBCD10700E36683 /* SOLFriendListPresenter.m */; };
+		DF9A59C31CBCD12300E36683 /* SOLFriendListRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9A59C21CBCD12300E36683 /* SOLFriendListRouter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		08AFDA533BD510CF96386493 /* Pods_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BC4F9BA3B39B88A172D20A8 /* Pods-Social.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.release.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.release.xcconfig"; sourceTree = "<group>"; };
+		5633E3211CB2876E0025D290 /* SOLAudioService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAudioService.h; sourceTree = "<group>"; };
+		5633E3221CB2876E0025D290 /* SOLAudioService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAudioService.m; sourceTree = "<group>"; };
+		5633E3241CB2876E0025D290 /* SOLAuthService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAuthService.h; sourceTree = "<group>"; };
+		5633E3251CB2876E0025D290 /* SOLAuthService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAuthService.m; sourceTree = "<group>"; };
+		5633E32E1CB2876E0025D290 /* SOLAudioPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLAudioPlainObject.h; sourceTree = "<group>"; };
+		5633E32F1CB2876E0025D290 /* SOLAudioPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLAudioPlainObject.m; sourceTree = "<group>"; };
+		5633E3301CB2876E0025D290 /* SOLFriendPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendPlainObject.h; sourceTree = "<group>"; };
+		5633E3311CB2876E0025D290 /* SOLFriendPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendPlainObject.m; sourceTree = "<group>"; };
+		5633E3321CB2876E0025D290 /* SOLUserPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserPlainObject.h; sourceTree = "<group>"; };
+		5633E3331CB2876E0025D290 /* SOLUserPlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserPlainObject.m; sourceTree = "<group>"; };
+		5633E35F1CB294DF0025D290 /* Dialogs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dialogs.storyboard; sourceTree = "<group>"; };
+		5633E3611CB297520025D290 /* SOLDialogListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListTableViewController.h; sourceTree = "<group>"; };
+		5633E3621CB297520025D290 /* SOLDialogListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListTableViewController.m; sourceTree = "<group>"; };
+		5633E3661CB2C4FF0025D290 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ApplicationLayer/AppDelegate/AppDelegate.h; sourceTree = "<group>"; };
+		5633E3671CB2C4FF0025D290 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ApplicationLayer/AppDelegate/AppDelegate.m; sourceTree = "<group>"; };
+		5633E3691CB2CC3E0025D290 /* SOLDialogListModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListModuleAssembly.h; sourceTree = "<group>"; };
+		5633E36A1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListModuleAssembly.m; sourceTree = "<group>"; };
+		5633E36C1CB2CFEB0025D290 /* SOLDialogListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListInteractor.h; sourceTree = "<group>"; };
+		5633E36D1CB2CFEB0025D290 /* SOLDialogListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListInteractor.m; sourceTree = "<group>"; };
+		5633E36F1CB2D03A0025D290 /* SOLDialogListInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListInteractorInput.h; sourceTree = "<group>"; };
+		5633E3701CB2D0620025D290 /* SOLDialogListInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListInteractorOutput.h; sourceTree = "<group>"; };
+		5633E3721CB2D0FD0025D290 /* SOLDialogListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListPresenter.h; sourceTree = "<group>"; };
+		5633E3731CB2D0FD0025D290 /* SOLDialogListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListPresenter.m; sourceTree = "<group>"; };
+		5633E3751CB2D15E0025D290 /* SOLDialogListRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListRouter.h; sourceTree = "<group>"; };
+		5633E3761CB2D15E0025D290 /* SOLDialogListRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogListRouter.m; sourceTree = "<group>"; };
+		5633E3781CB2D1860025D290 /* SOLDialogListRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListRouterInput.h; sourceTree = "<group>"; };
+		5633E3791CB2D3070025D290 /* SOLDialogListViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListViewInput.h; sourceTree = "<group>"; };
+		5633E37A1CB2D31E0025D290 /* SOLDialogListViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogListViewOutput.h; sourceTree = "<group>"; };
+		5633E37F1CB2D9EF0025D290 /* SOLMessagePlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessagePlainObject.h; sourceTree = "<group>"; };
+		5633E3801CB2D9EF0025D290 /* SOLMessagePlainObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLMessagePlainObject.m; sourceTree = "<group>"; };
+		569BD8C11CB69D6E00201B59 /* SOLCellObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLCellObjectBuilder.h; path = Common/CellObjectBuilder/SOLCellObjectBuilder.h; sourceTree = "<group>"; };
+		569BD8C21CB69DF000201B59 /* SOLPlainObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLPlainObject.h; sourceTree = "<group>"; };
+		569BD8C41CB6AB0600201B59 /* SOLDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDataDisplayManager.h; path = Common/DataDisplayManager/SOLDataDisplayManager.h; sourceTree = "<group>"; };
+		56CF94A21CBD381600C48330 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../../../Social/Images.xcassets; sourceTree = "<group>"; };
+		56CF94A81CBD60E200C48330 /* ViperTransitionModeratorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViperTransitionModeratorProtocol.h; path = CoreLayer/TransitionModerator/ViperTransitionModeratorProtocol.h; sourceTree = "<group>"; };
+		56CF94A91CBD621F00C48330 /* ViperModuleInputPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViperModuleInputPromise.h; path = CoreLayer/TransitionModerator/ViperModuleInputPromise.h; sourceTree = "<group>"; };
+		56CF94AA1CBD621F00C48330 /* ViperModuleInputPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViperModuleInputPromise.m; path = CoreLayer/TransitionModerator/ViperModuleInputPromise.m; sourceTree = "<group>"; };
+		56CF94AC1CBD629600C48330 /* UIViewController+ViperTransitionModeratorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+ViperTransitionModeratorProtocol.h"; path = "CoreLayer/TransitionModerator/UIViewController+ViperTransitionModeratorProtocol.h"; sourceTree = "<group>"; };
+		56CF94AD1CBD629600C48330 /* UIViewController+ViperTransitionModeratorProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+ViperTransitionModeratorProtocol.m"; path = "CoreLayer/TransitionModerator/UIViewController+ViperTransitionModeratorProtocol.m"; sourceTree = "<group>"; };
+		56CF94AF1CBD630400C48330 /* ViperModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViperModuleInput.h; path = CoreLayer/TransitionModerator/ViperModuleInput.h; sourceTree = "<group>"; };
+		56CF94B01CBD631B00C48330 /* ViperModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViperModuleOutput.h; path = CoreLayer/TransitionModerator/ViperModuleOutput.h; sourceTree = "<group>"; };
+		56CF94B11CBD63E500C48330 /* ViperModuleFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViperModuleFactoryProtocol.h; path = CoreLayer/TransitionModerator/ViperModuleFactoryProtocol.h; sourceTree = "<group>"; };
+		56CF94B21CBD640500C48330 /* ViperModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViperModuleFactory.h; path = CoreLayer/TransitionModerator/ViperModuleFactory.h; sourceTree = "<group>"; };
+		56CF94B31CBD640500C48330 /* ViperModuleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViperModuleFactory.m; path = CoreLayer/TransitionModerator/ViperModuleFactory.m; sourceTree = "<group>"; };
+		56D067B01CB40BD000B58F98 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		56D067B51CB51A6300B58F98 /* Message+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Message+CoreDataProperties.h"; path = "ManagedObjects/Message+CoreDataProperties.h"; sourceTree = "<group>"; };
+		56D067B61CB51A6300B58F98 /* Message+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Message+CoreDataProperties.m"; path = "ManagedObjects/Message+CoreDataProperties.m"; sourceTree = "<group>"; };
+		56D067B71CB51A6300B58F98 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = ManagedObjects/Message.h; sourceTree = "<group>"; };
+		56D067B81CB51A6300B58F98 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = ManagedObjects/Message.m; sourceTree = "<group>"; };
+		56E09D791CB65A8500E54B87 /* SOLDialogTableViewCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogTableViewCellObject.h; path = CellObject/SOLDialogTableViewCellObject.h; sourceTree = "<group>"; };
+		56E09D7A1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogTableViewCellObject.m; path = CellObject/SOLDialogTableViewCellObject.m; sourceTree = "<group>"; };
+		56E09D7D1CB6629100E54B87 /* SOLDialogCellObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogCellObjectBuilder.h; path = DialogCellObjectBuilder/SOLDialogCellObjectBuilder.h; sourceTree = "<group>"; };
+		56E09D7E1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogCellObjectBuilder.m; path = DialogCellObjectBuilder/SOLDialogCellObjectBuilder.m; sourceTree = "<group>"; };
+		56E09D841CB66A7300E54B87 /* SOLDialogDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogDataDisplayManager.h; path = DataDisplayManager/SOLDialogDataDisplayManager.h; sourceTree = "<group>"; };
+		56E09D851CB66A7300E54B87 /* SOLDialogDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogDataDisplayManager.m; path = DataDisplayManager/SOLDialogDataDisplayManager.m; sourceTree = "<group>"; };
+		D225FB881BDA6CE100711C53 /* String+Md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "String+Md5.h"; sourceTree = "<group>"; };
+		D225FB891BDA6CE100711C53 /* String+Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "String+Md5.m"; sourceTree = "<group>"; };
+		D24BAC2E1BE7A5F2003C96A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D24BAC301BE7A641003C96A9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D2587DBC1C6A0C7F006FAB08 /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
+		D2587DBF1C6A2434006FAB08 /* StringLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLocalizer.h; sourceTree = "<group>"; };
+		D2587DC01C6A2434006FAB08 /* StringLocalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringLocalizer.m; sourceTree = "<group>"; };
+		D26918F51C98548F00FD90C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D2A8CBA01BC7A62C006BF1F6 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2A8CBA41BC7A62C006BF1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2A8CBB41BC7A62C006BF1F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2A8CBBD1BC7A93F006BF1F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D2A8CBBF1BC7A94B006BF1F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D2DEDF881C4AA705006ED545 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D2F8AC391C4E746E00FB1DB0 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		D2FBF0061C1F0BAC005CEACA /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		DF0818931CBA738500BACB69 /* SOLUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserService.h; sourceTree = "<group>"; };
+		DF0818961CBA745000BACB69 /* SOLMessageServiceAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageServiceAssembly.h; sourceTree = "<group>"; };
+		DF0818971CBA745000BACB69 /* SOLMessageServiceAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLMessageServiceAssembly.m; sourceTree = "<group>"; };
+		DF0818991CBA745000BACB69 /* SOLMessageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageCache.h; sourceTree = "<group>"; };
+		DF08189A1CBA745000BACB69 /* SOLMessageCacheImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageCacheImplementation.h; sourceTree = "<group>"; };
+		DF08189B1CBA745000BACB69 /* SOLMessageCacheImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLMessageCacheImplementation.m; sourceTree = "<group>"; };
+		DF08189D1CBA745000BACB69 /* SOLMessageMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageMapper.h; sourceTree = "<group>"; };
+		DF08189E1CBA745000BACB69 /* SOLMessageMapperImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageMapperImplementation.h; sourceTree = "<group>"; };
+		DF08189F1CBA745000BACB69 /* SOLMessageMapperImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLMessageMapperImplementation.m; sourceTree = "<group>"; };
+		DF0818A11CBA745000BACB69 /* SOLMessageSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageSerializer.h; sourceTree = "<group>"; };
+		DF0818A21CBA745000BACB69 /* SOLMessageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageService.h; sourceTree = "<group>"; };
+		DF0818A31CBA745000BACB69 /* SOLMessageServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageServiceImplementation.h; sourceTree = "<group>"; };
+		DF0818A41CBA745000BACB69 /* SOLMessageServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLMessageServiceImplementation.m; sourceTree = "<group>"; };
+		DF0818A61CBA745000BACB69 /* SOLMessageTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageTransport.h; sourceTree = "<group>"; };
+		DF0818A71CBA745000BACB69 /* SOLMessageTransportImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLMessageTransportImplementation.h; sourceTree = "<group>"; };
+		DF0818A81CBA745000BACB69 /* SOLMessageTransportImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLMessageTransportImplementation.m; sourceTree = "<group>"; };
+		DF0818B21CBA776800BACB69 /* SOLUserServiceImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserServiceImplementation.h; sourceTree = "<group>"; };
+		DF0818B31CBA776800BACB69 /* SOLUserServiceImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserServiceImplementation.m; sourceTree = "<group>"; };
+		DF0818BA1CBA79A900BACB69 /* SOLUserServiceAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserServiceAssembly.h; sourceTree = "<group>"; };
+		DF0818BB1CBA79A900BACB69 /* SOLUserServiceAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserServiceAssembly.m; sourceTree = "<group>"; };
+		DF0818BD1CBA7B7400BACB69 /* SOLUserTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserTransport.h; sourceTree = "<group>"; };
+		DF0818BF1CBA82FB00BACB69 /* SOLUserTransportImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserTransportImplementation.h; sourceTree = "<group>"; };
+		DF0818C01CBA82FB00BACB69 /* SOLUserTransportImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserTransportImplementation.m; sourceTree = "<group>"; };
+		DF0818C21CBA988600BACB69 /* SOLUserMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserMapper.h; sourceTree = "<group>"; };
+		DF0818C31CBA98B200BACB69 /* SOLUserMapperImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserMapperImplementation.h; sourceTree = "<group>"; };
+		DF0818C41CBA98B200BACB69 /* SOLUserMapperImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserMapperImplementation.m; sourceTree = "<group>"; };
+		DF0818C71CBAA19000BACB69 /* SOLUserCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserCache.h; sourceTree = "<group>"; };
+		DF0818C81CBAA39800BACB69 /* SOLUserCacheImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLUserCacheImplementation.h; sourceTree = "<group>"; };
+		DF0818C91CBAA39800BACB69 /* SOLUserCacheImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLUserCacheImplementation.m; sourceTree = "<group>"; };
+		DF0818CB1CBAA91100BACB69 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "ManagedObjects/User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DF0818CC1CBAA91100BACB69 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "ManagedObjects/User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DF0818CD1CBAA91100BACB69 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = ManagedObjects/User.h; sourceTree = "<group>"; };
+		DF0818CE1CBAA91100BACB69 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = ManagedObjects/User.m; sourceTree = "<group>"; };
+		DF0818D71CBAAEB100BACB69 /* Friends.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Friends.storyboard; sourceTree = "<group>"; };
+		DF0818DE1CBAB0BA00BACB69 /* SOLFriendListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListTableViewController.h; sourceTree = "<group>"; };
+		DF0818DF1CBAB0BA00BACB69 /* SOLFriendListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListTableViewController.m; sourceTree = "<group>"; };
+		DF0818E81CBAB82E00BACB69 /* SOLFriendListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListTableViewCell.h; sourceTree = "<group>"; };
+		DF0818E91CBAB82E00BACB69 /* SOLFriendListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListTableViewCell.m; sourceTree = "<group>"; };
+		DF0818EA1CBAB82E00BACB69 /* SOLFriendListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SOLFriendListTableViewCell.xib; sourceTree = "<group>"; };
+		DF0818EF1CBAB87F00BACB69 /* SOLFriendListTableViewCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListTableViewCellObject.h; sourceTree = "<group>"; };
+		DF0818F01CBAB87F00BACB69 /* SOLFriendListTableViewCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListTableViewCellObject.m; sourceTree = "<group>"; };
+		DF0818F21CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListCellObjectBuilder.h; sourceTree = "<group>"; };
+		DF0818F31CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListCellObjectBuilder.m; sourceTree = "<group>"; };
+		DF0818F51CBAC38F00BACB69 /* SOLFriendListModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListModuleAssembly.h; sourceTree = "<group>"; };
+		DF0818F61CBAC38F00BACB69 /* SOLFriendListModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListModuleAssembly.m; sourceTree = "<group>"; };
+		DF0818F91CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListDataDisplayManager.h; sourceTree = "<group>"; };
+		DF0818FA1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListDataDisplayManager.m; sourceTree = "<group>"; };
+		DF0818FC1CBAF63100BACB69 /* SOLBaseDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLBaseDataDisplayManager.h; path = Common/DataDisplayManager/SOLBaseDataDisplayManager.h; sourceTree = "<group>"; };
+		DF0818FD1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLBaseDataDisplayManager.m; path = Common/DataDisplayManager/SOLBaseDataDisplayManager.m; sourceTree = "<group>"; };
+		DF0E7DD71CB6314B007E67E6 /* SOLDialogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogTableViewCell.h; path = Cell/SOLDialogTableViewCell.h; sourceTree = "<group>"; };
+		DF0E7DD81CB6314B007E67E6 /* SOLDialogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogTableViewCell.m; path = Cell/SOLDialogTableViewCell.m; sourceTree = "<group>"; };
+		DF0E7DDA1CB63170007E67E6 /* SOLDialogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SOLDialogTableViewCell.xib; path = Cell/SOLDialogTableViewCell.xib; sourceTree = "<group>"; };
+		DF21C7E31CB4DB5400635062 /* SOLInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLInitializer.h; sourceTree = "<group>"; };
+		DF21C7E41CB4DB5400635062 /* SOLInitializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLInitializer.m; sourceTree = "<group>"; };
+		DF2F60D21CB39EA4006352D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DF2F60DA1CB39F50006352D9 /* OutputFaceBookData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OutputFaceBookData.xcdatamodel; sourceTree = "<group>"; };
+		DF3BFE201CB4C7C40017ADA5 /* SOLThirdPartiesConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLThirdPartiesConfigurator.h; sourceTree = "<group>"; };
+		DF3BFE211CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLThirdPartiesConfiguratorImplementation.h; sourceTree = "<group>"; };
+		DF3BFE221CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLThirdPartiesConfiguratorImplementation.m; sourceTree = "<group>"; };
+		DF3BFE261CB4CC100017ADA5 /* SOLApplicationAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLApplicationAssembly.h; sourceTree = "<group>"; };
+		DF3BFE271CB4CC100017ADA5 /* SOLApplicationAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLApplicationAssembly.m; sourceTree = "<group>"; };
+		DF9A59B81CBCD01E00E36683 /* SOLFriendListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListInteractor.h; sourceTree = "<group>"; };
+		DF9A59B91CBCD01E00E36683 /* SOLFriendListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListInteractor.m; sourceTree = "<group>"; };
+		DF9A59BC1CBCD0AA00E36683 /* SOLFriendListInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListInteractorOutput.h; sourceTree = "<group>"; };
+		DF9A59BD1CBCD0DF00E36683 /* SOLFriendListInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListInteractorInput.h; sourceTree = "<group>"; };
+		DF9A59BE1CBCD10700E36683 /* SOLFriendListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListPresenter.h; sourceTree = "<group>"; };
+		DF9A59BF1CBCD10700E36683 /* SOLFriendListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListPresenter.m; sourceTree = "<group>"; };
+		DF9A59C11CBCD12300E36683 /* SOLFriendListRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListRouter.h; sourceTree = "<group>"; };
+		DF9A59C21CBCD12300E36683 /* SOLFriendListRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLFriendListRouter.m; sourceTree = "<group>"; };
+		DF9A59C41CBCD29400E36683 /* SOLFriendListViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListViewInput.h; sourceTree = "<group>"; };
+		DF9A59C51CBCD2B300E36683 /* SOLFriendListViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListViewOutput.h; sourceTree = "<group>"; };
+		DF9A59C61CBCD5FB00E36683 /* SOLFriendListRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLFriendListRouterInput.h; sourceTree = "<group>"; };
+		F569A988A172467CA446CEA3 /* Pods-Social.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Social.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Social/Pods-Social.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2A8CB9D1BC7A62C006BF1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D26918F61C98549000FD90C6 /* CoreData.framework in Frameworks */,
+				D2F8AC3A1C4E746E00FB1DB0 /* Contacts.framework in Frameworks */,
+				D2FBF0071C1F0BAC005CEACA /* SafariServices.framework in Frameworks */,
+				D2A8CBC31BC7A979006BF1F6 /* Foundation.framework in Frameworks */,
+				D2A8CBC01BC7A94B006BF1F6 /* CoreGraphics.framework in Frameworks */,
+				2EAF6E56DCD2F189A5ADF12C /* Pods_Social.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5633E31C1CB2876E0025D290 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3641CB2C2080025D290 /* ApplicationLayer */,
+				5633E31D1CB2876E0025D290 /* BusinessLogicLayer */,
+				5633E33C1CB288EF0025D290 /* PresentationLayer */,
+				5633E32C1CB2876E0025D290 /* Models */,
+				DF2F60CE1CB39EA4006352D9 /* Resources */,
+				DF3BFE291CB4D2B40017ADA5 /* CoreLayer */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		5633E31D1CB2876E0025D290 /* BusinessLogicLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5633E31E1CB2876E0025D290 /* Services */,
+			);
+			path = BusinessLogicLayer;
+			sourceTree = "<group>";
+		};
+		5633E31E1CB2876E0025D290 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5633E31F1CB2876E0025D290 /* ConcreteServices */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5633E31F1CB2876E0025D290 /* ConcreteServices */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3291CB2876E0025D290 /* UserService */,
+				DF0818941CBA745000BACB69 /* MessageService */,
+				5633E3201CB2876E0025D290 /* AudioService */,
+				5633E3231CB2876E0025D290 /* AuthService */,
+				5633E3261CB2876E0025D290 /* FriendService */,
+			);
+			path = ConcreteServices;
+			sourceTree = "<group>";
+		};
+		5633E3201CB2876E0025D290 /* AudioService */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3211CB2876E0025D290 /* SOLAudioService.h */,
+				5633E3221CB2876E0025D290 /* SOLAudioService.m */,
+			);
+			path = AudioService;
+			sourceTree = "<group>";
+		};
+		5633E3231CB2876E0025D290 /* AuthService */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3241CB2876E0025D290 /* SOLAuthService.h */,
+				5633E3251CB2876E0025D290 /* SOLAuthService.m */,
+			);
+			path = AuthService;
+			sourceTree = "<group>";
+		};
+		5633E3261CB2876E0025D290 /* FriendService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FriendService;
+			sourceTree = "<group>";
+		};
+		5633E3291CB2876E0025D290 /* UserService */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818931CBA738500BACB69 /* SOLUserService.h */,
+				DF0818B21CBA776800BACB69 /* SOLUserServiceImplementation.h */,
+				DF0818B31CBA776800BACB69 /* SOLUserServiceImplementation.m */,
+				DF0818B51CBA795A00BACB69 /* Assembly */,
+				DF0818B61CBA795A00BACB69 /* Cache */,
+				DF0818B71CBA795A00BACB69 /* Mapper */,
+				DF0818B81CBA795A00BACB69 /* Serializer */,
+				DF0818B91CBA795A00BACB69 /* Transport */,
+			);
+			path = UserService;
+			sourceTree = "<group>";
+		};
+		5633E32C1CB2876E0025D290 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5633E32D1CB2876E0025D290 /* PlainObjects */,
+				56D067B41CB5179200B58F98 /* ManagedObjects */,
+				DF2F60D61CB39F50006352D9 /* CoreDataModel */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5633E32D1CB2876E0025D290 /* PlainObjects */ = {
+			isa = PBXGroup;
+			children = (
+				569BD8C21CB69DF000201B59 /* SOLPlainObject.h */,
+				5633E32E1CB2876E0025D290 /* SOLAudioPlainObject.h */,
+				5633E32F1CB2876E0025D290 /* SOLAudioPlainObject.m */,
+				5633E3301CB2876E0025D290 /* SOLFriendPlainObject.h */,
+				5633E3311CB2876E0025D290 /* SOLFriendPlainObject.m */,
+				5633E3321CB2876E0025D290 /* SOLUserPlainObject.h */,
+				5633E3331CB2876E0025D290 /* SOLUserPlainObject.m */,
+				5633E37F1CB2D9EF0025D290 /* SOLMessagePlainObject.h */,
+				5633E3801CB2D9EF0025D290 /* SOLMessagePlainObject.m */,
+			);
+			path = PlainObjects;
+			sourceTree = "<group>";
+		};
+		5633E33C1CB288EF0025D290 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				569BD8BF1CB69CE400201B59 /* Common */,
+				5633E33D1CB288EF0025D290 /* UserStories */,
+				56D067B01CB40BD000B58F98 /* Main.storyboard */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		5633E33D1CB288EF0025D290 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818D11CBAAE7900BACB69 /* FriendsUserStory */,
+				5633E3541CB291F40025D290 /* DialogsUserStory */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		5633E3541CB291F40025D290 /* DialogsUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3551CB291F40025D290 /* Modules */,
+			);
+			path = DialogsUserStory;
+			sourceTree = "<group>";
+		};
+		5633E3551CB291F40025D290 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3561CB291F40025D290 /* DialogListModule */,
+				5633E35C1CB291F40025D290 /* Storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5633E3561CB291F40025D290 /* DialogListModule */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3571CB291F40025D290 /* Assembly */,
+				5633E3581CB291F40025D290 /* Interactor */,
+				5633E3591CB291F40025D290 /* Presenter */,
+				5633E35A1CB291F40025D290 /* Router */,
+				5633E35B1CB291F40025D290 /* View */,
+			);
+			path = DialogListModule;
+			sourceTree = "<group>";
+		};
+		5633E3571CB291F40025D290 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3691CB2CC3E0025D290 /* SOLDialogListModuleAssembly.h */,
+				5633E36A1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		5633E3581CB291F40025D290 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5633E36C1CB2CFEB0025D290 /* SOLDialogListInteractor.h */,
+				5633E36D1CB2CFEB0025D290 /* SOLDialogListInteractor.m */,
+				5633E36F1CB2D03A0025D290 /* SOLDialogListInteractorInput.h */,
+				5633E3701CB2D0620025D290 /* SOLDialogListInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5633E3591CB291F40025D290 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3721CB2D0FD0025D290 /* SOLDialogListPresenter.h */,
+				5633E3731CB2D0FD0025D290 /* SOLDialogListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5633E35A1CB291F40025D290 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3751CB2D15E0025D290 /* SOLDialogListRouter.h */,
+				5633E3761CB2D15E0025D290 /* SOLDialogListRouter.m */,
+				5633E3781CB2D1860025D290 /* SOLDialogListRouterInput.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5633E35B1CB291F40025D290 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56E09D781CB659F700E54B87 /* CellObjects */,
+				56E09D7C1CB661C300E54B87 /* DialogCellObjectBuilder */,
+				DF0E7DD61CB6301C007E67E6 /* Cell */,
+				56E09D801CB66A0E00E54B87 /* DataDisplayManager */,
+				5633E3611CB297520025D290 /* SOLDialogListTableViewController.h */,
+				5633E3621CB297520025D290 /* SOLDialogListTableViewController.m */,
+				5633E3791CB2D3070025D290 /* SOLDialogListViewInput.h */,
+				5633E37A1CB2D31E0025D290 /* SOLDialogListViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5633E35C1CB291F40025D290 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5633E35F1CB294DF0025D290 /* Dialogs.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5633E3641CB2C2080025D290 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				DF21C7E21CB4DB5400635062 /* Initializer */,
+				DF3BFE241CB4CBF00017ADA5 /* Assemblies */,
+				5633E3651CB2C4370025D290 /* AppDelegate */,
+				DF3BFE1F1CB4C7A00017ADA5 /* ThirdPartiesConfigurator */,
+			);
+			name = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		5633E3651CB2C4370025D290 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				5633E3661CB2C4FF0025D290 /* AppDelegate.h */,
+				5633E3671CB2C4FF0025D290 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		569BD8BF1CB69CE400201B59 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				569BD8C31CB6AAD200201B59 /* DataDisplayManager */,
+				569BD8C01CB69D1F00201B59 /* CellObjectBuilder */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		569BD8C01CB69D1F00201B59 /* CellObjectBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				569BD8C11CB69D6E00201B59 /* SOLCellObjectBuilder.h */,
+			);
+			name = CellObjectBuilder;
+			sourceTree = "<group>";
+		};
+		569BD8C31CB6AAD200201B59 /* DataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				569BD8C41CB6AB0600201B59 /* SOLDataDisplayManager.h */,
+				DF0818FC1CBAF63100BACB69 /* SOLBaseDataDisplayManager.h */,
+				DF0818FD1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m */,
+			);
+			name = DataDisplayManager;
+			sourceTree = "<group>";
+		};
+		56CF94A41CBD55BC00C48330 /* TransitionModerator */ = {
+			isa = PBXGroup;
+			children = (
+				56CF94B11CBD63E500C48330 /* ViperModuleFactoryProtocol.h */,
+				56CF94B21CBD640500C48330 /* ViperModuleFactory.h */,
+				56CF94B31CBD640500C48330 /* ViperModuleFactory.m */,
+				56CF94A81CBD60E200C48330 /* ViperTransitionModeratorProtocol.h */,
+				56CF94AC1CBD629600C48330 /* UIViewController+ViperTransitionModeratorProtocol.h */,
+				56CF94AD1CBD629600C48330 /* UIViewController+ViperTransitionModeratorProtocol.m */,
+				56CF94A91CBD621F00C48330 /* ViperModuleInputPromise.h */,
+				56CF94AA1CBD621F00C48330 /* ViperModuleInputPromise.m */,
+				56CF94AF1CBD630400C48330 /* ViperModuleInput.h */,
+				56CF94B01CBD631B00C48330 /* ViperModuleOutput.h */,
+			);
+			name = TransitionModerator;
+			sourceTree = "<group>";
+		};
+		56D067B41CB5179200B58F98 /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818CB1CBAA91100BACB69 /* User+CoreDataProperties.h */,
+				DF0818CC1CBAA91100BACB69 /* User+CoreDataProperties.m */,
+				DF0818CD1CBAA91100BACB69 /* User.h */,
+				DF0818CE1CBAA91100BACB69 /* User.m */,
+				56D067B51CB51A6300B58F98 /* Message+CoreDataProperties.h */,
+				56D067B61CB51A6300B58F98 /* Message+CoreDataProperties.m */,
+				56D067B71CB51A6300B58F98 /* Message.h */,
+				56D067B81CB51A6300B58F98 /* Message.m */,
+			);
+			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		56E09D781CB659F700E54B87 /* CellObjects */ = {
+			isa = PBXGroup;
+			children = (
+				56E09D791CB65A8500E54B87 /* SOLDialogTableViewCellObject.h */,
+				56E09D7A1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m */,
+			);
+			name = CellObjects;
+			sourceTree = "<group>";
+		};
+		56E09D7C1CB661C300E54B87 /* DialogCellObjectBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				56E09D7D1CB6629100E54B87 /* SOLDialogCellObjectBuilder.h */,
+				56E09D7E1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m */,
+			);
+			name = DialogCellObjectBuilder;
+			sourceTree = "<group>";
+		};
+		56E09D801CB66A0E00E54B87 /* DataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				56E09D841CB66A7300E54B87 /* SOLDialogDataDisplayManager.h */,
+				56E09D851CB66A7300E54B87 /* SOLDialogDataDisplayManager.m */,
+			);
+			name = DataDisplayManager;
+			sourceTree = "<group>";
+		};
+		57AB0CB99FB116F2D773AD4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F569A988A172467CA446CEA3 /* Pods-Social.debug.xcconfig */,
+				0BC4F9BA3B39B88A172D20A8 /* Pods-Social.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D225FB871BDA6CB000711C53 /* Utilits */ = {
+			isa = PBXGroup;
+			children = (
+				D225FB881BDA6CE100711C53 /* String+Md5.h */,
+				D225FB891BDA6CE100711C53 /* String+Md5.m */,
+				D2587DBF1C6A2434006FAB08 /* StringLocalizer.h */,
+				D2587DC01C6A2434006FAB08 /* StringLocalizer.m */,
+			);
+			name = Utilits;
+			sourceTree = "<group>";
+		};
+		D2A8CB971BC7A62C006BF1F6 = {
+			isa = PBXGroup;
+			children = (
+				5633E31C1CB2876E0025D290 /* Source */,
+				D2A8CBD21BC7AA67006BF1F6 /* Frameworks */,
+				D2A8CBA21BC7A62C006BF1F6 /* OutputFaceBookData */,
+				D2A8CBA11BC7A62C006BF1F6 /* Products */,
+				57AB0CB99FB116F2D773AD4D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		D2A8CBA11BC7A62C006BF1F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8CBA01BC7A62C006BF1F6 /* Social.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D2A8CBA21BC7A62C006BF1F6 /* OutputFaceBookData */ = {
+			isa = PBXGroup;
+			children = (
+				D225FB871BDA6CB000711C53 /* Utilits */,
+				D2A8CBB41BC7A62C006BF1F6 /* Info.plist */,
+				D2A8CBA31BC7A62C006BF1F6 /* Supporting Files */,
+				D2587DBC1C6A0C7F006FAB08 /* Consts.h */,
+			);
+			path = OutputFaceBookData;
+			sourceTree = "<group>";
+		};
+		D2A8CBA31BC7A62C006BF1F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2A8CBA41BC7A62C006BF1F6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D2A8CBD21BC7AA67006BF1F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D26918F51C98548F00FD90C6 /* CoreData.framework */,
+				D2F8AC391C4E746E00FB1DB0 /* Contacts.framework */,
+				D2DEDF881C4AA705006ED545 /* AddressBook.framework */,
+				D2FBF0061C1F0BAC005CEACA /* SafariServices.framework */,
+				D24BAC301BE7A641003C96A9 /* SystemConfiguration.framework */,
+				D24BAC2E1BE7A5F2003C96A9 /* Security.framework */,
+				D2A8CBBF1BC7A94B006BF1F6 /* CoreGraphics.framework */,
+				D2A8CBBD1BC7A93F006BF1F6 /* Foundation.framework */,
+				08AFDA533BD510CF96386493 /* Pods_Social.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF0818941CBA745000BACB69 /* MessageService */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818A21CBA745000BACB69 /* SOLMessageService.h */,
+				DF0818A31CBA745000BACB69 /* SOLMessageServiceImplementation.h */,
+				DF0818A41CBA745000BACB69 /* SOLMessageServiceImplementation.m */,
+				DF0818951CBA745000BACB69 /* Assembly */,
+				DF0818981CBA745000BACB69 /* Cache */,
+				DF08189C1CBA745000BACB69 /* Mapper */,
+				DF0818A01CBA745000BACB69 /* Serializer */,
+				DF0818A51CBA745000BACB69 /* Transport */,
+			);
+			path = MessageService;
+			sourceTree = "<group>";
+		};
+		DF0818951CBA745000BACB69 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818961CBA745000BACB69 /* SOLMessageServiceAssembly.h */,
+				DF0818971CBA745000BACB69 /* SOLMessageServiceAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		DF0818981CBA745000BACB69 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818991CBA745000BACB69 /* SOLMessageCache.h */,
+				DF08189A1CBA745000BACB69 /* SOLMessageCacheImplementation.h */,
+				DF08189B1CBA745000BACB69 /* SOLMessageCacheImplementation.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		DF08189C1CBA745000BACB69 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				DF08189D1CBA745000BACB69 /* SOLMessageMapper.h */,
+				DF08189E1CBA745000BACB69 /* SOLMessageMapperImplementation.h */,
+				DF08189F1CBA745000BACB69 /* SOLMessageMapperImplementation.m */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		DF0818A01CBA745000BACB69 /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818A11CBA745000BACB69 /* SOLMessageSerializer.h */,
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		DF0818A51CBA745000BACB69 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818A61CBA745000BACB69 /* SOLMessageTransport.h */,
+				DF0818A71CBA745000BACB69 /* SOLMessageTransportImplementation.h */,
+				DF0818A81CBA745000BACB69 /* SOLMessageTransportImplementation.m */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		DF0818B51CBA795A00BACB69 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818BA1CBA79A900BACB69 /* SOLUserServiceAssembly.h */,
+				DF0818BB1CBA79A900BACB69 /* SOLUserServiceAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		DF0818B61CBA795A00BACB69 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818C71CBAA19000BACB69 /* SOLUserCache.h */,
+				DF0818C81CBAA39800BACB69 /* SOLUserCacheImplementation.h */,
+				DF0818C91CBAA39800BACB69 /* SOLUserCacheImplementation.m */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
+		DF0818B71CBA795A00BACB69 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818C21CBA988600BACB69 /* SOLUserMapper.h */,
+				DF0818C31CBA98B200BACB69 /* SOLUserMapperImplementation.h */,
+				DF0818C41CBA98B200BACB69 /* SOLUserMapperImplementation.m */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		DF0818B81CBA795A00BACB69 /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		DF0818B91CBA795A00BACB69 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818BD1CBA7B7400BACB69 /* SOLUserTransport.h */,
+				DF0818BF1CBA82FB00BACB69 /* SOLUserTransportImplementation.h */,
+				DF0818C01CBA82FB00BACB69 /* SOLUserTransportImplementation.m */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		DF0818D11CBAAE7900BACB69 /* FriendsUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818D21CBAAE7900BACB69 /* Modules */,
+			);
+			path = FriendsUserStory;
+			sourceTree = "<group>";
+		};
+		DF0818D21CBAAE7900BACB69 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818D31CBAAE7900BACB69 /* FrieendListModule */,
+				DF0818D41CBAAE7900BACB69 /* Storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DF0818D31CBAAE7900BACB69 /* FrieendListModule */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818D91CBAB08300BACB69 /* Assembly */,
+				DF0818DA1CBAB08300BACB69 /* Interactor */,
+				DF0818DB1CBAB08300BACB69 /* Presenter */,
+				DF0818DC1CBAB08300BACB69 /* Router */,
+				DF0818DD1CBAB08300BACB69 /* View */,
+			);
+			path = FrieendListModule;
+			sourceTree = "<group>";
+		};
+		DF0818D41CBAAE7900BACB69 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818D71CBAAEB100BACB69 /* Friends.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		DF0818D91CBAB08300BACB69 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818F51CBAC38F00BACB69 /* SOLFriendListModuleAssembly.h */,
+				DF0818F61CBAC38F00BACB69 /* SOLFriendListModuleAssembly.m */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		DF0818DA1CBAB08300BACB69 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A59B81CBCD01E00E36683 /* SOLFriendListInteractor.h */,
+				DF9A59B91CBCD01E00E36683 /* SOLFriendListInteractor.m */,
+				DF9A59BD1CBCD0DF00E36683 /* SOLFriendListInteractorInput.h */,
+				DF9A59BC1CBCD0AA00E36683 /* SOLFriendListInteractorOutput.h */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		DF0818DB1CBAB08300BACB69 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A59BE1CBCD10700E36683 /* SOLFriendListPresenter.h */,
+				DF9A59BF1CBCD10700E36683 /* SOLFriendListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DF0818DC1CBAB08300BACB69 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				DF9A59C11CBCD12300E36683 /* SOLFriendListRouter.h */,
+				DF9A59C21CBCD12300E36683 /* SOLFriendListRouter.m */,
+				DF9A59C61CBCD5FB00E36683 /* SOLFriendListRouterInput.h */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		DF0818DD1CBAB08300BACB69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818E71CBAB82E00BACB69 /* Cell */,
+				DF0818EB1CBAB82E00BACB69 /* CellObjects */,
+				DF0818EC1CBAB82E00BACB69 /* CellObjectsBuilder */,
+				DF0818F81CBAC89E00BACB69 /* DataDisplayManager */,
+				DF0818DE1CBAB0BA00BACB69 /* SOLFriendListTableViewController.h */,
+				DF0818DF1CBAB0BA00BACB69 /* SOLFriendListTableViewController.m */,
+				DF9A59C41CBCD29400E36683 /* SOLFriendListViewInput.h */,
+				DF9A59C51CBCD2B300E36683 /* SOLFriendListViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF0818E71CBAB82E00BACB69 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818E81CBAB82E00BACB69 /* SOLFriendListTableViewCell.h */,
+				DF0818E91CBAB82E00BACB69 /* SOLFriendListTableViewCell.m */,
+				DF0818EA1CBAB82E00BACB69 /* SOLFriendListTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DF0818EB1CBAB82E00BACB69 /* CellObjects */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818EF1CBAB87F00BACB69 /* SOLFriendListTableViewCellObject.h */,
+				DF0818F01CBAB87F00BACB69 /* SOLFriendListTableViewCellObject.m */,
+			);
+			path = CellObjects;
+			sourceTree = "<group>";
+		};
+		DF0818EC1CBAB82E00BACB69 /* CellObjectsBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818F21CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.h */,
+				DF0818F31CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m */,
+			);
+			path = CellObjectsBuilder;
+			sourceTree = "<group>";
+		};
+		DF0818F81CBAC89E00BACB69 /* DataDisplayManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF0818F91CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.h */,
+				DF0818FA1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m */,
+			);
+			path = DataDisplayManager;
+			sourceTree = "<group>";
+		};
+		DF0E7DD61CB6301C007E67E6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DF0E7DD71CB6314B007E67E6 /* SOLDialogTableViewCell.h */,
+				DF0E7DD81CB6314B007E67E6 /* SOLDialogTableViewCell.m */,
+				DF0E7DDA1CB63170007E67E6 /* SOLDialogTableViewCell.xib */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		DF21C7E21CB4DB5400635062 /* Initializer */ = {
+			isa = PBXGroup;
+			children = (
+				DF21C7E31CB4DB5400635062 /* SOLInitializer.h */,
+				DF21C7E41CB4DB5400635062 /* SOLInitializer.m */,
+			);
+			name = Initializer;
+			path = ApplicationLayer/Initializer;
+			sourceTree = "<group>";
+		};
+		DF2F60CE1CB39EA4006352D9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60CF1CB39EA4006352D9 /* Images */,
+				DF2F60D01CB39EA4006352D9 /* Strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF2F60CF1CB39EA4006352D9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				56CF94A21CBD381600C48330 /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		DF2F60D01CB39EA4006352D9 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60D11CB39EA4006352D9 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		DF2F60D61CB39F50006352D9 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				DF2F60D91CB39F50006352D9 /* OutputFaceBookData.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		DF3BFE1F1CB4C7A00017ADA5 /* ThirdPartiesConfigurator */ = {
+			isa = PBXGroup;
+			children = (
+				DF3BFE201CB4C7C40017ADA5 /* SOLThirdPartiesConfigurator.h */,
+				DF3BFE211CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.h */,
+				DF3BFE221CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m */,
+			);
+			name = ThirdPartiesConfigurator;
+			path = ApplicationLayer/ThirdPartiesConfigurator;
+			sourceTree = "<group>";
+		};
+		DF3BFE241CB4CBF00017ADA5 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				DF3BFE251CB4CBF00017ADA5 /* ApplicationAssembly */,
+			);
+			name = Assemblies;
+			path = ApplicationLayer/Assemblies;
+			sourceTree = "<group>";
+		};
+		DF3BFE251CB4CBF00017ADA5 /* ApplicationAssembly */ = {
+			isa = PBXGroup;
+			children = (
+				DF3BFE261CB4CC100017ADA5 /* SOLApplicationAssembly.h */,
+				DF3BFE271CB4CC100017ADA5 /* SOLApplicationAssembly.m */,
+			);
+			path = ApplicationAssembly;
+			sourceTree = "<group>";
+		};
+		DF3BFE291CB4D2B40017ADA5 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				56CF94A41CBD55BC00C48330 /* TransitionModerator */,
+			);
+			name = CoreLayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2A8CB9F1BC7A62C006BF1F6 /* Social */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2A8CBB71BC7A62C006BF1F6 /* Build configuration list for PBXNativeTarget "Social" */;
+			buildPhases = (
+				609E5837B22474F20BB0126C /* Check Pods Manifest.lock */,
+				D2A8CB9C1BC7A62C006BF1F6 /* Sources */,
+				D2A8CB9D1BC7A62C006BF1F6 /* Frameworks */,
+				D2A8CB9E1BC7A62C006BF1F6 /* Resources */,
+				6B5D800FA69B1B54AF9043DF /* Embed Pods Frameworks */,
+				16D27A9E16054CBF525AF73A /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Social;
+			productName = OutputFaceBookData;
+			productReference = D2A8CBA01BC7A62C006BF1F6 /* Social.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D2A8CB981BC7A62C006BF1F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = OCP;
+				TargetAttributes = {
+					D2A8CB9F1BC7A62C006BF1F6 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D2A8CB9B1BC7A62C006BF1F6 /* Build configuration list for PBXProject "Social" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = D2A8CB971BC7A62C006BF1F6;
+			productRefGroup = D2A8CBA11BC7A62C006BF1F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2A8CB9F1BC7A62C006BF1F6 /* Social */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D2A8CB9E1BC7A62C006BF1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0818EE1CBAB82E00BACB69 /* SOLFriendListTableViewCell.xib in Resources */,
+				DF0818D81CBAAEB100BACB69 /* Friends.storyboard in Resources */,
+				56CF94A31CBD381600C48330 /* Images.xcassets in Resources */,
+				DF0E7DDB1CB63170007E67E6 /* SOLDialogTableViewCell.xib in Resources */,
+				56D067B11CB40BD000B58F98 /* Main.storyboard in Resources */,
+				DF2F60D31CB39EA4006352D9 /* Localizable.strings in Resources */,
+				5633E3601CB294DF0025D290 /* Dialogs.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16D27A9E16054CBF525AF73A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social/Pods-Social-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		609E5837B22474F20BB0126C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B5D800FA69B1B54AF9043DF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Social/Pods-Social-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2A8CB9C1BC7A62C006BF1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF0818D01CBAA91100BACB69 /* User.m in Sources */,
+				DF0818F41CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m in Sources */,
+				DF0818FE1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m in Sources */,
+				56E09D861CB66A7300E54B87 /* SOLDialogDataDisplayManager.m in Sources */,
+				DF0E7DD91CB6314B007E67E6 /* SOLDialogTableViewCell.m in Sources */,
+				56E09D7F1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m in Sources */,
+				56D067BA1CB51A6300B58F98 /* Message.m in Sources */,
+				DF9A59C31CBCD12300E36683 /* SOLFriendListRouter.m in Sources */,
+				5633E36E1CB2CFEB0025D290 /* SOLDialogListInteractor.m in Sources */,
+				5633E3741CB2D0FD0025D290 /* SOLDialogListPresenter.m in Sources */,
+				DF0818C51CBA98B200BACB69 /* SOLUserMapperImplementation.m in Sources */,
+				DF0818AC1CBA745000BACB69 /* SOLMessageServiceImplementation.m in Sources */,
+				DF0818A91CBA745000BACB69 /* SOLMessageServiceAssembly.m in Sources */,
+				5633E3351CB2876E0025D290 /* SOLAuthService.m in Sources */,
+				5633E3631CB297520025D290 /* SOLDialogListTableViewController.m in Sources */,
+				DF0818ED1CBAB82E00BACB69 /* SOLFriendListTableViewCell.m in Sources */,
+				DF21C7E51CB4DB5400635062 /* SOLInitializer.m in Sources */,
+				5633E33A1CB2876E0025D290 /* SOLUserPlainObject.m in Sources */,
+				DF3BFE281CB4CC100017ADA5 /* SOLApplicationAssembly.m in Sources */,
+				D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */,
+				DF9A59C01CBCD10700E36683 /* SOLFriendListPresenter.m in Sources */,
+				56CF94B41CBD640500C48330 /* ViperModuleFactory.m in Sources */,
+				DF0818E01CBAB0BA00BACB69 /* SOLFriendListTableViewController.m in Sources */,
+				DF0818CA1CBAA39800BACB69 /* SOLUserCacheImplementation.m in Sources */,
+				DF9A59BA1CBCD01E00E36683 /* SOLFriendListInteractor.m in Sources */,
+				56D067B91CB51A6300B58F98 /* Message+CoreDataProperties.m in Sources */,
+				56E09D7B1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m in Sources */,
+				5633E3811CB2D9EF0025D290 /* SOLMessagePlainObject.m in Sources */,
+				DF0818BC1CBA79A900BACB69 /* SOLUserServiceAssembly.m in Sources */,
+				56CF94AE1CBD629600C48330 /* UIViewController+ViperTransitionModeratorProtocol.m in Sources */,
+				DF0818F71CBAC38F00BACB69 /* SOLFriendListModuleAssembly.m in Sources */,
+				D2A8CBA51BC7A62C006BF1F6 /* main.m in Sources */,
+				5633E36B1CB2CC3E0025D290 /* SOLDialogListModuleAssembly.m in Sources */,
+				5633E3681CB2C4FF0025D290 /* AppDelegate.m in Sources */,
+				DF2F60DC1CB39F50006352D9 /* OutputFaceBookData.xcdatamodeld in Sources */,
+				5633E3341CB2876E0025D290 /* SOLAudioService.m in Sources */,
+				5633E3381CB2876E0025D290 /* SOLAudioPlainObject.m in Sources */,
+				DF0818AB1CBA745000BACB69 /* SOLMessageMapperImplementation.m in Sources */,
+				DF0818B41CBA776800BACB69 /* SOLUserServiceImplementation.m in Sources */,
+				5633E3771CB2D15E0025D290 /* SOLDialogListRouter.m in Sources */,
+				5633E3391CB2876E0025D290 /* SOLFriendPlainObject.m in Sources */,
+				DF0818CF1CBAA91100BACB69 /* User+CoreDataProperties.m in Sources */,
+				DF0818AD1CBA745000BACB69 /* SOLMessageTransportImplementation.m in Sources */,
+				DF0818AA1CBA745000BACB69 /* SOLMessageCacheImplementation.m in Sources */,
+				DF3BFE231CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m in Sources */,
+				DF0818F11CBAB87F00BACB69 /* SOLFriendListTableViewCellObject.m in Sources */,
+				DF0818C11CBA82FB00BACB69 /* SOLUserTransportImplementation.m in Sources */,
+				D225FB8A1BDA6CE100711C53 /* String+Md5.m in Sources */,
+				DF0818FB1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m in Sources */,
+				56CF94AB1CBD621F00C48330 /* ViperModuleInputPromise.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DF2F60D11CB39EA4006352D9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF2F60D21CB39EA4006352D9 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D2A8CBB51BC7A62C006BF1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D2A8CBB61BC7A62C006BF1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D2A8CBB81BC7A62C006BF1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F569A988A172467CA446CEA3 /* Pods-Social.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = OutputFaceBookData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.social.vk;
+				PRODUCT_NAME = Social;
+			};
+			name = Debug;
+		};
+		D2A8CBB91BC7A62C006BF1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BC4F9BA3B39B88A172D20A8 /* Pods-Social.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = OutputFaceBookData/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.social.vk;
+				PRODUCT_NAME = Social;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D2A8CB9B1BC7A62C006BF1F6 /* Build configuration list for PBXProject "Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A8CBB51BC7A62C006BF1F6 /* Debug */,
+				D2A8CBB61BC7A62C006BF1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2A8CBB71BC7A62C006BF1F6 /* Build configuration list for PBXNativeTarget "Social" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2A8CBB81BC7A62C006BF1F6 /* Debug */,
+				D2A8CBB91BC7A62C006BF1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DF2F60D91CB39F50006352D9 /* OutputFaceBookData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DF2F60DA1CB39F50006352D9 /* OutputFaceBookData.xcdatamodel */,
+			);
+			currentVersion = DF2F60DA1CB39F50006352D9 /* OutputFaceBookData.xcdatamodel */;
+			path = OutputFaceBookData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D2A8CB981BC7A62C006BF1F6 /* Project object */;
+}

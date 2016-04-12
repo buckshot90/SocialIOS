@@ -28,5 +28,9 @@
     return self;
 }
 
+- (NSString *)description {
+    
+    return [NSString stringWithFormat:@"name: %@, online: %i, onlineMobile: %i", _userName, _userOnline, _userOnlineMobile];
+}
 
 @end

@@ -6,7 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SOLUserPlainObject.h"
 
 @protocol SOLFriendListViewOutput <NSObject>
+
+- (void)viewDidLoad;
+- (void)didSelectCellWithFriend:(SOLUserPlainObject *)friend;
 
 @end

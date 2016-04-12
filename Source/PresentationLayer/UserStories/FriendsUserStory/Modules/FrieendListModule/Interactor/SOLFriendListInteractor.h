@@ -7,9 +7,10 @@
 
 #import <Foundation/Foundation.h>
 #import "SOLFriendListInteractorOutput.h"
+#import "SOLFriendListInteractorInput.h"
 #import "SOLUserService.h"
 
-@interface SOLFriendListInteractor : NSObject
+@interface SOLFriendListInteractor : NSObject <SOLFriendListInteractorInput>
 
 @property (weak, nonatomic) id<SOLFriendListInteractorOutput>output;
 @property (strong, nonatomic) id<SOLUserService>service;

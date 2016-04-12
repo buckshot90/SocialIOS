@@ -6,7 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class SOLUserPlainObject;
 
 @protocol SOLFriendListViewInput <NSObject>
+
+- (void)setupViewWithFriendList:(NSArray<SOLUserPlainObject *> *)friends;
+- (void)updateViewWithFriendList:(NSArray<SOLUserPlainObject *> *)friends;
 
 @end

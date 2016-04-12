@@ -25,6 +25,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [_output viewDidLoad];
+}
+
+#pragma mark - SOLFriendListViewInput
+
+- (void)setupViewWithFriendList:(NSArray<SOLUserPlainObject *> *)friends {
+    
     _dataDisplayManager.delegate = self;
     _dataDisplayManager.dataSource = self;
     self.tableView.delegate = _dataDisplayManager;
@@ -38,11 +45,13 @@
     self.searchController.searchBar.scopeButtonTitles = @[@"All", @"Online"];
     self.tableView.tableHeaderView = self.searchController.searchBar;
     
-    self.service = [SOLUserServiceAssembly userService];
-    [_service updateUsersWithPredicate:nil completionBlock:^(NSArray<SOLUserPlainObject *> *list, NSError *error) {
-        
-        [self.dataDisplayManager updateTableViewModelWithPlainObjects: list];
-    }];
+    [self.dataDisplayManager updateTableViewModelWithPlainObjects: friends];
+}
+
+- (void)updateViewWithFriendList:(NSArray<SOLUserPlainObject *> *)friends {
+    
+    NSLog(@"friends: %@", friends);
+    [self.dataDisplayManager updateTableViewModelWithPlainObjects: friends];
 }
 
 #pragma mark - SOLDataDisplayManagerDelegate
@@ -54,6 +63,7 @@
 
 - (void)didTapCellWithPlainObject:(id<SOLPlainObject>)plainObj {
     
+    [_output didSelectCellWithFriend:plainObj];
 }
 
 #pragma mark - SOLDataDisplayManagerDataSource

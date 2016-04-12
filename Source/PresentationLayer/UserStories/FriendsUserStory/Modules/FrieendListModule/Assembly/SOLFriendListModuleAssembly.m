@@ -9,6 +9,12 @@
 #import "SOLFriendListTableViewController.h"
 #import "SOLFriendListCellObjectBuilder.h"
 
+#import "SOLUserServiceAssembly.h"
+
+#import "SOLFriendListInteractor.h"
+#import "SOLFriendListPresenter.h"
+#import "SOLFriendListRouter.h"
+
 @interface SOLFriendListModuleAssembly ()
 
 @property (weak, nonatomic) IBOutlet SOLFriendListTableViewController *viewController;
@@ -33,8 +39,22 @@
 
 - (void)configure:(SOLFriendListTableViewController *)viewController {
     
+    SOLFriendListPresenter *presenter = [[SOLFriendListPresenter alloc] init];
+    
+    SOLFriendListInteractor *interactor = [[SOLFriendListInteractor alloc] init];
+    interactor.output = presenter;
+    interactor.service = [SOLUserServiceAssembly userService];
+    
+    SOLFriendListRouter *router = [[SOLFriendListRouter alloc] init];
+    
+    presenter.interactor = interactor;
+    presenter.router = router;
+    presenter.view = viewController;
+    
     viewController.dataDisplayManager = [self dataDisplayManager];
+    viewController.output = presenter;
 }
+
 - (SOLFriendListDataDisplayManager *)dataDisplayManager {
     
     SOLFriendListDataDisplayManager *dataDisplayManager = [[SOLFriendListDataDisplayManager alloc] init];
