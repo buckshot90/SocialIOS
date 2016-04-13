@@ -31,8 +31,7 @@ static CGFloat const kReportListTableViewCellHeight = 60.0f;
     [self.userPhoto setImageWithURL:object.userPhoto placeholderImage:nil];
     self.userOnline.hidden = !object.userOnline;
     self.userOnlineMobile.hidden = !object.userOnlineMobile;
-    
-    NSLog(@"user: %@", object);
+//    NSLog(@"user: %@", object);
     
     return YES;
 }

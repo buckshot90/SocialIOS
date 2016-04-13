@@ -21,6 +21,11 @@
 
 #pragma mark - SOLDialogListViewOutput
 
+- (void)refreshData {
+    
+     [self.interactor updateDialogList];
+}
+
 - (void)setupView {
     
     NSArray<SOLMessagePlainObject *> * dialogs = [self.interactor obtainDialogList];

@@ -18,6 +18,11 @@
 
 #pragma mark - SOLFriendListViewOutput
 
+- (void)refreshData {
+    
+    [_interactor updateFriendList];
+}
+
 - (void)viewDidLoad {
     
     NSArray <SOLUserPlainObject *> *plainObjs = [_interactor obtainFriendList];

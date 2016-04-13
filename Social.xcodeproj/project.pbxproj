@@ -31,8 +31,6 @@
 		56E09D7B1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D7A1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m */; };
 		56E09D7F1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D7E1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m */; };
 		56E09D861CB66A7300E54B87 /* SOLDialogDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D851CB66A7300E54B87 /* SOLDialogDataDisplayManager.m */; };
-		D225FB8A1BDA6CE100711C53 /* String+Md5.m in Sources */ = {isa = PBXBuildFile; fileRef = D225FB891BDA6CE100711C53 /* String+Md5.m */; };
-		D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2587DC01C6A2434006FAB08 /* StringLocalizer.m */; };
 		D26918F61C98549000FD90C6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D26918F51C98548F00FD90C6 /* CoreData.framework */; };
 		D2A8CBA51BC7A62C006BF1F6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A8CBA41BC7A62C006BF1F6 /* main.m */; };
 		D2A8CBC01BC7A94B006BF1F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2A8CBBF1BC7A94B006BF1F6 /* CoreGraphics.framework */; };
@@ -130,13 +128,8 @@
 		56E09D7E1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogCellObjectBuilder.m; path = DialogCellObjectBuilder/SOLDialogCellObjectBuilder.m; sourceTree = "<group>"; };
 		56E09D841CB66A7300E54B87 /* SOLDialogDataDisplayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogDataDisplayManager.h; path = DataDisplayManager/SOLDialogDataDisplayManager.h; sourceTree = "<group>"; };
 		56E09D851CB66A7300E54B87 /* SOLDialogDataDisplayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogDataDisplayManager.m; path = DataDisplayManager/SOLDialogDataDisplayManager.m; sourceTree = "<group>"; };
-		D225FB881BDA6CE100711C53 /* String+Md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "String+Md5.h"; sourceTree = "<group>"; };
-		D225FB891BDA6CE100711C53 /* String+Md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "String+Md5.m"; sourceTree = "<group>"; };
 		D24BAC2E1BE7A5F2003C96A9 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		D24BAC301BE7A641003C96A9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D2587DBC1C6A0C7F006FAB08 /* Consts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Consts.h; sourceTree = "<group>"; };
-		D2587DBF1C6A2434006FAB08 /* StringLocalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringLocalizer.h; sourceTree = "<group>"; };
-		D2587DC01C6A2434006FAB08 /* StringLocalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringLocalizer.m; sourceTree = "<group>"; };
 		D26918F51C98548F00FD90C6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D2A8CBA01BC7A62C006BF1F6 /* Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Social.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A8CBA41BC7A62C006BF1F6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -570,17 +563,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		D225FB871BDA6CB000711C53 /* Utilits */ = {
-			isa = PBXGroup;
-			children = (
-				D225FB881BDA6CE100711C53 /* String+Md5.h */,
-				D225FB891BDA6CE100711C53 /* String+Md5.m */,
-				D2587DBF1C6A2434006FAB08 /* StringLocalizer.h */,
-				D2587DC01C6A2434006FAB08 /* StringLocalizer.m */,
-			);
-			name = Utilits;
-			sourceTree = "<group>";
-		};
 		D2A8CB971BC7A62C006BF1F6 = {
 			isa = PBXGroup;
 			children = (
@@ -603,10 +585,8 @@
 		D2A8CBA21BC7A62C006BF1F6 /* OutputFaceBookData */ = {
 			isa = PBXGroup;
 			children = (
-				D225FB871BDA6CB000711C53 /* Utilits */,
 				D2A8CBB41BC7A62C006BF1F6 /* Info.plist */,
 				D2A8CBA31BC7A62C006BF1F6 /* Supporting Files */,
-				D2587DBC1C6A0C7F006FAB08 /* Consts.h */,
 			);
 			path = OutputFaceBookData;
 			sourceTree = "<group>";
@@ -1106,7 +1086,6 @@
 				DF21C7E51CB4DB5400635062 /* SOLInitializer.m in Sources */,
 				5633E33A1CB2876E0025D290 /* SOLUserPlainObject.m in Sources */,
 				DF3BFE281CB4CC100017ADA5 /* SOLApplicationAssembly.m in Sources */,
-				D2587DC11C6A2434006FAB08 /* StringLocalizer.m in Sources */,
 				DF9A59C01CBCD10700E36683 /* SOLFriendListPresenter.m in Sources */,
 				56CF94B41CBD640500C48330 /* ViperModuleFactory.m in Sources */,
 				DF0818E01CBAB0BA00BACB69 /* SOLFriendListTableViewController.m in Sources */,
@@ -1134,7 +1113,6 @@
 				DF3BFE231CB4C8200017ADA5 /* SOLThirdPartiesConfiguratorImplementation.m in Sources */,
 				DF0818F11CBAB87F00BACB69 /* SOLFriendListTableViewCellObject.m in Sources */,
 				DF0818C11CBA82FB00BACB69 /* SOLUserTransportImplementation.m in Sources */,
-				D225FB8A1BDA6CE100711C53 /* String+Md5.m in Sources */,
 				DF0818FB1CBAC8E700BACB69 /* SOLFriendListDataDisplayManager.m in Sources */,
 				56CF94AB1CBD621F00C48330 /* ViperModuleInputPromise.m in Sources */,
 			);

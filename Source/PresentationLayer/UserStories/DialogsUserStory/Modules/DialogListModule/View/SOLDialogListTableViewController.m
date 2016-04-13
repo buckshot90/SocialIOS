@@ -33,6 +33,9 @@
 
 - (void)setupViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs {
     
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    
     _dataDisplayManager.delegate = self;
     _dataDisplayManager.dataSource = self;
     self.tableView.delegate = _dataDisplayManager;
@@ -52,11 +55,19 @@
     [self.dataDisplayManager updateTableViewModelWithPlainObjects: dialogs];
 }
 
+#pragma mark - UIRefreshControl
+
+- (void)refresh:(id)sender {
+    
+    [_output refreshData];
+}
+
 #pragma mark - SOLDialogDataDisplayManagerDelegate
 
 - (void)didUpdateTableView {
     
     [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
 }
 
 - (void)didTapCellWithPlainObject:(id<SOLPlainObject>)plainObj {

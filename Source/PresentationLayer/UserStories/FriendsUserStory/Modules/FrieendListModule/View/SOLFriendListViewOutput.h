@@ -11,6 +11,7 @@
 @protocol SOLFriendListViewOutput <NSObject>
 
 - (void)viewDidLoad;
+- (void)refreshData;
 - (void)didSelectCellWithFriend:(SOLUserPlainObject *)friend;
 
 @end

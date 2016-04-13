@@ -12,6 +12,7 @@
 @protocol SOLDialogListViewOutput <NSObject>
 
 - (void)setupView;
+- (void)refreshData;
 - (void)didTriggerTapCellWithMessage:(SOLMessagePlainObject *)message;
 
 @end

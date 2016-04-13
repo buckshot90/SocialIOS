@@ -16,7 +16,6 @@
 @interface SOLFriendListTableViewController () <SOLDataDisplayManagerDelegate, SOLDataDisplayManagerDataSource>
 
 @property (strong, nonatomic) UISearchController *searchController;
-@property (strong, nonatomic) SOLUserServiceImplementation *service;
 
 @end
 
@@ -31,6 +30,9 @@
 #pragma mark - SOLFriendListViewInput
 
 - (void)setupViewWithFriendList:(NSArray<SOLUserPlainObject *> *)friends {
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
     
     _dataDisplayManager.delegate = self;
     _dataDisplayManager.dataSource = self;
@@ -49,9 +51,15 @@
 }
 
 - (void)updateViewWithFriendList:(NSArray<SOLUserPlainObject *> *)friends {
-    
-    NSLog(@"friends: %@", friends);
+//    NSLog(@"friends: %@", friends);
     [self.dataDisplayManager updateTableViewModelWithPlainObjects: friends];
+}
+
+#pragma mark - UIRefreshControl
+
+- (void)refresh:(id)sender {
+    
+    [_output refreshData];
 }
 
 #pragma mark - SOLDataDisplayManagerDelegate
@@ -59,6 +67,7 @@
 - (void)didUpdateTableView {
     
     [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
 }
 
 - (void)didTapCellWithPlainObject:(id<SOLPlainObject>)plainObj {
