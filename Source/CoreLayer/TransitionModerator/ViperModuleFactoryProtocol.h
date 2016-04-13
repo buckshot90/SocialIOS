@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol ViperTransitionModeratorProtocol;
+
 @protocol ViperModuleFactoryProtocol <NSObject>
+
+- (nullable id<ViperTransitionModeratorProtocol>)instantiateModuleTransitionModerator;
 
 @end
