@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -20,6 +21,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="DJy-ss-uBI" kind="presentation" identifier="DialogListModuleToDialogModuleSegue" id="vCF-X2-dmv"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -36,6 +40,36 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="343" y="598"/>
+        </scene>
+        <!--Dialog View Controller-->
+        <scene sceneID="Xb6-EV-p7Q">
+            <objects>
+                <viewController id="DJy-ss-uBI" customClass="SOLDialogViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hBz-ao-Y7l"/>
+                        <viewControllerLayoutGuide type="bottom" id="HYz-4b-Cj4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5tS-yG-0F8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ahS-zo-8R9">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ahS-zo-8R9" firstAttribute="top" secondItem="5tS-yG-0F8" secondAttribute="topMargin" id="2Og-gn-XOX"/>
+                            <constraint firstItem="ahS-zo-8R9" firstAttribute="leading" secondItem="5tS-yG-0F8" secondAttribute="leadingMargin" constant="-20" id="6b7-fh-dCa"/>
+                            <constraint firstItem="HYz-4b-Cj4" firstAttribute="top" secondItem="ahS-zo-8R9" secondAttribute="bottom" id="6do-Ip-bem"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ahS-zo-8R9" secondAttribute="trailing" constant="-20" id="zS1-W5-4hd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LHE-ch-nzH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1163" y="598"/>
         </scene>
     </scenes>
 </document>

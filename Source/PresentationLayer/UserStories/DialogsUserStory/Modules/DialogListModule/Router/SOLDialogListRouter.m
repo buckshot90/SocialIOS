@@ -8,6 +8,8 @@
 
 #import "SOLDialogListRouter.h"
 
+static NSString *const kDialogListModuleToDialogModuleSegue = @"DialogListModuleToDialogModuleSegue";
+
 @implementation SOLDialogListRouter
 
 @end
