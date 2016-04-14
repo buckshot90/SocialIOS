@@ -26,7 +26,8 @@
 
 - (NSArray<SOLUserPlainObject *> *)obtainUsersWithPredicate:(NSPredicate *)predicate {
     
-    return [_cache cacheWithPredicate:predicate mapper:_mapper];
+    NSArray<SOLUserPlainObject *> *list = [_cache cacheWithPredicate:predicate mapper:_mapper];
+    return list;
 }
 
 @end
