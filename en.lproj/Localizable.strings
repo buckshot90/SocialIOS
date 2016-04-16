@@ -47,6 +47,9 @@
 "addToFriend" = "Applications Friend";
 "Followers" = "Followers";
 
+// POOMessagesViewController
+"Message" = "Messages";
+
 // POOLikeViewController
 "Liked" = "Liked";
 "POOLikedViewController.editButton" = "Edit";

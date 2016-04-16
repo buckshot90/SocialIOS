@@ -47,6 +47,9 @@
 "addToFriend" = "Заявки в друзья";
 "Followers" = "Подписчики";
 
+// POOMessagesViewController
+"Message" = "Сообщения";
+
 // POOLikeViewController
 "Liked" = "Избранное";
 "POOLikedViewController.editButton" = "Ред.";

@@ -12,7 +12,6 @@
 #import "POOLogInVKViewController.h"
 #import "POOLikedViewController.h"
 
-
 static NSArray *SCOPE = nil;
 
 @interface AppDelegate () <VKSdkDelegate, VKSdkUIDelegate>
@@ -68,18 +67,22 @@ static NSArray *SCOPE = nil;
 }
 
 - (void)buildTabBar {
-    UINavigationController *navControllerloginViewController = [[UINavigationController alloc] initWithRootViewController:[[POOLogInVKViewController alloc] init]];
-    navControllerloginViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Contacts" image:[UIImage imageNamed:@"DockContacts"] tag:0];
+//    UINavigationController *navControllerloginViewController = [[UINavigationController alloc] initWithRootViewController:[[POOLogInVKViewController alloc] init]];
+//    navControllerloginViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Contacts" image:[UIImage imageNamed:@"DockContacts"] tag:0];
+//    
+//    UINavigationController *navControllerMessagesViewController = [[UINavigationController alloc] initWithRootViewController:[[POOMessagesViewController alloc] init]];
+//    navControllerMessagesViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Message" image:[UIImage imageNamed:@"DockMessages"] tag:1];
+//    
+//    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([POOLikedViewController class]) bundle:nil];
+//    POOLikedViewController *likedViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([POOLikedViewController class])];
+//    UINavigationController *likedViewControllerNavigationController = [[UINavigationController alloc] initWithRootViewController:likedViewController];
+//    likedViewControllerNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Liked" image:[UIImage imageNamed:@"DockFaves"] tag:2];
+//    
+//    self.tabBarController.viewControllers = @[likedViewControllerNavigationController,  navControllerMessagesViewController, navControllerloginViewController];
     
-    UINavigationController *navControllerMessagesViewController = [[UINavigationController alloc] initWithRootViewController:[[POOMessagesViewController alloc] init]];
-    navControllerMessagesViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Message" image:[UIImage imageNamed:@"DockMessages"] tag:1];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([POOFacebookData class]) bundle:nil];
     
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([POOLikedViewController class]) bundle:nil];
-    POOLikedViewController *likedViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([POOLikedViewController class])];
-    UINavigationController *likedViewControllerNavigationController = [[UINavigationController alloc] initWithRootViewController:likedViewController];
-    likedViewControllerNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Liked" image:[UIImage imageNamed:@"DockFaves"] tag:2];
-    
-    self.tabBarController.viewControllers = @[likedViewControllerNavigationController,  navControllerMessagesViewController, navControllerloginViewController];
+     self.tabBarController = [storyBoard instantiateViewControllerWithIdentifier:@"POOFacebookData"];
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {

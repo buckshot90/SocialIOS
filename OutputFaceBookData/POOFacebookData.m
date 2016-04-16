@@ -59,18 +59,8 @@ static NSArray *SCOPE = nil;
 }
 
 - (void)buildTabBar {
-    UINavigationController *navControllerloginViewController = [[UINavigationController alloc] initWithRootViewController:[[POOLogInVKViewController alloc] init]];
-    navControllerloginViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Contacts" image:[UIImage imageNamed:@"DockContacts"] tag:0];
-    
-    UINavigationController *navControllerMessagesViewController = [[UINavigationController alloc] initWithRootViewController:[[POOMessagesViewController alloc] init]];
-    navControllerMessagesViewController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Message" image:[UIImage imageNamed:@"DockMessages"] tag:1];
-    
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([POOLikedViewController class]) bundle:nil];
-    POOLikedViewController *likedViewController = [storyBoard instantiateViewControllerWithIdentifier:NSStringFromClass([POOLikedViewController class])];
-    UINavigationController *likedViewControllerNavigationController = [[UINavigationController alloc] initWithRootViewController:likedViewController];
-    likedViewControllerNavigationController.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Liked" image:[UIImage imageNamed:@"DockFaves"] tag:2];
-    
-    self.tabBarController.viewControllers = @[likedViewControllerNavigationController,  navControllerMessagesViewController, navControllerloginViewController];
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:NSStringFromClass([POOFacebookData class]) bundle:nil];
+    self.tabBarController = [storyBoard instantiateViewControllerWithIdentifier:@"POOFacebookData"];
 }
 
 #pragma mark - Button cliked
@@ -302,6 +292,8 @@ static NSArray *SCOPE = nil;
         [[NSUserDefaults standardUserDefaults] setObject:result.user.id forKey:kConstsUserIdKey];
         [[NSUserDefaults standardUserDefaults] setObject:result.token.secret forKey:kConstsVkSecretKey];
         [[NSUserDefaults standardUserDefaults ] setObject:result.user.photo_100 forKey:kConstsUserPhotoKey];
+        [[NSUserDefaults standardUserDefaults ] setObject:result.user.first_name forKey:kConstsNameKey];
+        [[NSUserDefaults standardUserDefaults ] setObject:result.user.last_name forKey:kConstsLastnameKey];
         
         [self buildTabBar];
         

@@ -17,6 +17,7 @@ static NSString *const kConstsUserIdKey = @"user_id";
 static NSString *const kConstsVkSecretKey = @"secret";
 static NSString *const kConstsUserPhotoKey = @"user_photo_100";
 static NSString *const kConstsExpiresInKey = @"expires_in";
-
+static NSString *const kConstsNameKey = @"name";
+static NSString *const kConstsLastnameKey = @"lastname";
 
 #endif /* Consts_h */

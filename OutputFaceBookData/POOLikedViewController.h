@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface POOLikedViewController : UITableViewController
+@interface POOLikedViewController : UIViewController
 
 @end

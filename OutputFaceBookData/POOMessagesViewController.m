@@ -13,10 +13,11 @@
 #import "POOVKUserModel.h"
 #import "POOVkMessageTableViewCell.h"
 #import "POORequstManager.h"
+#import "StringLocalizer.h"
 
 static NSString *MessagesIdent = @"MessagesIdent";
 
-@interface POOMessagesViewController () <UITableViewDataSource>
+@interface POOMessagesViewController () <UITableViewDataSource, UITabBarDelegate>
 
 @property (strong, nonatomic) NSMutableArray *dialogs;
 @property (strong, nonatomic) NSMutableArray *friends;
@@ -26,13 +27,10 @@ static NSString *MessagesIdent = @"MessagesIdent";
 
 @implementation POOMessagesViewController
 
-- (instancetype)init {
-    self = [super init];
-    
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:NSStringFromClass([POOMessagesViewController class]) bundle:nil];
-        self = [storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([POOMessagesViewController class])];
-        
         self.dialogs = [NSMutableArray array];
         self.friends = [NSMutableArray array];
         self.index = 50;
@@ -45,10 +43,18 @@ static NSString *MessagesIdent = @"MessagesIdent";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self headerConfig];
+    
     [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([POOVkMessageTableViewCell class])  bundle:nil] forCellReuseIdentifier:MessagesIdent];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
     [self.dialogs removeAllObjects];
     [self getDialogs:self.index offset:0];
 }
@@ -118,6 +124,14 @@ static NSString *MessagesIdent = @"MessagesIdent";
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 80;
+}
+
+- (void)headerConfig {
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage imageNamed:@"Header_black"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0) resizingMode:UIImageResizingModeStretch] forBarPosition:UIBarPositionTopAttached barMetrics:UIBarMetricsDefault];
+    
+    self.navigationController.navigationBar.topItem.title = [@"Message" localized];
+    [self.navigationController.navigationBar setTitleTextAttributes:
+     @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -25,4 +25,8 @@
     return self;
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"\rName:%@\rSecondName:%@",self.name, self.secondName];
+}
+
 @end

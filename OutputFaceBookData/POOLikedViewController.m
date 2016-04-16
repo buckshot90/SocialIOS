@@ -11,9 +11,10 @@
 
 static NSString *MyIdentifier = @"LikedCellIdentifier";
 
-@interface POOLikedViewController ()
+@interface POOLikedViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSArray *someArray;
+@property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
@@ -23,6 +24,9 @@ static NSString *MyIdentifier = @"LikedCellIdentifier";
     [super viewDidLoad];
     [self buildHeader];
     self.someArray = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4", nil];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
