@@ -17,10 +17,4 @@
 - (SOLMessagePlainObject *)objectFromExternalRepresentation:(NSDictionary *)dictionary;
 - (NSArray<SOLMessagePlainObject *> *)arrayFromExternalRepresentation:(NSArray *)array;
 
-- (SOLMessagePlainObject *)objectFromManagedObject:(Message *)managedObject;
-- (NSArray<SOLMessagePlainObject *> *)arrayFromManagedObject:(NSArray<Message *> *)managedObjects;
-
-- (Message *)objectFromPlainObject:(SOLMessagePlainObject *)plainObject;
-- (NSArray<Message *> *)arrayFromPlainObject:(NSArray<SOLMessagePlainObject *> *)plainObjects;
-
 @end

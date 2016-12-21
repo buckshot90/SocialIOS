@@ -33,7 +33,12 @@
             
             for (SOLUserPlainObject *plain in [mapper arrayFromExternalRepresentation:items]) {
                 
-                User *manage = [User MR_createEntity];
+                User *manage = [User MR_findFirstOrCreateByAttribute:@"guid" withValue:plain.guid inContext:localContext];
+                if (manage == nil) {
+                    
+                    manage = [User MR_createEntityInContext:localContext];
+                }
+                
                 manage.guid = plain.guid;
                 manage.firstName = plain.firstName;
                 manage.lastName = plain.lastName;

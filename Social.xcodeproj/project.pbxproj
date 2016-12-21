@@ -28,6 +28,7 @@
 		56D067B11CB40BD000B58F98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D067B01CB40BD000B58F98 /* Main.storyboard */; };
 		56D067B91CB51A6300B58F98 /* Message+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067B61CB51A6300B58F98 /* Message+CoreDataProperties.m */; };
 		56D067BA1CB51A6300B58F98 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D067B81CB51A6300B58F98 /* Message.m */; };
+		56D21F051CBFFA6B00AE400F /* SOLDialogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D21F041CBFFA6B00AE400F /* SOLDialogViewController.m */; };
 		56E09D7B1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D7A1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m */; };
 		56E09D7F1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D7E1CB6629100E54B87 /* SOLDialogCellObjectBuilder.m */; };
 		56E09D861CB66A7300E54B87 /* SOLDialogDataDisplayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E09D851CB66A7300E54B87 /* SOLDialogDataDisplayManager.m */; };
@@ -122,6 +123,8 @@
 		56D067B61CB51A6300B58F98 /* Message+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Message+CoreDataProperties.m"; path = "ManagedObjects/Message+CoreDataProperties.m"; sourceTree = "<group>"; };
 		56D067B71CB51A6300B58F98 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Message.h; path = ManagedObjects/Message.h; sourceTree = "<group>"; };
 		56D067B81CB51A6300B58F98 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Message.m; path = ManagedObjects/Message.m; sourceTree = "<group>"; };
+		56D21F031CBFFA6B00AE400F /* SOLDialogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SOLDialogViewController.h; sourceTree = "<group>"; };
+		56D21F041CBFFA6B00AE400F /* SOLDialogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SOLDialogViewController.m; sourceTree = "<group>"; };
 		56E09D791CB65A8500E54B87 /* SOLDialogTableViewCellObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogTableViewCellObject.h; path = CellObject/SOLDialogTableViewCellObject.h; sourceTree = "<group>"; };
 		56E09D7A1CB65A8500E54B87 /* SOLDialogTableViewCellObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOLDialogTableViewCellObject.m; path = CellObject/SOLDialogTableViewCellObject.m; sourceTree = "<group>"; };
 		56E09D7D1CB6629100E54B87 /* SOLDialogCellObjectBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOLDialogCellObjectBuilder.h; path = DialogCellObjectBuilder/SOLDialogCellObjectBuilder.h; sourceTree = "<group>"; };
@@ -369,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				5633E3561CB291F40025D290 /* DialogListModule */,
+				56D21EFD1CBFF84000AE400F /* DialogModule */,
 				5633E35C1CB291F40025D290 /* Storyboard */,
 			);
 			path = Modules;
@@ -525,6 +529,55 @@
 				56D067B81CB51A6300B58F98 /* Message.m */,
 			);
 			name = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		56D21EFD1CBFF84000AE400F /* DialogModule */ = {
+			isa = PBXGroup;
+			children = (
+				56D21EFE1CBFF84000AE400F /* Assembly */,
+				56D21EFF1CBFF84000AE400F /* Interactor */,
+				56D21F001CBFF84000AE400F /* Presenter */,
+				56D21F011CBFF84000AE400F /* Router */,
+				56D21F021CBFF84000AE400F /* View */,
+			);
+			path = DialogModule;
+			sourceTree = "<group>";
+		};
+		56D21EFE1CBFF84000AE400F /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		56D21EFF1CBFF84000AE400F /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		56D21F001CBFF84000AE400F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		56D21F011CBFF84000AE400F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		56D21F021CBFF84000AE400F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				56D21F031CBFFA6B00AE400F /* SOLDialogViewController.h */,
+				56D21F041CBFFA6B00AE400F /* SOLDialogViewController.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		56E09D781CB659F700E54B87 /* CellObjects */ = {
@@ -1067,6 +1120,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D21F051CBFFA6B00AE400F /* SOLDialogViewController.m in Sources */,
 				DF0818D01CBAA91100BACB69 /* User.m in Sources */,
 				DF0818F41CBAC27B00BACB69 /* SOLFriendListCellObjectBuilder.m in Sources */,
 				DF0818FE1CBAF63100BACB69 /* SOLBaseDataDisplayManager.m in Sources */,

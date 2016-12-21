@@ -17,12 +17,46 @@
         
         [MagicalRecord saveWithBlockAndWait:^(NSManagedObjectContext *localContext) {
             
-            [mapper arrayFromPlainObject:[mapper arrayFromExternalRepresentation:messages]];
+            for (SOLMessagePlainObject *plain in [mapper arrayFromExternalRepresentation:messages]) {
+                
+                Message *managed = [Message MR_findFirstOrCreateByAttribute:@"guid" withValue:plain.guid inContext:localContext];
+                if (managed == nil) {
+                    
+                    managed = [Message MR_createEntityInContext:localContext];
+                }
+                
+                if(plain) {
+                    
+                    managed.title = plain.title;
+                    managed.body = plain.body;
+                    managed.guid = plain.guid;
+                    managed.userId = plain.userId;
+                    managed.readState = plain.readState;
+                    managed.date = plain.date;
+                }
+            }
         }];
     }
     
-    NSArray *dialogs = predicate ? [Message MR_findAllWithPredicate:predicate] : [Message MR_findAll];
-    return [mapper arrayFromManagedObject:dialogs];
+    NSArray *managedObjects = predicate ? [Message MR_findAllWithPredicate:predicate] : [Message MR_findAll];
+    
+    NSMutableArray<SOLMessagePlainObject *> *list = [[NSMutableArray<SOLMessagePlainObject *> alloc] initWithCapacity:managedObjects.count];
+    for (Message *managed in managedObjects) {
+        
+        SOLMessagePlainObject *plain = [SOLMessagePlainObject new];
+        if(managed) {
+            
+            plain.title = managed.title;
+            plain.body = managed.body;
+            plain.guid = managed.guid;
+            plain.userId = managed.userId;
+            plain.readState = managed.readState;
+            plain.date = managed.date;
+        }
+        [list addObject:plain];
+    }
+    
+    return list;
 }
 
 - (NSArray<SOLMessagePlainObject *> *)cacheWithPredicate:(NSPredicate *)predicate mapper:(id<SOLMessageMapper>)mapper {
