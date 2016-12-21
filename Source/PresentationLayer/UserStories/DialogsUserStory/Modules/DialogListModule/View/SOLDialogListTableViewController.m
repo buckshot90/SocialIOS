@@ -29,6 +29,12 @@
     [self.output setupView];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear: animated];
+  
+    [_output refreshData];
+}
+
 #pragma mark - SOLDialogListViewInput
 
 - (void)setupViewWithDialogList:(NSArray<SOLMessagePlainObject *> *)dialogs {

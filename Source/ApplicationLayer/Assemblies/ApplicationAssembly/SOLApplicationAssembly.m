@@ -20,7 +20,7 @@
 
 - (AppDelegate *)p_appDelegate {
 
-    AppDelegate *appDelegateAssebly = [[UIApplication sharedApplication] delegate];
+    AppDelegate *appDelegateAssebly = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegateAssebly.thirdPartiesConfigurator = [self p_thirdPartiesConfigurator];
     return appDelegateAssebly;
 }

@@ -12,6 +12,7 @@
 
 static NSString * const kRCFCoreDataStoreName = @"OutputFaceBookData";
 
+
 @interface SOLThirdPartiesConfiguratorImplementation () <VKSdkUIDelegate, VKSdkDelegate>
 @property (strong, nonatomic) UIViewController *rootController;
 @end
@@ -60,7 +61,7 @@ static NSString * const kRCFCoreDataStoreName = @"OutputFaceBookData";
         
         if (state == VKAuthorizationAuthorized) {
             // Authorized and ready to go
-            [self.rootController dismissViewControllerAnimated:NO completion:^{}];
+            [self.rootController dismissViewControllerAnimated:NO completion:^{ }];
         } else if (error) {
             
 //            [UIAlertController alertControllerWithTitle:nil message:[error description] preferredStyle: UIAlertControllerStyleAlert];
